@@ -6,7 +6,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: overlay;
+
 }
 
 a {
@@ -25,6 +27,29 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #149ddd;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0) !important;
+  /* border-radius: 10px; */
+
+}
+::-webkit-scrollbar-track {
+  /* background: #ff0000; */
+  margin: 0;
 }
 
 /*--------------------------------------------------------------
