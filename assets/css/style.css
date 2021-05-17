@@ -211,9 +211,9 @@ h6 {
   left: 0;
 }
 
-.mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
-}
+/* .mobile-nav-active .mobile-nav-toggle i {
+  color: #777;
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -222,7 +222,7 @@ h6 {
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background: url("../img/hero/a.svg") top center; 
+  background: url("../img/hero/a.svg") top center;
   /* background: #173b6c; */
 }
 /* 
