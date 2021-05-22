@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="icon"
       href="./assets/img/favicon/favicon.png"
@@ -13,6 +14,10 @@
 
     <!--  CSS Files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css"
+    />
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
@@ -30,16 +35,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
-      rel="stylesheet"
-    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      rel="stylesheet"
     />
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -133,6 +139,7 @@
     </section>
 
     <main id="main">
+      <!--!___________________ About _____________________  -->
       <section id="about" class="about">
         <div class="container">
           <div class="section-title" data-aos="fade-up">
@@ -166,11 +173,11 @@
                   <ul>
                     <li>
                       <i class="icofont-rounded-right"></i
-                      ><strong>Phone:</strong>+961 71 442 659
+                      ><strong class="mr-3">Phone:</strong>+961 71 442 659
                     </li>
                     <li>
                       <i class="icofont-rounded-right"></i
-                      ><strong>Location:</strong>Beirut, Lebanon
+                      ><strong class="mr-3">Location:</strong>Beirut, Lebanon
                     </li>
                   </ul>
                 </div>
@@ -178,11 +185,12 @@
                   <ul>
                     <li>
                       <i class="icofont-rounded-right"></i
-                      ><strong>Email:</strong>alishkeir_@hotmail.com
+                      ><strong class="mr-3">Email:</strong
+                      >alishkeir_@hotmail.com
                     </li>
                     <li>
                       <i class="icofont-rounded-right"></i
-                      ><strong>Nationality:</strong>Lebanese
+                      ><strong class="mr-3">Nationality:</strong>Lebanese
                     </li>
                   </ul>
                 </div>
@@ -196,7 +204,7 @@
         </div>
       </section>
 
-      <!--! _________ Facts _________  -->
+      <!--!___________________ Facts _____________________  -->
 
       <section id="facts" class="facts">
         <div class="container">
@@ -258,7 +266,7 @@
         </div>
       </section>
 
-      <!--! ______Skills ______ -->
+      <!--!__________________ Skills _____________________  -->
 
       <section id="skill" class="skills section-bg">
         <div class="container">
@@ -360,8 +368,7 @@
         </div>
       </section>
 
-      <!--! ___________Services _________  -->
-
+      <!--!_________________ Services ____________________  -->
       <section id="services" class="services">
         <div class="container">
           <div class="section-title" data-aos="fade-up">
@@ -460,7 +467,7 @@
         </div>
       </section>
 
-      <!--!___________________ Testimonials _____________________  -->
+      <!--!________________ Testimonials _________________  -->
 
       <section id="testimonials" class="testimonials section-bg">
         <div class="container">
@@ -468,7 +475,8 @@
             <h2>Testimonials</h2>
             <p>
               Id ullamco dolor consequat adipisicing id est aliquip non commodo
-              mollit.
+              mollit. Lorem adipisicing commodo excepteur cillum occaecat
+              reprehenderit laborum laborum Lorem tempor.
             </p>
           </div>
           <div class="owl-carousel testimonials-carousel">
@@ -477,9 +485,7 @@
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -491,14 +497,16 @@
               <h4>CEO &amp; Founder</h4>
             </div>
 
-            <div class="testimonials-item" data-aos="fade-up">
+            <div
+              class="testimonials-item"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -510,14 +518,16 @@
               <h4>CEO &amp; Founder</h4>
             </div>
 
-            <div class="testimonials-item" data-aos="fade-up">
+            <div
+              class="testimonials-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -529,14 +539,16 @@
               <h4>CEO &amp; Founder</h4>
             </div>
 
-            <div class="testimonials-item" data-aos="fade-up">
+            <div
+              class="testimonials-item"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -548,14 +560,16 @@
               <h4>CEO &amp; Founder</h4>
             </div>
 
-            <div class="testimonials-item" data-aos="fade-up">
+            <div
+              class="testimonials-item"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -567,14 +581,16 @@
               <h4>CEO &amp; Founder</h4>
             </div>
 
-            <div class="testimonials-item" data-aos="fade-up">
+            <div
+              class="testimonials-item"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                 Est ut aliqua sit non pariatur est consectetur excepteur non
                 minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
-                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
-                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
-                cillum fugiat quis consequat dolor dolore quis.
+                officia.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
               <img
@@ -584,6 +600,118 @@
               />
               <h3>Lorem Ipsum</h3>
               <h4>CEO &amp; Founder</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--! __________________ Contact ___________________  -->
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>
+              Amet proident labore amet incididunt est sunt aliqua sit magna
+              sint incididunt amet.
+            </p>
+          </div>
+          <div class="row" data-aos="fade-in">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="icofont-google-map"></i>
+                  <h4>Location:</h4>
+                  <p>Mreijeh - Beirut, Lebanon</p>
+                </div>
+                <div class="email">
+                  <i class="icofont-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>alishkeir_@hotmail.com</p>
+                </div>
+                <div class="phone">
+                  <i class="icofont-phone"></i>
+                  <h4>Mobile:</h4>
+                  <p>+961 71 442 659</p>
+                </div>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.5119382945062!2d35.51407682924436!3d33.83687911274833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUwJzEyLjgiTiAzNcKwMzAnNTIuNyJF!5e0!3m2!1sen!2slb!4v1621678644901!5m2!1sen!2slb"
+                  frameborder="0"
+                  style="border: 0; width: 100%; height: 290px"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form
+                action="https://formsubmit.co/alishkeir_@hotmail.com"
+                method="POST"
+                class="php-email-form"
+                enctype="multipart/form-data"
+              >
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      data-rule="minlen:4"
+                      data-msg="Please Enter at Least 4 Characters"
+                      required
+                    />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      data-rule="Please Enter a Valid Email Address"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="someone@example.com"
+                      required
+                    />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    data-rule="minlen:4"
+                    data-msg="Please Enter at Least 8 Characters"
+                    required
+                  />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    data-rule="required"
+                    data-msg="Please Write Something For Us"
+                    required
+                  ></textarea>
+
+                  <div class="validate"></div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -600,8 +728,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 
     <!-- Template Main JS File -->
 

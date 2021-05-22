@@ -377,12 +377,9 @@ h6 {
 }
 /*! _________Facts _________  */
 
-.facts,
-.about,
-.skills,
-.services {
+section {
   /* padding-bottom: 30px; */
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .facts .count-box {
@@ -560,12 +557,112 @@ h6 {
 
 /*^ ___________ Testimonials ____________  */
 
-.testimonials {
-  overflow-x: hidden;
-}
-
 .testimonials .testimonials-item {
   box-sizing: content-box;
   text-align: center;
   min-height: 320px;
+  margin: 0 20px;
+}
+
+.testimonials .testimonials-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonials .testimonials-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.testimonials .testimonials-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.testimonials .testimonials-item .quote-icon-left,
+.testimonials .testimonials-item .quote-icon-right {
+  color: #c3e8fa;
+  font-size: 30px;
+}
+
+.testimonials .testimonials-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonials-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonials-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonials-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #fff;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+.testimonials .owl-pagination,
+.testimonials .owl-nav {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.testimonials .owl-page {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.testimonials .owl-pagination .active {
+  background-color: #149ddd !important;
+}
+
+@media screen and (max-width: 767px) {
+  .testimonials {
+    margin: 30px 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .jconfirm-content div {
+    font-size: 13px;
+  }
 }
