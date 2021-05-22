@@ -8,9 +8,9 @@
     new Typed(".typed", {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
+      typeSpeed: 50,
       backSpeed: 50,
-      backDelay: 2000,
+      backDelay: 1000,
     });
   }
 
@@ -206,7 +206,7 @@
   });
 })(jQuery);
 
-$form = $(".php-email-form");
+$form = $(".email-form");
 $form.on("submit", function () {
   alert("Email Sent!");
   location.reload();
