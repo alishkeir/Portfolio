@@ -8,7 +8,12 @@ body {
   color: #272829;
   /* overflow-x: hidden; */
   overflow: overlay;
-
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 }
 
 a {
@@ -45,7 +50,6 @@ h6 {
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0) !important;
   /* border-radius: 10px; */
-
 }
 ::-webkit-scrollbar-track {
   /* background: #ff0000; */
@@ -416,11 +420,11 @@ h6 {
   color: #122f57;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
   -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;
   -ms-transition: ease-in-out 0.3s;
   -o-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
@@ -486,12 +490,12 @@ h6 {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.9s;
-  -webkit-transition: 0.9s;
   -moz-transition: 0.9s;
   -ms-transition: 0.9s;
+  -webkit-transition: 0.9s;
   -o-transition: 0.9s;
   background-color: #149ddd;
+  transition: 0.9s;
 }
 
 /*! _______________ Services ____________  */
@@ -507,16 +511,16 @@ h6 {
   width: 54px;
   height: 54px;
   background: #149ddd;
-  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transition: 0.5s;
+  border-radius: 50%;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  transition: 0.5s;
   border: 1px solid #149ddd;
 }
 
@@ -552,4 +556,16 @@ h6 {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+}
+
+/*^ ___________ Testimonials ____________  */
+
+.testimonials {
+  overflow-x: hidden;
+}
+
+.testimonials .testimonials-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 320px;
 }

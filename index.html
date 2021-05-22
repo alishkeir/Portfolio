@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="icon"
+      href="./assets/img/favicon/favicon.png"
+      type="image/png"
+      sizes="16x16 32x32"
+    />
     <title>Ali Shkeir - Portfolio</title>
 
     <!--  CSS Files -->
@@ -42,22 +46,28 @@
   </head>
 
   <body>
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button> -->
-
     <header id="header">
       <div class="d-flex flex-column">
         <div class="profile">
           <img
-            src="assets/img/profile-img.jpg"
+            src="assets/img/profile/profile-img.png"
             alt="Profile Photo"
             class="img-fluid rounded-circle"
           />
           <h1 class="text-light"><a href="index.html">Ali Shkeir</a></h1>
           <div class="social-links mt-3 text-center">
-            <a href="" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="" class="twitter" title="twitter"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="" class="facebook" title="facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="" class="instagram" title="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="" class="linkedin" title="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </div>
         </div>
 
@@ -93,7 +103,12 @@
           </ul>
         </nav>
 
-        <button type="button" class="mobile-nav-toggle d-xl-none">
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none"
+          value=""
+          title="Menu"
+        >
           <i class="icofont-navigation-menu"></i>
         </button>
       </div>
@@ -133,7 +148,11 @@
 
           <div class="row">
             <div class="col-lg-4 text-center" data-aos="fade-right">
-              <img src="assets/img/profile-img.jpg" alt="" class="img-fluid" />
+              <img
+                src="assets/img/profile/profile-img.png"
+                alt=""
+                class="img-fluid"
+              />
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
               <h3>Web &amp; Mobile Developer.</h3>
@@ -258,6 +277,7 @@
                     aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="HTML"
                   ></div>
                 </div>
               </div>
@@ -271,6 +291,7 @@
                     aria-valuenow="85"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="CSS"
                   ></div>
                 </div>
               </div>
@@ -283,6 +304,7 @@
                     aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="CSS"
                   ></div>
                 </div>
               </div>
@@ -302,6 +324,7 @@
                     aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="CSS"
                   ></div>
                 </div>
               </div>
@@ -315,6 +338,7 @@
                     aria-valuenow="85"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="CSS"
                   ></div>
                 </div>
               </div>
@@ -327,6 +351,7 @@
                     aria-valuenow="90"
                     aria-valuemin="0"
                     aria-valuemax="100"
+                    title="CSS"
                   ></div>
                 </div>
               </div>
@@ -434,10 +459,139 @@
           </div>
         </div>
       </section>
+
+      <!--!___________________ Testimonials _____________________  -->
+
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Testimonials</h2>
+            <p>
+              Id ullamco dolor consequat adipisicing id est aliquip non commodo
+              mollit.
+            </p>
+          </div>
+          <div class="owl-carousel testimonials-carousel">
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+
+            <div class="testimonials-item" data-aos="fade-up">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Est ut aliqua sit non pariatur est consectetur excepteur non
+                minim pariatur qui. Enim laborum pariatur aliqua pariatur nulla
+                officia. Nostrud ullamco incididunt occaecat eiusmod adipisicing
+                cillum velit ea qui veniam sunt nostrud. Officia anim pariatur
+                cillum fugiat quis consequat dolor dolore quis.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img
+                src="/assets/img/testimonials/testimonial.png"
+                alt="Testimonial"
+                class="testimonial-img"
+              />
+              <h3>Lorem Ipsum</h3>
+              <h4>CEO &amp; Founder</h4>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--! Vendor JS Files -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
