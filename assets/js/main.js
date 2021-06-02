@@ -206,8 +206,8 @@
   });
 })(jQuery);
 
-$form = $(".email-form");
-$form.on("submit", function () {
-  alert("Email Sent!");
-  location.reload();
-});
+// $form = $(".email-form");
+// $form.on("submit", function () {
+//   alert("Email Sent!");
+//   location.reload();
+// });
