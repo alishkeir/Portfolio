@@ -1,0 +1,334 @@
+html body {
+    color: #272829;
+}
+
+html body a {
+    color: #149ddd;
+}
+
+html body a:hover {
+    color: #37b3ed;
+}
+
+html body::-webkit-scrollbar-thumb {
+    background-color: #149ddd;
+}
+
+html body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+html body .back-to-top {
+    background: #149ddd;
+    color: #fff;
+}
+
+html body #hero {
+    background: url(../../img/hero/a.svg) top center;
+}
+
+html body #hero h1 {
+    color: #fff;
+}
+
+html body #hero p {
+    color: #fff;
+}
+
+html body #hero p span {
+    color: #fff;
+    border-bottom: 3px solid #149ddd;
+}
+
+html body #main .section-bg {
+    background-color: #f5f8fd;
+}
+
+html body #main .section-title .section-title h2 {
+    color: #173b6c;
+}
+
+html body #main .section-title .section-title h2::after {
+    background: #149ddd;
+}
+
+html body #main .about .content h3 {
+    color: #173b6c;
+}
+
+html body #main .about .content ul i {
+    color: #149ddd;
+}
+
+html body #main .resume .resume-title {
+    color: #050d18;
+}
+
+html body #main .resume .resume-item {
+    border-left: 2px solid #1f5297;
+}
+
+html body #main .resume .resume-item::before {
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+html body #main .resume .resume-item a {
+    color: #000;
+}
+
+html body #main .resume .resume-item h4 {
+    color: #050d18;
+}
+
+html body #main .resume .resume-item h5 {
+    background: #e4edf9;
+}
+
+html body #main .portfolio #portfolio-flters {
+    background: #fff;
+}
+
+html body #main .portfolio #portfolio-flters .filter-active {
+    color: #149ddd !important;
+}
+
+html body #main .portfolio #portfolio-flters li {
+    color: #272829;
+}
+
+html body #main .portfolio #portfolio-flters li:hover {
+    color: #149ddd !important;
+}
+
+html body #main .facts .count-box i {
+    color: #149ddd;
+}
+
+html body #main .facts .count-box span {
+    color: #050d18;
+}
+
+html body #main .facts .count-box p {
+    color: #122f57;
+}
+
+html body #main .facts .count-box a {
+    color: #122f57;
+}
+
+html body #main .facts .count-box a:hover {
+    color: #1f5297;
+}
+
+html body #main .skills .progress .skill {
+    color: #050d18;
+}
+
+html body #main .skills .progress-bar-wrap {
+    background: #aaa;
+}
+
+html body #main .skills .progress-bar {
+    background-color: #149ddd;
+}
+
+html body #main .services .icon-box .icon {
+    background: #149ddd;
+    border: 1px solid #149ddd;
+}
+
+html body #main .services .icon-box .icon i {
+    color: #fff;
+}
+
+html body #main .services .icon-box:hover .icon {
+    background: #fff;
+}
+
+html body #main .services .icon-box:hover .icon i {
+    color: #149ddd;
+}
+
+html body #main .services .icon-box .title a {
+    color: #343a40;
+}
+
+html body #main .services .icon-box .title a:hover {
+    color: #149ddd;
+}
+
+html body .testimonials .testimonials-item h3 {
+    color: #111;
+}
+
+html body .testimonials .testimonials-item h4 {
+    color: #999;
+}
+
+html body .testimonials .testimonials-item .quote-icon-left,
+html body .testimonials .testimonials-item .quote-icon-right {
+    color: #c3e8fa;
+}
+
+html body .testimonials .testimonials-item p {
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+html body .testimonials .testimonials-item p::after {
+    border-top: 20px solid #fff;
+}
+
+html body .testimonials .owl-page {
+    background-color: #ddd !important;
+}
+
+html body .testimonials .owl-pagination .active {
+    background-color: #149ddd !important;
+}
+
+html body .contact .info {
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+html body .contact .info i {
+    color: #149ddd;
+    background: #dff3fc;
+}
+
+html body .contact .info h4 {
+    color: #050d18;
+}
+
+html body .contact .info p {
+    color: #173b6c;
+}
+
+html body .contact .info .address:hover i,
+html body .contact .info .email:hover i,
+html body .contact .info .phone:hover i {
+    background: #149ddd;
+    color: #fff;
+}
+
+html body .contact .email-form {
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+html body .contact .email-form button[type='submit'] {
+    background: #149ddd;
+}
+
+html body .contact .email-form button[type='submit']:hover {
+    background: #004e72;
+}
+
+html body .social-links a {
+    background: #212431;
+    color: #fff;
+}
+
+html body .social-links a:hover {
+    background: #149ddd;
+    color: #fff;
+}
+
+html #footer {
+    color: #f4f6fd;
+    background: #040b14;
+}
+
+html #footer .credits {
+    color: #eaebf0;
+}
+
+html .back-to-top {
+    background: #149ddd;
+    color: #fff;
+}
+
+html .back-to-top:hover {
+    color: #fff;
+    background: #1f5297;
+}
+
+html .check-container h2 {
+    color: #525252;
+}
+
+html .check-container p {
+    color: #b5b9b7;
+}
+
+html .check-container .check .checkmark {
+    stroke: #fff;
+    box-shadow: inset 0 0 0 #7ac142;
+}
+
+html .check-container .check .checkmark .checkmark__circle {
+    stroke: #7ac142;
+}
+
+html .check-container .landingButton {
+    border: 2px solid #149ddd;
+}
+
+html .check-container .landingButton:before {
+    background-color: #149ddd;
+}
+
+html .check-container .landingButton:hover span {
+    color: #fff;
+}
+
+html .success-footer {
+    background: #040b14;
+    color: #eee;
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0 0 0 30px #7ac142;
+    }
+}
+
+#header {
+    background: #040b14;
+}
+
+#header .profile img {
+    border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+    color: #fff;
+}
+
+#header .nav-menu a {
+    color: #a8a9b4;
+}
+
+#header .nav-menu a i {
+    color: #6f7180;
+}
+
+#header .nav-menu .active > a,
+#header .nav-menu a:hover,
+#header .nav-menu li:hover > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header .nav-menu .active > a i,
+#header .nav-menu a:hover i,
+#header .nav-menu li:hover > a i {
+    color: #149ddd;
+}
+
+#header .mobile-nav-toggle i {
+    color: #149ddd;
+}

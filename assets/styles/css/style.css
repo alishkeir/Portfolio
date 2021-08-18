@@ -1,0 +1,882 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+
+html body {
+  font-family: 'Open Sans', sans-serif;
+  overflow: overlay;
+  margin: 0;
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  font-family: Raleway, sans-serif;
+}
+
+html body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+html body::-webkit-scrollbar-button {
+  display: none;
+}
+
+html body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+html body::-webkit-scrollbar-track {
+  margin: 0;
+}
+
+html body .back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+html body .back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+html body #hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+html body #hero:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+html body #hero .hero-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+html body #hero h1 {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+}
+
+html body #hero p {
+  margin-bottom: 50px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+html body #hero p span {
+  padding-top: 4px;
+  letter-spacing: 1px;
+}
+
+html body #main {
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+html body #main section {
+  margin-bottom: 80px;
+}
+
+html body #main section .section-title {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+html body #main section .section-title .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+html body #main section .section-title .section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+html body #main .about {
+  overflow-x: hidden;
+}
+
+html body #main .about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+html body #main .about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+html body #main .about .content ul li {
+  padding-bottom: 10px;
+}
+
+html body #main .about .content ul i {
+  font-size: 20px;
+  padding-right: 2px;
+}
+
+html body #main .about .content p:last-child {
+  margin-bottom: 0;
+}
+
+html body #main .resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+html body #main .resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+
+html body #main .resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+html body #main .resume .resume-item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+}
+
+html body #main .resume .resume-item a {
+  font-weight: 700;
+}
+
+html body #main .resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 10px;
+}
+
+html body #main .resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+html body #main .resume .resume-item ul {
+  padding-left: 20px;
+}
+
+html body #main .resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+html body #main .portfolio .portfolio-item {
+  margin-bottom: 30px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  cursor: pointer;
+}
+
+html body #main .portfolio .portfolio-item:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+html body #main .portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+html body #main .portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+html body #main .portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+html body #main .portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+html body #main .facts .count-box {
+  padding: 30px;
+}
+
+html body #main .facts .count-box i {
+  display: block;
+  font-size: 44px;
+  float: left;
+}
+
+html body #main .facts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+html body #main .facts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+}
+
+html body #main .facts .count-box a {
+  font-weight: 600;
+  display: block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: Poppins, sans-serif;
+  transition: ease-in-out 0.3s;
+}
+
+html body #main .skills .progress {
+  height: 50px;
+  display: block;
+  background: 0 0;
+}
+
+html body #main .skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+}
+
+html body #main .skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+html body #main .skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+}
+
+html body #main .services .icon-box {
+  margin-bottom: 20px;
+}
+
+html body #main .services .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+html body #main .services .icon-box .icon i {
+  font-size: 24px;
+}
+
+html body #main .services .icon-box .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+html body #main .services .icon-box .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+html body #main .testimonials .testimonials-item {
+  box-sizing: content-box;
+  text-align: center;
+  min-height: 320px;
+  margin: 0 20px;
+}
+
+html body #main .testimonials .testimonials-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 auto;
+}
+
+html body #main .testimonials .testimonials-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+}
+
+html body #main .testimonials .testimonials-item h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+html body #main .testimonials .testimonials-item .quote-icon-left,
+html body #main .testimonials .testimonials-item .quote-icon-right {
+  font-size: 30px;
+}
+
+html body #main .testimonials .testimonials-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+html body #main .testimonials .testimonials-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+html body #main .testimonials .testimonials-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+html body #main .testimonials .testimonials-item p::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+
+html body #main .testimonials .owl-nav,
+html body #main .testimonials .owl-pagination {
+  margin-top: 5px;
+  text-align: center;
+}
+
+html body #main .testimonials .owl-page {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+html body #main .contact .info {
+  padding: 30px;
+  width: 100%;
+}
+
+html body #main .contact .info i {
+  font-size: 20px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+html body #main .contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+html body #main .contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+html body #main .contact .info .email p {
+  padding-top: 5px;
+}
+
+html body #main .contact .email-form {
+  width: 100%;
+  padding: 30px;
+}
+
+html body #main .contact .email-form .form-group {
+  padding-bottom: 8px;
+}
+
+html body #main .contact .email-form input {
+  height: 44px;
+}
+
+html body #main .contact .email-form input,
+html body #main .contact .email-form textarea {
+  padding: 10px 12px;
+}
+
+html body #main .contact .email-form button[type='submit'] {
+  border: 0;
+  padding: 10px 12px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+html body #footer {
+  padding: 15px;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+}
+
+html body #footer .copyright {
+  text-align: center;
+}
+
+html body #footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+html body .back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  transition: display 0.5s ease-in-out;
+  -webkit-transition: display 0.5s ease-in-out;
+  -moz-transition: display 0.5s ease-in-out;
+  -ms-transition: display 0.5s ease-in-out;
+  -o-transition: display 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+html body .back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+html body .back-to-top:hover {
+  transition: background 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -ms-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+}
+
+html body .check-container {
+  padding: 20px;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html body .check-container * {
+  text-align: center;
+}
+
+html body .check-container h2 {
+  margin-top: 5vh;
+  margin-bottom: 1rem;
+}
+
+html body .check-container .check {
+  width: 100vw;
+}
+
+html body .check-container .check .checkmark {
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 50px;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 0 auto;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  -webkit-border-radius: 50p;
+  -moz-border-radius: 50p;
+  -ms-border-radius: 50p;
+  -o-border-radius: 50p;
+}
+
+html body .check-container .check .checkmark .checkmark__circle {
+  margin: auto;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+html body .check-container .check .checkmark .checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+html body .check-container .landingButton {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 200px;
+  min-height: 50px;
+  line-height: 45px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+}
+
+html body .check-container .landingButton span {
+  z-index: 3;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+html body .check-container .landingButton:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.7s;
+  transform: scale(0, 1.1);
+  border-radius: 50px;
+  transform-origin: center;
+}
+
+html body .check-container .landingButton:hover span {
+  transition-duration: 1.2s;
+}
+
+html body .check-container .landingButton:hover:before {
+  opacity: 1;
+  transform: scale(1.1, 1);
+  -webkit-transform: scale(1.1, 1);
+  -moz-transform: scale(1.1, 1);
+  -ms-transform: scale(1.1, 1);
+  -o-transform: scale(1.1, 1);
+}
+
+html body .success-footer {
+  margin-bottom: 0;
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1199px) {
+  html body #header {
+    left: -300px;
+  }
+  html body #main {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html body #hero {
+    background-attachment: fixed;
+  }
+  html body #hero h1 {
+    font-size: 64px;
+  }
+  html body #hero p {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  html body #hero h1 {
+    font-size: 40px;
+    line-height: 36px;
+  }
+  html body #hero p {
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html body .testimonials {
+    margin: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html body .jconfirm-content div {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  html body #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  html body .checkmark {
+    min-width: 56px;
+    min-height: 56px;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+html body .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+html body .social-links a:hover {
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align-last: center;
+  font-family: Poppins, sans-serif;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  text-decoration: none;
+}
+
+#header .nav-menu {
+  padding-top: 30px;
+}
+
+#header .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#header .nav-menu ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+#header .nav-menu a {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+#header .nav-menu a i {
+  font-size: 24px;
+  padding-right: 8px;
+}
+
+#header .nav-menu .active > a,
+#header .nav-menu a:hover,
+#header .nav-menu li:hover > a {
+  text-decoration: none;
+}
+
+#header .mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: 0 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: 0 !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-active {
+  overflow: hidden !important;
+}
+
+.mobile-nav-active #header {
+  left: 0 !important;
+}

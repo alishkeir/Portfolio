@@ -1,0 +1,395 @@
+html {
+    body {
+        color: #272829;
+
+        a {
+            color: #149ddd;
+
+            &:hover {
+                color: #37b3ed;
+            }
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #149ddd;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0) !important;
+        }
+
+        .back-to-top {
+            background: #149ddd;
+            color: #fff;
+        }
+
+        #hero {
+            background: url(../img/hero/a.svg) top center;
+
+            h1 {
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+
+                span {
+                    color: #fff;
+
+                    border-bottom: 3px solid #149ddd;
+                }
+            }
+        }
+
+        #main {
+            .section-bg {
+                background-color: #f5f8fd;
+            }
+            .section-title {
+                .section-title h2 {
+                    color: #173b6c;
+
+                    &::after {
+                        background: #149ddd;
+                    }
+                }
+            }
+
+            .about {
+                .content {
+                    h3 {
+                        color: #173b6c;
+                    }
+
+                    ul {
+                        i {
+                            color: #149ddd;
+                        }
+                    }
+                }
+            }
+
+            .resume {
+                .resume-title {
+                    color: #050d18;
+                }
+
+                .resume-item {
+                    border-left: 2px solid #1f5297;
+
+                    &::before {
+                        background: #fff;
+                        border: 2px solid #1f5297;
+                    }
+
+                    a {
+                        color: #000;
+                    }
+
+                    h4 {
+                        color: #050d18;
+                    }
+
+                    h5 {
+                        background: #e4edf9;
+                    }
+                }
+            }
+
+            .portfolio {
+                #portfolio-flters {
+                    background: #fff;
+
+                    .filter-active {
+                        color: #149ddd !important;
+                    }
+
+                    li {
+                        color: #272829;
+
+                        &:hover {
+                            color: #149ddd !important;
+                        }
+                    }
+                }
+            }
+
+            .facts {
+                .count-box {
+                    i {
+                        color: #149ddd;
+                    }
+
+                    span {
+                        color: #050d18;
+                    }
+
+                    p {
+                        color: #122f57;
+                    }
+
+                    a {
+                        color: #122f57;
+
+                        &:hover {
+                            color: #1f5297;
+                        }
+                    }
+                }
+            }
+
+            .skills {
+                .progress {
+                    .skill {
+                        color: #050d18;
+                    }
+                }
+
+                .progress-bar-wrap {
+                    background: #aaa;
+                }
+                .progress-bar {
+                    background-color: #149ddd;
+                }
+            }
+
+            .services {
+                .icon-box {
+                    .icon {
+                        background: #149ddd;
+                        border: 1px solid #149ddd;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+
+                    &:hover .icon {
+                        background: #fff;
+
+                        i {
+                            color: #149ddd;
+                        }
+                    }
+
+                    .title {
+                        a {
+                            color: #343a40;
+
+                            &:hover {
+                                color: #149ddd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .testimonials {
+            .testimonials-item {
+                h3 {
+                    color: #111;
+                }
+                h4 {
+                    color: #999;
+                }
+
+                .quote-icon-left,
+                .quote-icon-right {
+                    color: #c3e8fa;
+                }
+
+                p {
+                    background: #fff;
+
+                    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+                    &::after {
+                        border-top: 20px solid #fff;
+                    }
+                }
+            }
+
+            .owl-page {
+                background-color: #ddd !important;
+            }
+
+            .owl-pagination {
+                .active {
+                    background-color: #149ddd !important;
+                }
+            }
+        }
+
+        .contact {
+            .info {
+                background: #fff;
+                box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+                i {
+                    color: #149ddd;
+
+                    background: #dff3fc;
+                }
+                h4 {
+                    color: #050d18;
+                }
+                p {
+                    color: #173b6c;
+                }
+
+                .address:hover i,
+                .email:hover i,
+                .phone:hover i {
+                    background: #149ddd;
+                    color: #fff;
+                }
+            }
+
+            .email-form {
+                background: #fff;
+                box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+                button[type='submit'] {
+                    background: #149ddd;
+
+                    &:hover {
+                        background: #004e72;
+                    }
+                }
+            }
+        }
+
+        .social-links {
+            a {
+                background: #212431;
+                color: #fff;
+
+                &:hover {
+                    background: #149ddd;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    #footer {
+        color: #f4f6fd;
+
+        background: #040b14;
+
+        .credits {
+            color: #eaebf0;
+        }
+    }
+
+    .back-to-top {
+        background: #149ddd;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background: #1f5297;
+        }
+    }
+
+    .check-container {
+        h2 {
+            color: #525252;
+        }
+
+        p {
+            color: #b5b9b7;
+        }
+
+        .check {
+            .checkmark {
+                stroke: #fff;
+
+                box-shadow: inset 0 0 0 #7ac142;
+
+                .checkmark__circle {
+                    stroke: #7ac142;
+                }
+            }
+        }
+
+        .landingButton {
+            border: 2px solid #149ddd;
+
+            &:before {
+                background-color: #149ddd;
+            }
+
+            &:hover {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .success-footer {
+        background: #040b14;
+
+        color: #eee;
+    }
+
+    //^ Keyframes
+
+    @keyframes fill {
+        100% {
+            box-shadow: inset 0 0 0 30px #7ac142;
+        }
+    }
+}
+
+#header {
+    background: #040b14;
+
+    .profile {
+        img {
+            border: 8px solid #2c2f3f;
+        }
+
+        h1 {
+            a,
+            a:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .nav-menu {
+        a {
+            color: #a8a9b4;
+
+            i {
+                color: #6f7180;
+            }
+        }
+        .active > a,
+        a:hover,
+        li:hover > a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .active > a i,
+        a:hover i,
+        li:hover > a i {
+            color: #149ddd;
+        }
+    }
+
+    .mobile-nav-toggle {
+        i {
+            color: #149ddd;
+        }
+    }
+}
+
+// .portfolio #portfolio-flters li.filter-active,
+// .portfolio #portfolio-flters li:hover {
+//     color: #149ddd !important;
+// }
