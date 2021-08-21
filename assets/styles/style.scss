@@ -830,43 +830,6 @@ html {
                 }
             }
         }
-
-        .theme-toggle {
-            -webkit-appearance: none;
-            position: relative;
-
-            width: 60px;
-            height: 30px;
-            background-image: url('../img/theme-toggle/light-background.webp');
-            background-size: cover;
-            border-radius: 50px;
-            outline: none;
-            transition: background-image 0.9s;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 30px;
-                width: 30px;
-                background-color: navy;
-                border-radius: 50px;
-                transition: all 0.9s;
-                background-color: #f7ca33;
-            }
-
-            &:checked {
-                background-image: url('../img/theme-toggle/dark-background.png.webp');
-                transition: background-image 0.9s;
-
-                &:before {
-                    transform: translate(100%);
-                    transition: all 0.9s;
-                    background-color: #ecf0f3;
-                }
-            }
-        }
     }
 }
 
@@ -922,7 +885,7 @@ html {
             display: flex;
             align-items: center;
             padding: 8px 15px;
-            margin-bottom: 8px;
+            // margin-bottom: 8px;
             transition: 0.3s;
             font-size: 15px;
 
@@ -939,9 +902,45 @@ html {
 
         .theme-toggle-list-item {
             display: flex;
-            // justify-content: center;
             align-items: center;
-            padding-left: 15px;
+            padding: 8px 15px;
+
+            .theme-toggle {
+                -webkit-appearance: none;
+                position: relative;
+
+                width: 60px;
+                height: 30px;
+                background-image: url('../img/theme-toggle/light-background.webp');
+                background-size: cover;
+                border-radius: 50px;
+                outline: none;
+                transition: background-image 0.9s;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 30px;
+                    width: 30px;
+                    background-color: navy;
+                    border-radius: 50px;
+                    transition: all 0.9s;
+                    background-color: #f7ca33;
+                }
+
+                &:checked {
+                    background-image: url('../img/theme-toggle/dark-background.png.webp');
+                    transition: background-image 0.9s;
+
+                    &:before {
+                        transform: translate(100%);
+                        transition: all 0.9s;
+                        background-color: #ecf0f3;
+                    }
+                }
+            }
         }
     }
 

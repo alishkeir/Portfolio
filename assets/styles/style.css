@@ -790,42 +790,6 @@ html body .social-links a:hover {
   text-decoration: none;
 }
 
-html body .theme-toggle {
-  -webkit-appearance: none;
-  position: relative;
-  width: 60px;
-  height: 30px;
-  background-image: url("../img/theme-toggle/light-background.webp");
-  background-size: cover;
-  border-radius: 50px;
-  outline: none;
-  transition: background-image 0.9s;
-}
-
-html body .theme-toggle:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  background-color: navy;
-  border-radius: 50px;
-  transition: all 0.9s;
-  background-color: #f7ca33;
-}
-
-html body .theme-toggle:checked {
-  background-image: url("../img/theme-toggle/dark-background.png.webp");
-  transition: background-image 0.9s;
-}
-
-html body .theme-toggle:checked:before {
-  transform: translate(100%);
-  transition: all 0.9s;
-  background-color: #ecf0f3;
-}
-
 #header {
   position: fixed;
   top: 0;
@@ -878,7 +842,6 @@ html body .theme-toggle:checked:before {
   display: flex;
   align-items: center;
   padding: 8px 15px;
-  margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -897,7 +860,43 @@ html body .theme-toggle:checked:before {
 #header .nav-menu .theme-toggle-list-item {
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding: 8px 15px;
+}
+
+#header .nav-menu .theme-toggle-list-item .theme-toggle {
+  -webkit-appearance: none;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-image: url("../img/theme-toggle/light-background.webp");
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image 0.9s;
+}
+
+#header .nav-menu .theme-toggle-list-item .theme-toggle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+
+#header .nav-menu .theme-toggle-list-item .theme-toggle:checked {
+  background-image: url("../img/theme-toggle/dark-background.png.webp");
+  transition: background-image 0.9s;
+}
+
+#header .nav-menu .theme-toggle-list-item .theme-toggle:checked:before {
+  transform: translate(100%);
+  transition: all 0.9s;
+  background-color: #ecf0f3;
 }
 
 #header .mobile-nav-toggle {
