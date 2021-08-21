@@ -34,6 +34,10 @@ html {
             margin: 0;
         }
 
+        ::-webkit-resizer {
+            display: none;
+        }
+
         .back-to-top {
             position: fixed;
             display: none;
@@ -605,8 +609,6 @@ html {
                 -o-transition: background 0.2s ease-in-out;
             }
         }
-
-       
 
         //^ Media Queries
 

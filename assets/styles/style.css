@@ -38,6 +38,10 @@ html body::-webkit-scrollbar-track {
   margin: 0;
 }
 
+html body ::-webkit-resizer {
+  display: none;
+}
+
 html body .back-to-top {
   position: fixed;
   display: none;
