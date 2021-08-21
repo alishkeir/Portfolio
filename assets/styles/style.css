@@ -866,6 +866,7 @@ html body .social-links a:hover {
 #header .nav-menu .theme-toggle-list-item .theme-toggle {
   -webkit-appearance: none;
   position: relative;
+  cursor: pointer;
   width: 60px;
   height: 30px;
   background-image: url("../img/theme-toggle/light-background.webp");
