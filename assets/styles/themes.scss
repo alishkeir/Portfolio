@@ -1,5 +1,7 @@
+@import 'colors';
+
 html {
-    body {
+    .light {
         color: #272829;
 
         a {
@@ -271,120 +273,120 @@ html {
                 }
             }
         }
-    }
 
-    #footer {
-        color: #f4f6fd;
+        #footer {
+            color: #f4f6fd;
 
-        background: #040b14;
+            background: #040b14;
 
-        .credits {
-            color: #eaebf0;
+            .credits {
+                color: #eaebf0;
+            }
         }
-    }
 
-    .back-to-top {
-        background: #149ddd;
-        color: #fff;
-
-        &:hover {
+        .back-to-top {
+            background: #149ddd;
             color: #fff;
-            background: #1f5297;
-        }
-    }
-
-    .check-container {
-        h2 {
-            color: #525252;
-        }
-
-        p {
-            color: #b5b9b7;
-        }
-
-        .check {
-            .checkmark {
-                stroke: #fff;
-
-                box-shadow: inset 0 0 0 #7ac142;
-
-                .checkmark__circle {
-                    stroke: #7ac142;
-                }
-            }
-        }
-
-        .landingButton {
-            border: 2px solid #149ddd;
-
-            &:before {
-                background-color: #149ddd;
-            }
 
             &:hover {
-                span {
-                    color: #fff;
+                color: #fff;
+                background: #1f5297;
+            }
+        }
+
+        .check-container {
+            h2 {
+                color: #525252;
+            }
+
+            p {
+                color: #b5b9b7;
+            }
+
+            .check {
+                .checkmark {
+                    stroke: #fff;
+
+                    box-shadow: inset 0 0 0 #7ac142;
+
+                    .checkmark__circle {
+                        stroke: #7ac142;
+                    }
+                }
+            }
+
+            .landingButton {
+                border: 2px solid #149ddd;
+
+                &:before {
+                    background-color: #149ddd;
+                }
+
+                &:hover {
+                    span {
+                        color: #fff;
+                    }
                 }
             }
         }
-    }
 
-    .success-footer {
-        background: #040b14;
+        .success-footer {
+            background: #040b14;
 
-        color: #eee;
-    }
-
-    //^ Keyframes
-
-    @keyframes fill {
-        100% {
-            box-shadow: inset 0 0 0 30px #7ac142;
-        }
-    }
-}
-
-#header {
-    background: #040b14;
-
-    .profile {
-        img {
-            border: 8px solid #2c2f3f;
+            color: #eee;
         }
 
-        h1 {
-            a,
-            a:hover {
-                color: #fff;
+        //^ Keyframes
+
+        @keyframes fill {
+            100% {
+                box-shadow: inset 0 0 0 30px #7ac142;
             }
         }
-    }
 
-    .nav-menu {
-        a {
-            color: #a8a9b4;
+        #header {
+            background: #040b14;
 
-            i {
-                color: #6f7180;
+            .profile {
+                img {
+                    border: 8px solid #2c2f3f;
+                }
+
+                h1 {
+                    a,
+                    a:hover {
+                        color: #fff;
+                    }
+                }
             }
-        }
-        .active > a,
-        a:hover,
-        li:hover > a {
-            text-decoration: none;
-            color: #fff;
-        }
 
-        .active > a i,
-        a:hover i,
-        li:hover > a i {
-            color: #149ddd;
-        }
-    }
+            .nav-menu {
+                a {
+                    color: #a8a9b4;
 
-    .mobile-nav-toggle {
-        i {
-            color: #149ddd;
+                    i {
+                        color: #6f7180;
+                    }
+                }
+                .active > a,
+                a:hover,
+                li:hover > a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                .active > a i,
+                a:hover i,
+                li:hover > a i {
+                    color: #149ddd;
+                }
+            }
+
+            .mobile-nav-toggle {
+                i {
+                    color: #149ddd;
+                }
+            }
         }
     }
 }

@@ -790,6 +790,42 @@ html body .social-links a:hover {
   text-decoration: none;
 }
 
+html body .theme-toggle {
+  -webkit-appearance: none;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-image: url("../img/theme-toggle/light-background.webp");
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image 0.9s;
+}
+
+html body .theme-toggle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+
+html body .theme-toggle:checked {
+  background-image: url("../img/theme-toggle/dark-background.png.webp");
+  transition: background-image 0.9s;
+}
+
+html body .theme-toggle:checked:before {
+  transform: translate(100%);
+  transition: all 0.9s;
+  background-color: #ecf0f3;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -856,6 +892,12 @@ html body .social-links a:hover {
 #header .nav-menu a:hover,
 #header .nav-menu li:hover > a {
   text-decoration: none;
+}
+
+#header .nav-menu .theme-toggle-list-item {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
 
 #header .mobile-nav-toggle {

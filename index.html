@@ -51,11 +51,11 @@
             rel="stylesheet"
         />
         <!-- Main CSS File -->
-        <link rel="stylesheet" href="assets/styles/css/style.css" />
-        <link rel="stylesheet" href="assets/styles/css/themes.css" />
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/themes.css" />
     </head>
 
-    <body class="body">
+    <body class="light">
         <header id="header">
             <div class="d-flex flex-column">
                 <div class="profile">
@@ -155,6 +155,14 @@
                             >
                                 <i class="bx bx-download"></i><span>My CV</span>
                             </a>
+                        </li>
+
+                        <li class="theme-toggle-list-item">
+                            <input
+                                type="checkbox"
+                                class="theme-toggle"
+                                onclick="toggleTheme()"
+                            />
                         </li>
                     </ul>
                 </nav>
@@ -257,10 +265,6 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p>
-                                <!-- Aute eu voluptate laborum anim exercitation cillum enim
-                incididunt ut sunt. -->
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -295,12 +299,12 @@
                                 </h4>
                                 <h5>2015 - 2018</h5>
                                 <p>
-                                    <em></em>
+                                    <em>
                                         <a href="##">
                                             Al Rassoul Al aazam University
                                             Institute</a
                                         >
-                                         - Beirut, LB</em
+                                        - Beirut, LB</em
                                     >
                                 </p>
                                 <ul>
@@ -538,7 +542,6 @@
                 <div class="container">
                     <div class="section-title" data-aos="fade-up">
                         <h2>Skills</h2>
-                        <!-- <p>Esse laborum ex laboris sit cillum et reprehenderit culpa.</p> -->
                     </div>
                     <div class="row skills-content m-auto">
                         <div
@@ -841,65 +844,65 @@
                         </div>
 
                         <div
-                        class="
-                            col-lg-5 col-sm-6
-                            aos-item
-                            ml-auto
-                            mr-auto
-                            mb-0
-                            mt-5
-                        "
-                        data-aos="fade-up"
-                        data-aos-mirror="true"
-                        data-aos-delay="500"
-                    >
-                        <div class="progress">
-                            <span class="skill"
-                                >React Native<i class="val">75%</i></span
-                            >
-                            <div class="progress-bar-wrap">
-                                <div
-                                    class="progress-bar"
-                                    role="progressbar"
-                                    aria-valuenow="75"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                    title="React Native"
-                                ></div>
+                            class="
+                                col-lg-5 col-sm-6
+                                aos-item
+                                ml-auto
+                                mr-auto
+                                mb-0
+                                mt-5
+                            "
+                            data-aos="fade-up"
+                            data-aos-mirror="true"
+                            data-aos-delay="500"
+                        >
+                            <div class="progress">
+                                <span class="skill"
+                                    >React Native<i class="val">75%</i></span
+                                >
+                                <div class="progress-bar-wrap">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        aria-valuenow="75"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        title="React Native"
+                                    ></div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="progress">
-                            <span class="skill"
-                                >GraphQL<i class="val">55%</i></span
-                            >
-                            <div class="progress-bar-wrap">
-                                <div
-                                    class="progress-bar"
-                                    role="progressbar"
-                                    aria-valuenow="55"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                    title="GraphQL"
-                                ></div>
+                            <div class="progress">
+                                <span class="skill"
+                                    >GraphQL<i class="val">55%</i></span
+                                >
+                                <div class="progress-bar-wrap">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        aria-valuenow="55"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        title="GraphQL"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <span class="skill"
+                                    >Git<i class="val">90%</i></span
+                                >
+                                <div class="progress-bar-wrap">
+                                    <div
+                                        class="progress-bar"
+                                        role="progressbar"
+                                        aria-valuenow="90"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        title="Git"
+                                    ></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <span class="skill"
-                                >Git<i class="val">90%</i></span
-                            >
-                            <div class="progress-bar-wrap">
-                                <div
-                                    class="progress-bar"
-                                    role="progressbar"
-                                    aria-valuenow="90"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                    title="Git"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </section>
@@ -909,10 +912,6 @@
                 <div class="container">
                     <div class="section-title" data-aos="fade-up">
                         <h2>Services</h2>
-                        <!-- <p>
-              Excepteur id minim eu dolor proident sunt velit incididunt id ad
-              eiusmod.
-            </p> -->
                     </div>
 
                     <div class="row">
@@ -929,8 +928,8 @@
                             <p class="description">
                                 Web Development is building out the components
                                 of a website. Using HTML, CSS , Javascript, PHP
-                                and their frameworks and libraries. I build fast,
-                                responsive and interactive web apps.
+                                and their frameworks and libraries. I build
+                                fast, responsive and interactive web apps.
                             </p>
                         </div>
                         <div
@@ -1117,10 +1116,6 @@
                 <div class="container">
                     <div class="section-title">
                         <h2>Contact</h2>
-                        <!-- <p>
-              Amet proident labore amet incididunt est sunt aliqua sit magna
-              sint incididunt amet.
-            </p> -->
                     </div>
                     <div class="row">
                         <div
@@ -1264,15 +1259,13 @@
                 </div>
                 <div class="credits">
                     Designed By
-                    <a href="#"
-                        >Ali Shkeir</a
-                    >
+                    <a href="#">Ali Shkeir</a>
                 </div>
             </div>
         </footer>
 
         <!--!______________ Back To Top Button _______________  -->
-        <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
+        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
         <!--! Vendor JS Files -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
