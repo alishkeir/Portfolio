@@ -2,19 +2,19 @@
 
 html {
     .dark {
-        color: #cacaca;
-        background: #090c10;
+        color: $darkest-white;
+        background: $dark-main-background;
 
         a {
-            color: #e50000;
+            color: $dark-headers-color;
 
             &:hover {
-                color: #990000 !important;
+                color: $dark-subtitles-color !important;
             }
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: #e50000;
+            background-color: $dark-headers-color;
         }
 
         &::-webkit-scrollbar-track {
@@ -22,50 +22,50 @@ html {
         }
 
         .back-to-top {
-            background: #e50000;
-            color: #ffffff;
+            background: $dark-headers-color;
+            color: $main-white;
         }
 
         #hero {
             background: url(../img/hero/dark.svg) top center;
 
             h1 {
-                color: #ffffff;
+                color: $main-white;
             }
 
             p {
-                color: #ffffff;
+                color: $main-white;
 
                 span {
-                    color: #ffffff;
+                    color: $main-white;
 
-                    border-bottom: 3px solid #e50000;
+                    border-bottom: 3px solid $dark-headers-color;
                 }
             }
         }
 
         #main {
             .section-bg {
-                background-color: #0d1117;
+                background-color: $dark-sub-background;
             }
             .section-title {
                 h2 {
-                    color: #e50000 !important;
+                    color: $dark-headers-color !important;
                 }
                 &::after {
-                    background: #e50000;
+                    background: $dark-headers-color;
                 }
             }
 
             .about {
                 .content {
                     h3 {
-                        color: #cc0000;
+                        color: $dark-titles-color;
                     }
 
                     ul {
                         i {
-                            color: #cc0000;
+                            color: $dark-titles-color;
                         }
                     }
                 }
@@ -73,44 +73,44 @@ html {
 
             .resume {
                 .resume-title {
-                    color: #cc0000;
+                    color: $dark-titles-color;
                 }
 
                 .resume-item {
-                    border-left: 2px solid #e50000;
+                    border-left: 2px solid $dark-headers-color;
 
                     &::before {
-                        background: #ffffff;
-                        border: 2px solid #e50000;
+                        background: $main-white;
+                        border: 2px solid $dark-headers-color;
                     }
 
                     a {
-                        color: #cacaca;
+                        color: $darkest-white;
                     }
 
                     h4 {
-                        color: #990000;
+                        color: $dark-subtitles-color;
                     }
 
                     h5 {
-                        background: #161b22;
+                        background: $dark-lightest-background;
                     }
                 }
             }
 
             .portfolio {
                 #portfolio-flters {
-                    background: #090c10;
+                    background: $dark-main-background;
 
                     .filter-active {
-                        color: #cc0000 !important;
+                        color: $dark-titles-color !important;
                     }
 
                     li {
                         color: inherit;
 
                         &:hover {
-                            color: #cc0000 !important;
+                            color: $dark-titles-color !important;
                         }
                     }
                 }
@@ -119,22 +119,22 @@ html {
             .facts {
                 .count-box {
                     i {
-                        color: #e50000;
+                        color: $dark-headers-color;
                     }
 
                     span {
-                        color: #990000;
+                        color: $dark-subtitles-color;
                     }
 
                     p {
-                        color: #e50000;
+                        color: $dark-headers-color;
                     }
 
                     a {
-                        color: #990000;
+                        color: $dark-subtitles-color;
 
                         &:hover {
-                            color: #e50000;
+                            color: $dark-headers-color;
                         }
                     }
                 }
@@ -148,38 +148,39 @@ html {
                 }
 
                 .progress-bar-wrap {
-                    background: #cacaca;
+                    background: $darkest-white;
                 }
                 .progress-bar {
-                    background-color: #cc0000;
+                    background-color: $dark-titles-color;
                 }
             }
 
             .services {
                 .icon-box {
                     .icon {
-                        background: #cc0000;
-                        border: 1px solid #cc0000;
+                        background: $dark-titles-color;
+                        border: 1px solid $dark-titles-color;
 
                         i {
-                            color: #ffffff;
+                            color: $main-white;
                         }
                     }
 
                     &:hover .icon {
-                        background: #ffffff;
+                        background: $dark-subtitles-color;
 
-                        i {
-                            color: #e50000;
-                        }
+                        // i {
+                        //     color: $dark-headers-color;
+                        // }
+                        border: 1px solid $dark-main-background;
                     }
 
                     .title {
-                        a {
-                            color: #cc0000;
+                        p {
+                            color: $dark-titles-color;
 
                             &:hover {
-                                color: #990000;
+                                color: $dark-subtitles-color;
                             }
                         }
                     }
@@ -190,49 +191,49 @@ html {
         .testimonials {
             .testimonials-item {
                 h3 {
-                    color: #dddddd;
+                    color: $darken-white;
                 }
                 h4 {
-                    color: #cacaca;
+                    color: $darkest-white;
                 }
 
                 .quote-icon-left,
                 .quote-icon-right {
-                    color: #990000;
+                    color: $dark-subtitles-color;
                 }
 
                 p {
-                    background: #ffffff;
+                    background: $main-white;
 
                     &::after {
-                        border-top: 20px solid #ffffff;
+                        border-top: 20px solid $main-white;
                     }
                 }
             }
 
             .owl-page {
-                background-color: #dddddd !important;
+                background-color: $darken-white !important;
             }
 
             .owl-pagination {
                 .active {
-                    background-color: #e50000 !important;
+                    background-color: $dark-headers-color !important;
                 }
             }
         }
 
         .contact {
             .info {
-                background: #0d1117;
+                background: $dark-sub-background;
                 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 
                 i {
-                    color: #cc0000;
+                    color: $dark-titles-color;
 
-                    background: #090c10;
+                    background: $dark-main-background;
                 }
                 h4 {
-                    color: #cc0000;
+                    color: $dark-titles-color;
                 }
                 p {
                     color: inherit;
@@ -241,27 +242,31 @@ html {
                 .address:hover i,
                 .email:hover i,
                 .phone:hover i {
-                    background: #e50000;
-                    color: #ffffff;
+                    background: $dark-headers-color;
+                    color: $main-white;
                 }
             }
 
             .email-form {
-                background: #0d1117;
+                background: $dark-sub-background;
                 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
                 input,
                 textarea {
-                    background: #090c10;
+                    background: $dark-main-background;
                     border: none;
-                    color: #cacaca;
+                    color: $darkest-white;
+
+                    &:focus {
+                        box-shadow: 0 0 0 3px $dark-subtitles-color;
+                    }
                 }
 
                 button[type='submit'] {
-                    background: #cc0000;
-                    color: #cacaca;
+                    background: $dark-titles-color;
+                    color: $darkest-white;
 
                     &:hover {
-                        background: #990000;
+                        background: $dark-subtitles-color;
                     }
                 }
             }
@@ -269,63 +274,68 @@ html {
 
         .social-links {
             a {
-                background: #990000;
-                color: #ffffff;
+                background: $dark-subtitles-color;
+                color: $main-white;
 
                 &:hover {
-                    background: #e50000;
-                    color: #ffffff;
+                    background: $dark-headers-color;
+                    color: $main-white;
                 }
             }
         }
 
         .back-to-top {
-            background: #990000;
-            color: #ffffff;
+            background: $dark-subtitles-color;
+            color: $main-white;
 
             &:hover {
-                color: #ffffff !important;
-                background: #e50000;
+                color: $main-white !important;
+                background: $dark-headers-color;
             }
         }
 
         #header {
-            background: #161b22;
+            background: $dark-lightest-background;
 
             .profile {
                 img {
-                    border: 8px solid #990000;
+                    border: 8px solid $dark-subtitles-color;
                 }
 
                 h1 {
                     a,
                     a:hover {
-                        color: #ffffff;
+                        color: $main-white;
                     }
                 }
             }
 
             .nav-menu {
                 a {
-                    color: #cacaca;
+                    i {
+                        color: $darken-white;
+                    }
+                    span {
+                        color: $darkest-white;
+                    }
                 }
                 .active > a,
                 a:hover,
                 li:hover > a {
                     text-decoration: none;
-                    color: #ffffff;
+                    color: $main-white;
                 }
 
                 .active > a i,
                 a:hover i,
                 li:hover > a i {
-                    color: #e50000;
+                    color: $dark-headers-color;
                 }
             }
 
             .mobile-nav-toggle {
                 i {
-                    color: #e50000;
+                    color: $dark-headers-color;
                 }
             }
         }
@@ -334,5 +344,5 @@ html {
 
 // .portfolio #portfolio-flters li.filter-active,
 // .portfolio #portfolio-flters li:hover {
-//     color: #e50000 !important;
+//     color: $dark-headers-color !important;
 // }

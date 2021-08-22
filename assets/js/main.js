@@ -1,6 +1,8 @@
 !(function ($) {
     'use strict';
 
+    $('#title').off('click');
+
     // Hero typed
     if ($('.typed').length) {
         var typed_strings = $('.typed').data('typed-items');

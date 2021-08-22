@@ -1,18 +1,18 @@
 html .dark {
-  color: #cacaca;
+  color: #b3b3b3;
   background: #090c10;
 }
 
 html .dark a {
-  color: #e50000;
+  color: #b30000;
 }
 
 html .dark a:hover {
-  color: #990000 !important;
+  color: maroon !important;
 }
 
 html .dark::-webkit-scrollbar-thumb {
-  background-color: #e50000;
+  background-color: #b30000;
 }
 
 html .dark::-webkit-scrollbar-track {
@@ -20,8 +20,8 @@ html .dark::-webkit-scrollbar-track {
 }
 
 html .dark .back-to-top {
-  background: #e50000;
-  color: #ffffff;
+  background: #b30000;
+  color: #e6e6e6;
 }
 
 html .dark #hero {
@@ -29,16 +29,16 @@ html .dark #hero {
 }
 
 html .dark #hero h1 {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 html .dark #hero p {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 html .dark #hero p span {
-  color: #ffffff;
-  border-bottom: 3px solid #e50000;
+  color: #e6e6e6;
+  border-bottom: 3px solid #b30000;
 }
 
 html .dark #main .section-bg {
@@ -46,40 +46,40 @@ html .dark #main .section-bg {
 }
 
 html .dark #main .section-title h2 {
-  color: #e50000 !important;
+  color: #b30000 !important;
 }
 
 html .dark #main .section-title::after {
-  background: #e50000;
+  background: #b30000;
 }
 
 html .dark #main .about .content h3 {
-  color: #cc0000;
+  color: #990000;
 }
 
 html .dark #main .about .content ul i {
-  color: #cc0000;
+  color: #990000;
 }
 
 html .dark #main .resume .resume-title {
-  color: #cc0000;
+  color: #990000;
 }
 
 html .dark #main .resume .resume-item {
-  border-left: 2px solid #e50000;
+  border-left: 2px solid #b30000;
 }
 
 html .dark #main .resume .resume-item::before {
-  background: #ffffff;
-  border: 2px solid #e50000;
+  background: #e6e6e6;
+  border: 2px solid #b30000;
 }
 
 html .dark #main .resume .resume-item a {
-  color: #cacaca;
+  color: #b3b3b3;
 }
 
 html .dark #main .resume .resume-item h4 {
-  color: #990000;
+  color: maroon;
 }
 
 html .dark #main .resume .resume-item h5 {
@@ -91,7 +91,7 @@ html .dark #main .portfolio #portfolio-flters {
 }
 
 html .dark #main .portfolio #portfolio-flters .filter-active {
-  color: #cc0000 !important;
+  color: #990000 !important;
 }
 
 html .dark #main .portfolio #portfolio-flters li {
@@ -99,27 +99,27 @@ html .dark #main .portfolio #portfolio-flters li {
 }
 
 html .dark #main .portfolio #portfolio-flters li:hover {
-  color: #cc0000 !important;
+  color: #990000 !important;
 }
 
 html .dark #main .facts .count-box i {
-  color: #e50000;
+  color: #b30000;
 }
 
 html .dark #main .facts .count-box span {
-  color: #990000;
+  color: maroon;
 }
 
 html .dark #main .facts .count-box p {
-  color: #e50000;
+  color: #b30000;
 }
 
 html .dark #main .facts .count-box a {
-  color: #990000;
+  color: maroon;
 }
 
 html .dark #main .facts .count-box a:hover {
-  color: #e50000;
+  color: #b30000;
 }
 
 html .dark #main .skills .progress .skill {
@@ -127,65 +127,62 @@ html .dark #main .skills .progress .skill {
 }
 
 html .dark #main .skills .progress-bar-wrap {
-  background: #cacaca;
+  background: #b3b3b3;
 }
 
 html .dark #main .skills .progress-bar {
-  background-color: #cc0000;
+  background-color: #990000;
 }
 
 html .dark #main .services .icon-box .icon {
-  background: #cc0000;
-  border: 1px solid #cc0000;
+  background: #990000;
+  border: 1px solid #990000;
 }
 
 html .dark #main .services .icon-box .icon i {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 html .dark #main .services .icon-box:hover .icon {
-  background: #ffffff;
+  background: maroon;
+  border: 1px solid #090c10;
 }
 
-html .dark #main .services .icon-box:hover .icon i {
-  color: #e50000;
-}
-
-html .dark #main .services .icon-box .title a {
-  color: #cc0000;
-}
-
-html .dark #main .services .icon-box .title a:hover {
+html .dark #main .services .icon-box .title p {
   color: #990000;
 }
 
+html .dark #main .services .icon-box .title p:hover {
+  color: maroon;
+}
+
 html .dark .testimonials .testimonials-item h3 {
-  color: #dddddd;
+  color: #cccccc;
 }
 
 html .dark .testimonials .testimonials-item h4 {
-  color: #cacaca;
+  color: #b3b3b3;
 }
 
 html .dark .testimonials .testimonials-item .quote-icon-left,
 html .dark .testimonials .testimonials-item .quote-icon-right {
-  color: #990000;
+  color: maroon;
 }
 
 html .dark .testimonials .testimonials-item p {
-  background: #ffffff;
+  background: #e6e6e6;
 }
 
 html .dark .testimonials .testimonials-item p::after {
-  border-top: 20px solid #ffffff;
+  border-top: 20px solid #e6e6e6;
 }
 
 html .dark .testimonials .owl-page {
-  background-color: #dddddd !important;
+  background-color: #cccccc !important;
 }
 
 html .dark .testimonials .owl-pagination .active {
-  background-color: #e50000 !important;
+  background-color: #b30000 !important;
 }
 
 html .dark .contact .info {
@@ -194,12 +191,12 @@ html .dark .contact .info {
 }
 
 html .dark .contact .info i {
-  color: #cc0000;
+  color: #990000;
   background: #090c10;
 }
 
 html .dark .contact .info h4 {
-  color: #cc0000;
+  color: #990000;
 }
 
 html .dark .contact .info p {
@@ -209,8 +206,8 @@ html .dark .contact .info p {
 html .dark .contact .info .address:hover i,
 html .dark .contact .info .email:hover i,
 html .dark .contact .info .phone:hover i {
-  background: #e50000;
-  color: #ffffff;
+  background: #b30000;
+  color: #e6e6e6;
 }
 
 html .dark .contact .email-form {
@@ -222,36 +219,41 @@ html .dark .contact .email-form input,
 html .dark .contact .email-form textarea {
   background: #090c10;
   border: none;
-  color: #cacaca;
+  color: #b3b3b3;
+}
+
+html .dark .contact .email-form input:focus,
+html .dark .contact .email-form textarea:focus {
+  box-shadow: 0 0 0 3px maroon;
 }
 
 html .dark .contact .email-form button[type='submit'] {
-  background: #cc0000;
-  color: #cacaca;
+  background: #990000;
+  color: #b3b3b3;
 }
 
 html .dark .contact .email-form button[type='submit']:hover {
-  background: #990000;
+  background: maroon;
 }
 
 html .dark .social-links a {
-  background: #990000;
-  color: #ffffff;
+  background: maroon;
+  color: #e6e6e6;
 }
 
 html .dark .social-links a:hover {
-  background: #e50000;
-  color: #ffffff;
+  background: #b30000;
+  color: #e6e6e6;
 }
 
 html .dark .back-to-top {
-  background: #990000;
-  color: #ffffff;
+  background: maroon;
+  color: #e6e6e6;
 }
 
 html .dark .back-to-top:hover {
-  color: #ffffff !important;
-  background: #e50000;
+  color: #e6e6e6 !important;
+  background: #b30000;
 }
 
 html .dark #header {
@@ -259,31 +261,35 @@ html .dark #header {
 }
 
 html .dark #header .profile img {
-  border: 8px solid #990000;
+  border: 8px solid maroon;
 }
 
 html .dark #header .profile h1 a,
 html .dark #header .profile h1 a:hover {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
-html .dark #header .nav-menu a {
-  color: #cacaca;
+html .dark #header .nav-menu a i {
+  color: #cccccc;
+}
+
+html .dark #header .nav-menu a span {
+  color: #b3b3b3;
 }
 
 html .dark #header .nav-menu .active > a,
 html .dark #header .nav-menu a:hover,
 html .dark #header .nav-menu li:hover > a {
   text-decoration: none;
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 html .dark #header .nav-menu .active > a i,
 html .dark #header .nav-menu a:hover i,
 html .dark #header .nav-menu li:hover > a i {
-  color: #e50000;
+  color: #b30000;
 }
 
 html .dark #header .mobile-nav-toggle i {
-  color: #e50000;
+  color: #b30000;
 }
