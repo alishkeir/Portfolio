@@ -28,6 +28,7 @@ html {
 
         #hero {
             background: url(../img/hero/dark.svg) top center;
+            transition: all 0.5s;
 
             h1 {
                 color: $main-white;
@@ -279,7 +280,7 @@ html {
 
                 &:hover {
                     background: $dark-headers-color;
-                    color: $main-white;
+                    color: $main-black !important;
                 }
             }
         }
@@ -313,10 +314,10 @@ html {
             .nav-menu {
                 a {
                     i {
-                        color: $darken-white;
+                        color: $main-white;
                     }
                     span {
-                        color: $darkest-white;
+                        color: $darken-white;
                     }
                 }
                 .active > a,

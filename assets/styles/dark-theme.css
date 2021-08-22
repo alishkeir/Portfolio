@@ -1,6 +1,6 @@
 html .dark {
   color: #b3b3b3;
-  background: #090c10;
+  background: #080808;
 }
 
 html .dark a {
@@ -26,6 +26,7 @@ html .dark .back-to-top {
 
 html .dark #hero {
   background: url(../img/hero/dark.svg) top center;
+  transition: all 0.5s;
 }
 
 html .dark #hero h1 {
@@ -42,7 +43,7 @@ html .dark #hero p span {
 }
 
 html .dark #main .section-bg {
-  background-color: #0d1117;
+  background-color: #0f0f0f;
 }
 
 html .dark #main .section-title h2 {
@@ -83,11 +84,11 @@ html .dark #main .resume .resume-item h4 {
 }
 
 html .dark #main .resume .resume-item h5 {
-  background: #161b22;
+  background: #171717;
 }
 
 html .dark #main .portfolio #portfolio-flters {
-  background: #090c10;
+  background: #080808;
 }
 
 html .dark #main .portfolio #portfolio-flters .filter-active {
@@ -145,7 +146,7 @@ html .dark #main .services .icon-box .icon i {
 
 html .dark #main .services .icon-box:hover .icon {
   background: maroon;
-  border: 1px solid #090c10;
+  border: 1px solid #080808;
 }
 
 html .dark #main .services .icon-box .title p {
@@ -186,13 +187,13 @@ html .dark .testimonials .owl-pagination .active {
 }
 
 html .dark .contact .info {
-  background: #0d1117;
+  background: #0f0f0f;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 html .dark .contact .info i {
   color: #990000;
-  background: #090c10;
+  background: #080808;
 }
 
 html .dark .contact .info h4 {
@@ -211,13 +212,13 @@ html .dark .contact .info .phone:hover i {
 }
 
 html .dark .contact .email-form {
-  background: #0d1117;
+  background: #0f0f0f;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 html .dark .contact .email-form input,
 html .dark .contact .email-form textarea {
-  background: #090c10;
+  background: #080808;
   border: none;
   color: #b3b3b3;
 }
@@ -243,7 +244,7 @@ html .dark .social-links a {
 
 html .dark .social-links a:hover {
   background: #b30000;
-  color: #e6e6e6;
+  color: #1a1a1a !important;
 }
 
 html .dark .back-to-top {
@@ -257,7 +258,7 @@ html .dark .back-to-top:hover {
 }
 
 html .dark #header {
-  background: #161b22;
+  background: #171717;
 }
 
 html .dark #header .profile img {
@@ -270,11 +271,11 @@ html .dark #header .profile h1 a:hover {
 }
 
 html .dark #header .nav-menu a i {
-  color: #cccccc;
+  color: #e6e6e6;
 }
 
 html .dark #header .nav-menu a span {
-  color: #b3b3b3;
+  color: #cccccc;
 }
 
 html .dark #header .nav-menu .active > a,

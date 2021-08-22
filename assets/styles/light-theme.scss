@@ -2,70 +2,71 @@
 
 html {
     .light {
-        color: #272829;
+        color: $lightest-black;
+        background: $light-main-background;
 
         a {
-            color: #149ddd;
+            color: $light-headers-color;
 
             &:hover {
-                color: #37b3ed;
+                color: $light-subtitles-color !important;
             }
         }
 
         &::-webkit-scrollbar-thumb {
-            background-color: #149ddd;
+            background-color: $light-headers-color;
         }
 
         &::-webkit-scrollbar-track {
-            background: rgba(0, 0, 0, 0) !important;
+            background: inherit;
         }
 
         .back-to-top {
-            background: #149ddd;
-            color: #fff;
+            background: $light-headers-color;
+            color: $main-black;
         }
 
         #hero {
-            background: url(../img/hero/a.svg) top center;
+            background: url(../img/hero/light.svg) top center;
+            transition: all 0.5s;
 
             h1 {
-                color: #fff;
+                color: $main-black;
             }
 
             p {
-                color: #fff;
+                color: $main-black;
 
                 span {
-                    color: #fff;
+                    color: $main-black;
 
-                    border-bottom: 3px solid #149ddd;
+                    border-bottom: 3px solid $light-headers-color;
                 }
             }
         }
 
         #main {
             .section-bg {
-                background-color: #f5f8fd;
+                background-color: $light-sub-background;
             }
             .section-title {
-                .section-title h2 {
-                    color: #173b6c;
-
-                    &::after {
-                        background: #149ddd;
-                    }
+                h2 {
+                    color: $light-headers-color !important;
+                }
+                &::after {
+                    background: $light-headers-color;
                 }
             }
 
             .about {
                 .content {
                     h3 {
-                        color: #173b6c;
+                        color: $light-titles-color;
                     }
 
                     ul {
                         i {
-                            color: #149ddd;
+                            color: $light-titles-color;
                         }
                     }
                 }
@@ -73,44 +74,44 @@ html {
 
             .resume {
                 .resume-title {
-                    color: #050d18;
+                    color: $light-titles-color;
                 }
 
                 .resume-item {
-                    border-left: 2px solid #1f5297;
+                    border-left: 2px solid $light-headers-color;
 
                     &::before {
-                        background: #fff;
-                        border: 2px solid #1f5297;
+                        background: $main-black;
+                        border: 2px solid $light-headers-color;
                     }
 
                     a {
-                        color: #000;
+                        color: $lightest-black;
                     }
 
                     h4 {
-                        color: #050d18;
+                        color: $light-subtitles-color;
                     }
 
                     h5 {
-                        background: #e4edf9;
+                        background: $light-darkest-background;
                     }
                 }
             }
 
             .portfolio {
                 #portfolio-flters {
-                    background: #fff;
+                    background: $light-main-background;
 
                     .filter-active {
-                        color: #149ddd !important;
+                        color: $light-titles-color !important;
                     }
 
                     li {
-                        color: #272829;
+                        color: inherit;
 
                         &:hover {
-                            color: #149ddd !important;
+                            color: $light-titles-color !important;
                         }
                     }
                 }
@@ -119,22 +120,22 @@ html {
             .facts {
                 .count-box {
                     i {
-                        color: #149ddd;
+                        color: $light-headers-color;
                     }
 
                     span {
-                        color: #050d18;
+                        color: $light-subtitles-color;
                     }
 
                     p {
-                        color: #122f57;
+                        color: $light-headers-color;
                     }
 
                     a {
-                        color: #122f57;
+                        color: $light-subtitles-color;
 
                         &:hover {
-                            color: #1f5297;
+                            color: $light-headers-color;
                         }
                     }
                 }
@@ -143,43 +144,44 @@ html {
             .skills {
                 .progress {
                     .skill {
-                        color: #050d18;
+                        color: inherit;
                     }
                 }
 
                 .progress-bar-wrap {
-                    background: #aaa;
+                    background: $lightest-black;
                 }
                 .progress-bar {
-                    background-color: #149ddd;
+                    background-color: $light-titles-color;
                 }
             }
 
             .services {
                 .icon-box {
                     .icon {
-                        background: #149ddd;
-                        border: 1px solid #149ddd;
+                        background: $light-titles-color;
+                        border: 1px solid $light-titles-color;
 
                         i {
-                            color: #fff;
+                            color: $main-black;
                         }
                     }
 
                     &:hover .icon {
-                        background: #fff;
+                        background: $light-subtitles-color;
 
-                        i {
-                            color: #149ddd;
-                        }
+                        // i {
+                        //     color: $light-headers-color;
+                        // }
+                        border: 1px solid $light-main-background;
                     }
 
                     .title {
-                        a {
-                            color: #343a40;
+                        p {
+                            color: $light-titles-color;
 
                             &:hover {
-                                color: #149ddd;
+                                color: $light-subtitles-color;
                             }
                         }
                     }
@@ -190,73 +192,82 @@ html {
         .testimonials {
             .testimonials-item {
                 h3 {
-                    color: #111;
+                    color: $lighten-black;
                 }
                 h4 {
-                    color: #999;
+                    color: $lightest-black;
                 }
 
                 .quote-icon-left,
                 .quote-icon-right {
-                    color: #c3e8fa;
+                    color: $light-subtitles-color;
                 }
 
                 p {
-                    background: #fff;
-
-                    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+                    background: $main-black;
 
                     &::after {
-                        border-top: 20px solid #fff;
+                        border-top: 20px solid $main-black;
                     }
                 }
             }
 
             .owl-page {
-                background-color: #ddd !important;
+                background-color: $lighten-black !important;
             }
 
             .owl-pagination {
                 .active {
-                    background-color: #149ddd !important;
+                    background-color: $light-headers-color !important;
                 }
             }
         }
 
         .contact {
             .info {
-                background: #fff;
+                background: $light-sub-background;
                 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 
                 i {
-                    color: #149ddd;
+                    color: $light-titles-color;
 
-                    background: #dff3fc;
+                    background: $light-main-background;
                 }
                 h4 {
-                    color: #050d18;
+                    color: $light-titles-color;
                 }
                 p {
-                    color: #173b6c;
+                    color: inherit;
                 }
 
                 .address:hover i,
                 .email:hover i,
                 .phone:hover i {
-                    background: #149ddd;
-                    color: #fff;
+                    background: $light-headers-color;
+                    color: $main-black;
                 }
             }
 
             .email-form {
-                background: #fff;
+                background: $light-sub-background;
                 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+                input,
+                textarea {
+                    background: $light-darkest-background;
+                    border: none;
+                    color: $lightest-black;
+
+                    &:focus {
+                        box-shadow: 0 0 0 3px $light-subtitles-color;
+                    }
+                }
 
                 button[type='submit'] {
-                    background: #149ddd;
+                    background: $light-titles-color;
+                    color: $main-white;
 
                     &:hover {
-                        background: #004e72;
+                        background: $light-subtitles-color;
                     }
                 }
             }
@@ -264,127 +275,68 @@ html {
 
         .social-links {
             a {
-                background: #212431;
-                color: #fff;
+                background: $light-subtitles-color;
+                color: $main-black;
 
                 &:hover {
-                    background: #149ddd;
-                    color: #fff;
+                    background: $light-headers-color;
+                    color: $main-white !important;
                 }
-            }
-        }
-
-        #footer {
-            color: #f4f6fd;
-
-            background: #040b14;
-
-            .credits {
-                color: #eaebf0;
             }
         }
 
         .back-to-top {
-            background: #149ddd;
-            color: #fff;
+            background: $light-subtitles-color;
+            color: $main-black;
 
             &:hover {
-                color: #fff;
-                background: #1f5297;
-            }
-        }
-
-        .check-container {
-            h2 {
-                color: #525252;
-            }
-
-            p {
-                color: #b5b9b7;
-            }
-
-            .check {
-                .checkmark {
-                    stroke: #fff;
-
-                    box-shadow: inset 0 0 0 #7ac142;
-
-                    .checkmark__circle {
-                        stroke: #7ac142;
-                    }
-                }
-            }
-
-            .landingButton {
-                border: 2px solid #149ddd;
-
-                &:before {
-                    background-color: #149ddd;
-                }
-
-                &:hover {
-                    span {
-                        color: #fff;
-                    }
-                }
-            }
-        }
-
-        .success-footer {
-            background: #040b14;
-
-            color: #eee;
-        }
-
-        //^ Keyframes
-
-        @keyframes fill {
-            100% {
-                box-shadow: inset 0 0 0 30px #7ac142;
+                color: $main-black !important;
+                background: $light-headers-color;
             }
         }
 
         #header {
-            background: #040b14;
+            background: $light-darkest-background;
 
             .profile {
                 img {
-                    border: 8px solid #2c2f3f;
+                    border: 8px solid $light-subtitles-color;
                 }
 
                 h1 {
                     a,
                     a:hover {
-                        color: #fff;
+                        color: $main-black;
                     }
                 }
             }
 
             .nav-menu {
                 a {
-                    color: #a8a9b4;
-
                     i {
-                        color: #6f7180;
+                        color: $main-black;
+                    }
+                    span {
+                        color: $lighten-black;
                     }
                 }
                 .active > a,
                 a:hover,
                 li:hover > a {
                     text-decoration: none;
-                    color: #fff;
+                    color: $main-black;
                 }
 
                 .active > a i,
                 a:hover i,
                 li:hover > a i {
-                    color: #149ddd;
+                    color: $light-headers-color;
                 }
             }
 
             .mobile-nav-toggle {
                 i {
-                    color: #149ddd;
+                    color: $light-headers-color;
                 }
             }
         }
@@ -393,5 +345,5 @@ html {
 
 // .portfolio #portfolio-flters li.filter-active,
 // .portfolio #portfolio-flters li:hover {
-//     color: #149ddd !important;
+//     color: $light-headers-color !important;
 // }
