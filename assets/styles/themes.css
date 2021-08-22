@@ -239,17 +239,17 @@ html .light .contact .email-form button[type='submit']:hover {
 
 html .light .social-links a {
   background: #008500;
-  color: #1a1a1a;
+  color: #e6e6e6;
 }
 
 html .light .social-links a:hover {
   background: #00a300;
-  color: #e6e6e6 !important;
+  color: #1a1a1a !important;
 }
 
 html .light .back-to-top {
   background: #008500;
-  color: #1a1a1a;
+  color: #e6e6e6;
 }
 
 html .light .back-to-top:hover {
