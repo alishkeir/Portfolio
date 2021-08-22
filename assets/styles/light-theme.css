@@ -71,7 +71,7 @@ html .light #main .resume .resume-item {
 }
 
 html .light #main .resume .resume-item::before {
-  background: #1a1a1a;
+  background: #e6e6e6;
   border: 2px solid #ff7b24;
 }
 
