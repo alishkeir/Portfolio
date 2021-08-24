@@ -18,7 +18,7 @@ html .light a::selection:not(:hover) {
 }
 
 html .light a:hover {
-  color: #00004d !important;
+  color: #00004d;
 }
 
 html .light::-webkit-scrollbar-thumb {
@@ -203,7 +203,7 @@ html .light #main .skills .progress .skill {
 }
 
 html .light #main .skills .progress-bar-wrap {
-  background: #4d4d4d;
+  background: #c2c2c2;
 }
 
 html .light #main .skills .progress-bar {
@@ -216,12 +216,11 @@ html .light #main .services .icon-box .icon {
 }
 
 html .light #main .services .icon-box .icon i {
-  color: #1a1a1a;
+  color: #ebebeb;
 }
 
 html .light #main .services .icon-box:hover .icon {
   background: #00004d;
-  border: 1px solid #f7f7f7;
 }
 
 html .light #main .services .icon-box .title p {
@@ -350,7 +349,6 @@ html .light .social-links a {
 
 html .light .social-links a:hover {
   background: #0000cc;
-  color: #1a1a1a !important;
 }
 
 html .light .back-to-top {

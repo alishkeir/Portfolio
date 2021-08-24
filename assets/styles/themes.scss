@@ -20,7 +20,7 @@ html {
             }
 
             &:hover {
-                color: $light-subtitles-color !important;
+                color: $light-subtitles-color;
             }
         }
 
@@ -215,7 +215,7 @@ html {
                 }
 
                 .progress-bar-wrap {
-                    background: $lightest-black;
+                    background: $darkest-white;
                 }
                 .progress-bar {
                     background-color: $light-titles-color;
@@ -229,17 +229,12 @@ html {
                         border: 1px solid $light-titles-color;
 
                         i {
-                            color: $main-black;
+                            color: $main-white;
                         }
                     }
 
                     &:hover .icon {
                         background: $light-subtitles-color;
-
-                        // i {
-                        //     color: $light-headers-color;
-                        // }
-                        border: 1px solid $light-main-background;
                     }
 
                     .title {
@@ -371,7 +366,6 @@ html {
 
                 &:hover {
                     background: $light-headers-color;
-                    color: $main-black !important;
                 }
             }
         }
