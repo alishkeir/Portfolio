@@ -281,8 +281,14 @@ html .light .contact .info {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
+html .light .contact .info .address:hover i,
+html .light .contact .info .email:hover i,
+html .light .contact .info .phone:hover i {
+  color: #ebebeb !important;
+}
+
 html .light .contact .info i {
-  color: #000099;
+  color: #000099 !important;
   background: #f7f7f7;
 }
 

@@ -301,8 +301,19 @@ html {
                 background: $light-sub-background;
                 box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 
+                .address,
+                .email,
+                .phone {
+                    &:hover {
+                        i {
+                            color: $main-white !important;
+                        }
+                    }
+                }
+
                 i {
-                    color: $light-titles-color;
+                    color: $light-titles-color !important;
+
                     &::selection {
                         background: $light-main-selected-background !important;
                         color: $light-main-selected-color !important;
