@@ -1,6 +1,6 @@
-$main-white: darken(#ffffff, 10%);
-$darken-white: darken(#ffffff, 20%);
-$darkest-white: darken(#ffffff, 30%);
+$main-white: darken(#ffffff, 8%);
+$darken-white: darken(#ffffff, 16%);
+$darkest-white: darken(#ffffff, 24%);
 
 $main-black: lighten(#000000, 10%);
 $lighten-black: lighten(#000000, 20%);
@@ -18,10 +18,22 @@ $dark-main-background: lighten(#000000, 3%);
 $dark-sub-background: lighten(#000000, 6%);
 $dark-lightest-background: lighten(#000000, 9%);
 
-$light-headers-color: darken(#00ff00, 18%);
-$light-titles-color: darken(#00ff00, 21%);
-$light-subtitles-color: darken(#00ff00, 24%);
+$light-headers-color: darken(#0000ff, 10%);
+$light-titles-color: darken(#0000ff, 20%);
+$light-subtitles-color: darken(#0000ff, 35%);
 
 $light-main-background: darken(#ffffff, 3%);
 $light-sub-background: darken(#ffffff, 6%);
 $light-darkest-background: darken(#ffffff, 9%);
+
+$dark-main-selected-background: #ffffff;
+$dark-main-selected-color: #000000;
+
+$dark-minor-selected-background: darken(#ff0000, 15%);
+$dark-minor-selected-color: #ffffff;
+
+$light-main-selected-background: darken(#0000ff, 20%);
+$light-main-selected-color: darken(#ffffff, 8%);
+
+$light-minor-selected-background: rgba(0, 0, 0, 0.6);
+$light-minor-selected-color: #ffffff;

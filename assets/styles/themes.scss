@@ -3,10 +3,21 @@
 html {
     .light {
         color: $lightest-black;
+
+        *::selection {
+            background: $light-minor-selected-background;
+            color: $light-minor-selected-color;
+        }
+
         background: $light-main-background;
 
         a {
             color: $light-headers-color;
+
+            &::selection:not(:hover) {
+                background: $light-main-selected-background !important;
+                color: $light-main-selected-color !important;
+            }
 
             &:hover {
                 color: $light-subtitles-color !important;
@@ -23,6 +34,10 @@ html {
 
         .back-to-top {
             background: $light-headers-color;
+            &::selection {
+                background: $light-main-selected-background !important;
+                color: $light-main-selected-color !important;
+            }
             color: $main-black;
         }
 
@@ -52,6 +67,10 @@ html {
             .section-title {
                 h2 {
                     color: $light-headers-color !important;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
                 &::after {
                     background: $light-headers-color;
@@ -62,11 +81,19 @@ html {
                 .content {
                     h3 {
                         color: $light-titles-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
                     }
 
                     ul {
                         i {
                             color: $light-titles-color;
+                            &::selection {
+                                background: $light-main-selected-background !important;
+                                color: $light-main-selected-color !important;
+                            }
                         }
                     }
                 }
@@ -75,6 +102,10 @@ html {
             .resume {
                 .resume-title {
                     color: $light-titles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
 
                 .resume-item {
@@ -91,6 +122,16 @@ html {
 
                     h4 {
                         color: $light-subtitles-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
+                        sub {
+                            &::selection {
+                                background: $light-main-selected-background !important;
+                                color: $light-main-selected-color !important;
+                            }
+                        }
                     }
 
                     h5 {
@@ -105,6 +146,10 @@ html {
 
                     .filter-active {
                         color: $light-titles-color !important;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
                     }
 
                     li {
@@ -112,6 +157,10 @@ html {
 
                         &:hover {
                             color: $light-titles-color !important;
+                            &::selection {
+                                background: $light-main-selected-background !important;
+                                color: $light-main-selected-color !important;
+                            }
                         }
                     }
                 }
@@ -121,18 +170,35 @@ html {
                 .count-box {
                     i {
                         color: $light-headers-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
                     }
 
                     span {
                         color: $light-subtitles-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
                     }
 
                     p {
                         color: $light-headers-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
                     }
 
                     a {
                         color: $light-subtitles-color;
+
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
 
                         &:hover {
                             color: $light-headers-color;
@@ -179,6 +245,10 @@ html {
                     .title {
                         p {
                             color: $light-titles-color;
+                            &::selection {
+                                background: $light-main-selected-background !important;
+                                color: $light-main-selected-color !important;
+                            }
 
                             &:hover {
                                 color: $light-subtitles-color;
@@ -201,6 +271,10 @@ html {
                 .quote-icon-left,
                 .quote-icon-right {
                     color: $light-subtitles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
 
                 p {
@@ -219,6 +293,10 @@ html {
             .owl-pagination {
                 .active {
                     background-color: $light-headers-color !important;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
             }
         }
@@ -230,11 +308,19 @@ html {
 
                 i {
                     color: $light-titles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
 
                     background: $light-main-background;
                 }
                 h4 {
                     color: $light-titles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
                 p {
                     color: inherit;
@@ -265,6 +351,11 @@ html {
                 button[type='submit'] {
                     background: $light-titles-color;
                     color: $main-white;
+
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
 
                     &:hover {
                         background: $light-subtitles-color;
@@ -337,6 +428,10 @@ html {
             .mobile-nav-toggle {
                 i {
                     color: $light-headers-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
                 }
             }
         }
@@ -344,10 +439,20 @@ html {
 
     .dark {
         color: $darkest-white;
+
+        *::selection:not(button) {
+            background: $dark-minor-selected-background;
+            color: $dark-minor-selected-color;
+        }
+
         background: $dark-main-background;
 
         a {
-            color: $dark-headers-color;
+            // color: $dark-headers-color;
+            &::selection:not(:hover) {
+                background: $dark-main-selected-background !important;
+                color: $dark-main-selected-color !important;
+            }
 
             &:hover {
                 color: $dark-subtitles-color !important;
@@ -364,6 +469,10 @@ html {
 
         .back-to-top {
             background: $dark-headers-color;
+            &::selection {
+                background: $dark-main-selected-background !important;
+                color: $dark-main-selected-color !important;
+            }
             color: $main-white;
         }
 
@@ -393,6 +502,10 @@ html {
             .section-title {
                 h2 {
                     color: $dark-headers-color !important;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
                 &::after {
                     background: $dark-headers-color;
@@ -403,11 +516,19 @@ html {
                 .content {
                     h3 {
                         color: $dark-titles-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
                     }
 
                     ul {
                         i {
                             color: $dark-titles-color;
+                            &::selection {
+                                background: $dark-main-selected-background !important;
+                                color: $dark-main-selected-color !important;
+                            }
                         }
                     }
                 }
@@ -416,6 +537,10 @@ html {
             .resume {
                 .resume-title {
                     color: $dark-titles-color;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
 
                 .resume-item {
@@ -432,6 +557,16 @@ html {
 
                     h4 {
                         color: $dark-subtitles-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
+                        sub {
+                            &::selection {
+                                background: $dark-main-selected-background !important;
+                                color: $dark-main-selected-color !important;
+                            }
+                        }
                     }
 
                     h5 {
@@ -446,6 +581,10 @@ html {
 
                     .filter-active {
                         color: $dark-titles-color !important;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
                     }
 
                     li {
@@ -453,6 +592,10 @@ html {
 
                         &:hover {
                             color: $dark-titles-color !important;
+                            &::selection {
+                                background: $dark-main-selected-background !important;
+                                color: $dark-main-selected-color !important;
+                            }
                         }
                     }
                 }
@@ -462,18 +605,34 @@ html {
                 .count-box {
                     i {
                         color: $dark-headers-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
                     }
 
                     span {
                         color: $dark-subtitles-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
                     }
 
                     p {
                         color: $dark-headers-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
                     }
 
                     a {
                         color: $dark-subtitles-color;
+                        &::selection {
+                            background: $dark-main-selected-background !important;
+                            color: $dark-main-selected-color !important;
+                        }
 
                         &:hover {
                             color: $dark-headers-color;
@@ -520,6 +679,10 @@ html {
                     .title {
                         p {
                             color: $dark-titles-color;
+                            &::selection {
+                                background: $dark-main-selected-background !important;
+                                color: $dark-main-selected-color !important;
+                            }
 
                             &:hover {
                                 color: $dark-subtitles-color;
@@ -542,6 +705,10 @@ html {
                 .quote-icon-left,
                 .quote-icon-right {
                     color: $dark-subtitles-color;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
 
                 p {
@@ -560,6 +727,10 @@ html {
             .owl-pagination {
                 .active {
                     background-color: $dark-headers-color !important;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
             }
         }
@@ -571,11 +742,19 @@ html {
 
                 i {
                     color: $dark-titles-color;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
 
                     background: $dark-main-background;
                 }
                 h4 {
                     color: $dark-titles-color;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
                 p {
                     color: inherit;
@@ -606,6 +785,11 @@ html {
                 button[type='submit'] {
                     background: $dark-titles-color;
                     color: $darkest-white;
+
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
 
                     &:hover {
                         background: $dark-subtitles-color;
@@ -678,6 +862,10 @@ html {
             .mobile-nav-toggle {
                 i {
                     color: $dark-headers-color;
+                    &::selection {
+                        background: $dark-main-selected-background !important;
+                        color: $dark-main-selected-color !important;
+                    }
                 }
             }
         }
@@ -687,4 +875,12 @@ html {
 // .portfolio #portfolio-flters li.filter-active,
 // .portfolio #portfolio-flters li:hover {
 //     color: $light-headers-color !important;
+// }
+
+// &::selection {
+//     background: $dark-main-selected-background;
+// }
+
+// &::selection {
+//     background: $dark-minor-selected-background !important;
 // }
