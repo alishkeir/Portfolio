@@ -4,7 +4,9 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
-
+    * {
+        transition: background-color 0.5s ease;
+    }
     body {
         font-family: 'Open Sans', sans-serif;
         overflow: overlay;

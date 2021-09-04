@@ -5,6 +5,10 @@ html {
   width: 100%;
 }
 
+html * {
+  transition: background-color 0.5s ease;
+}
+
 html body {
   font-family: 'Open Sans', sans-serif;
   overflow: overlay;
