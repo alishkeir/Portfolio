@@ -719,7 +719,7 @@ html body .social-links a:hover {
 
 html .dark {
   color: #ededed;
-  background: #0a0a1a;
+  background: #080808;
 }
 html .dark *::selection:not(button) {
   background: #d98d08;
@@ -761,7 +761,7 @@ html .dark #hero p span {
   border-bottom: 3px solid #f7a71c;
 }
 html .dark #main .section-bg {
-  background-color: #11112c;
+  background-color: #0f0f0f;
 }
 html .dark #main .section-title h2 {
   color: #f7a71c !important;
@@ -816,10 +816,10 @@ html .dark #main .resume .resume-item h4 sub::selection {
   color: #000000 !important;
 }
 html .dark #main .resume .resume-item h5 {
-  background: #18183f;
+  background: #171717;
 }
 html .dark #main .portfolio #portfolio-flters {
-  background: #0a0a1a;
+  background: #080808;
 }
 html .dark #main .portfolio #portfolio-flters .filter-active {
   color: #f19c08 !important;
@@ -887,7 +887,7 @@ html .dark #main .services .icon-box .icon i {
 }
 html .dark #main .services .icon-box:hover .icon {
   background: #d88c08;
-  border: 1px solid #0a0a1a;
+  border: 1px solid #080808;
 }
 html .dark #main .services .icon-box .title p {
   color: #f19c08;
@@ -931,12 +931,12 @@ html .dark .testimonials .owl-pagination .active::selection {
   color: #000000 !important;
 }
 html .dark .contact .info {
-  background: #11112c;
+  background: #0f0f0f;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 html .dark .contact .info i {
   color: #f19c08;
-  background: #0a0a1a;
+  background: #080808;
 }
 html .dark .contact .info i::selection {
   background: #ffffff !important;
@@ -959,12 +959,12 @@ html .dark .contact .info .phone:hover i {
   color: #fafafa;
 }
 html .dark .contact .email-form {
-  background: #11112c;
+  background: #0f0f0f;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 html .dark .contact .email-form input,
 html .dark .contact .email-form textarea {
-  background: #0a0a1a;
+  background: #080808;
   border: none;
   color: #ededed;
 }
@@ -1000,7 +1000,7 @@ html .dark .back-to-top:hover {
   background: #f7a71c;
 }
 html .dark #header {
-  background: #18183f;
+  background: #171717;
 }
 html .dark #header .profile img {
   border: 8px solid #d88c08;

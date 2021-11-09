@@ -3,13 +3,9 @@ $darken-white: darken(#ffffff, 5%);
 $darkest-white: darken(#ffffff, 7%);
 $black: #000;
 
-// $dark-main-background: lighten(#000000, 3%);
-// $dark-sub-background: lighten(#000000, 6%);
-// $dark-lightest-background: lighten(#000000, 9%);
-
-$dark-main-background: #0a0a1a;
-$dark-sub-background: #11112c;
-$dark-lightest-background: #18183f;
+$dark-main-background: lighten(#000000, 3%);
+$dark-sub-background: lighten(#000000, 6%);
+$dark-lightest-background: lighten(#000000, 9%);
 
 // $dark-headers-color: darken(#f8b135, 15%);
 // $dark-titles-color: darken(#f8b135, 20%);
