@@ -1,0 +1,26 @@
+$main-white: darken(#ffffff, 2%);
+$darken-white: darken(#ffffff, 5%);
+$darkest-white: darken(#ffffff, 7%);
+$black: #000;
+
+// $dark-main-background: lighten(#000000, 3%);
+// $dark-sub-background: lighten(#000000, 6%);
+// $dark-lightest-background: lighten(#000000, 9%);
+
+$dark-main-background: #0a0a1a;
+$dark-sub-background: #11112c;
+$dark-lightest-background: #18183f;
+
+// $dark-headers-color: darken(#f8b135, 15%);
+// $dark-titles-color: darken(#f8b135, 20%);
+// $dark-subtitles-color: darken(#f8b135, 25%);
+
+$dark-headers-color: #f7a71c;
+$dark-titles-color: #f19c08;
+$dark-subtitles-color: #d88c08;
+
+$dark-main-selected-background: #ffffff;
+$dark-main-selected-color: #000000;
+
+$dark-minor-selected-background: darken(#f8b135, 15%);
+$dark-minor-selected-color: #ffffff;

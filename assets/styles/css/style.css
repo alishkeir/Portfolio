@@ -4,17 +4,14 @@ html {
   overflow-y: auto;
   width: 100%;
 }
-
 html * {
   transition: background-color 0.5s ease;
 }
-
 html body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow: overlay;
   margin: 0;
 }
-
 html body h1,
 html body h2,
 html body h3,
@@ -23,29 +20,23 @@ html body h5,
 html body h6 {
   font-family: Raleway, sans-serif;
 }
-
 html body::-webkit-scrollbar {
   width: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
-
 html body::-webkit-scrollbar-button {
   display: none;
 }
-
 html body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
-
 html body::-webkit-scrollbar-track {
   margin: 0;
 }
-
 html body ::-webkit-resizer {
   display: none;
 }
-
 html body .back-to-top {
   position: fixed;
   display: none;
@@ -57,22 +48,19 @@ html body .back-to-top {
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
-
 html body .back-to-top i {
   font-size: 24px;
   position: absolute;
   top: 7px;
   left: 8px;
 }
-
 html body #hero {
   width: 100%;
   height: 100vh;
   background-size: cover;
 }
-
 html body #hero:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   top: 0;
@@ -80,45 +68,37 @@ html body #hero:before {
   right: 0;
   z-index: 1;
 }
-
 html body #hero .hero-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
 }
-
 html body #hero h1 {
   margin: 0 0 10px 0;
   font-weight: 700;
   line-height: 56px;
   text-align: center;
 }
-
 html body #hero p {
   margin-bottom: 50px;
   font-family: Poppins, sans-serif;
   text-align: center;
 }
-
 html body #hero p span {
   padding-top: 4px;
   letter-spacing: 1px;
 }
-
 html body #main {
   overflow: hidden;
   margin-left: 300px;
 }
-
 html body #main section {
   margin-bottom: 80px;
 }
-
 html body #main section .section-title {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-
 html body #main section .section-title .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -126,9 +106,8 @@ html body #main section .section-title .section-title h2 {
   padding-bottom: 20px;
   position: relative;
 }
-
 html body #main section .section-title .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -136,53 +115,43 @@ html body #main section .section-title .section-title h2::after {
   bottom: 0;
   left: 0;
 }
-
 html body #main .about {
   overflow-x: hidden;
 }
-
 html body #main .about .content h3 {
   font-weight: 700;
   font-size: 26px;
 }
-
 html body #main .about .content ul {
   list-style: none;
   padding: 0;
 }
-
 html body #main .about .content ul li {
   padding-bottom: 10px;
 }
-
 html body #main .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
 }
-
 html body #main .about .content p:last-child {
   margin-bottom: 0;
 }
-
 html body #main .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 html body #main .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   position: relative;
 }
-
 html body #main .resume .resume-item:last-child {
   padding-bottom: 0;
 }
-
 html body #main .resume .resume-item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -190,11 +159,9 @@ html body #main .resume .resume-item::before {
   left: -9px;
   top: 0;
 }
-
 html body #main .resume .resume-item a {
   font-weight: 700;
 }
-
 html body #main .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -203,7 +170,6 @@ html body #main .resume .resume-item h4 {
   font-family: Poppins, sans-serif;
   margin-bottom: 10px;
 }
-
 html body #main .resume .resume-item h5 {
   font-size: 16px;
   padding: 5px 15px;
@@ -211,15 +177,12 @@ html body #main .resume .resume-item h5 {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 html body #main .resume .resume-item ul {
   padding-left: 20px;
 }
-
 html body #main .resume .resume-item ul li {
   padding-bottom: 10px;
 }
-
 html body #main .portfolio .portfolio-item {
   margin-bottom: 30px;
   transition: all 0.5s;
@@ -229,7 +192,6 @@ html body #main .portfolio .portfolio-item {
   -o-transition: all 0.5s;
   cursor: pointer;
 }
-
 html body #main .portfolio .portfolio-item:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -242,7 +204,6 @@ html body #main .portfolio .portfolio-item:hover {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
-
 html body #main .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
@@ -251,7 +212,6 @@ html body #main .portfolio #portfolio-flters {
   border-radius: 50px;
   padding: 2px 15px;
 }
-
 html body #main .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -263,28 +223,23 @@ html body #main .portfolio #portfolio-flters li {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-
 html body #main .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-
 html body #main .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
-
 html body #main .facts .count-box {
   padding: 30px;
 }
-
 html body #main .facts .count-box i {
   display: block;
   font-size: 44px;
   float: left;
 }
-
 html body #main .facts .count-box span {
   font-size: 48px;
   line-height: 40px;
@@ -292,29 +247,29 @@ html body #main .facts .count-box span {
   font-weight: 700;
   margin-left: 60px;
 }
-
 html body #main .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: Raleway, sans-serif;
   font-size: 14px;
 }
-
 html body #main .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
   font-size: 15px;
   font-family: Poppins, sans-serif;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-
 html body #main .skills .progress {
   height: 50px;
   display: block;
   background: 0 0;
 }
-
 html body #main .skills .progress .skill {
   padding: 10px 0;
   margin: 0 0 6px 0;
@@ -323,22 +278,22 @@ html body #main .skills .progress .skill {
   font-weight: 600;
   font-family: Poppins, sans-serif;
 }
-
 html body #main .skills .progress .skill .val {
   float: right;
   font-style: normal;
 }
-
 html body #main .skills .progress-bar {
   width: 1px;
   height: 10px;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
   transition: 0.9s;
 }
-
 html body #main .services .icon-box {
   margin-bottom: 20px;
 }
-
 html body #main .services .icon-box .icon {
   float: left;
   display: flex;
@@ -346,34 +301,37 @@ html body #main .services .icon-box .icon {
   justify-content: center;
   width: 54px;
   height: 54px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 html body #main .services .icon-box .icon i {
   font-size: 24px;
 }
-
 html body #main .services .icon-box .title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
-
 html body #main .services .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
 }
-
 html body #main .testimonials .testimonials-item {
   box-sizing: content-box;
   text-align: center;
   min-height: 320px;
   margin: 0 20px;
 }
-
 html body #main .testimonials .testimonials-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
@@ -383,36 +341,30 @@ html body #main .testimonials .testimonials-item .testimonial-img {
   -o-border-radius: 50%;
   margin: 0 auto;
 }
-
 html body #main .testimonials .testimonials-item h3 {
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0 5px 0;
 }
-
 html body #main .testimonials .testimonials-item h4 {
   font-size: 14px;
   margin: 0;
 }
-
 html body #main .testimonials .testimonials-item .quote-icon-left,
 html body #main .testimonials .testimonials-item .quote-icon-right {
   font-size: 30px;
 }
-
 html body #main .testimonials .testimonials-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
-
 html body #main .testimonials .testimonials-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
-
 html body #main .testimonials .testimonials-item p {
   font-style: italic;
   margin: 0 15px 15px 15px;
@@ -425,9 +377,8 @@ html body #main .testimonials .testimonials-item p {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
-
 html body #main .testimonials .testimonials-item p::after {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-right: 20px solid transparent;
@@ -436,13 +387,11 @@ html body #main .testimonials .testimonials-item p::after {
   bottom: -20px;
   left: calc(50% - 20px);
 }
-
 html body #main .testimonials .owl-nav,
 html body #main .testimonials .owl-pagination {
   margin-top: 5px;
   text-align: center;
 }
-
 html body #main .testimonials .owl-page {
   display: inline-block;
   margin: 0 5px;
@@ -454,12 +403,10 @@ html body #main .testimonials .owl-page {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-
 html body #main .contact .info {
   padding: 30px;
   width: 100%;
 }
-
 html body #main .contact .info i {
   font-size: 20px;
   float: left;
@@ -479,43 +426,35 @@ html body #main .contact .info i {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-
 html body #main .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-
 html body #main .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
 }
-
 html body #main .contact .info .email p {
   padding-top: 5px;
 }
-
 html body #main .contact .email-form {
   width: 100%;
   padding: 30px;
 }
-
 html body #main .contact .email-form .form-group {
   padding-bottom: 8px;
 }
-
 html body #main .contact .email-form input {
   height: 44px;
 }
-
 html body #main .contact .email-form input,
 html body #main .contact .email-form textarea {
   padding: 10px 12px;
 }
-
-html body #main .contact .email-form button[type='submit'] {
+html body #main .contact .email-form button[type=submit] {
   border: 0;
   padding: 10px 12px;
   transition: 0.4s;
@@ -529,7 +468,6 @@ html body #main .contact .email-form button[type='submit'] {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-
 html body #footer {
   padding: 15px;
   font-size: 14px;
@@ -539,17 +477,14 @@ html body #footer {
   width: 300px;
   z-index: 9999;
 }
-
 html body #footer .copyright {
   text-align: center;
 }
-
 html body #footer .credits {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
 }
-
 html body .back-to-top {
   position: fixed;
   display: none;
@@ -569,14 +504,12 @@ html body .back-to-top {
   -o-transition: display 0.5s ease-in-out;
   z-index: 9999;
 }
-
 html body .back-to-top i {
   font-size: 24px;
   position: absolute;
   top: 7px;
   left: 8px;
 }
-
 html body .back-to-top:hover {
   transition: background 0.2s ease-in-out;
   -webkit-transition: background 0.2s ease-in-out;
@@ -584,7 +517,6 @@ html body .back-to-top:hover {
   -ms-transition: background 0.2s ease-in-out;
   -o-transition: background 0.2s ease-in-out;
 }
-
 @media (max-width: 1199px) {
   html body #header {
     left: -300px;
@@ -593,7 +525,6 @@ html body .back-to-top:hover {
     margin-left: 0;
   }
 }
-
 @media screen and (min-width: 1024px) {
   html body #hero {
     background-attachment: fixed;
@@ -605,7 +536,6 @@ html body .back-to-top:hover {
     font-size: 34px;
   }
 }
-
 @media screen and (max-width: 1023px) {
   html body #hero h1 {
     font-size: 40px;
@@ -617,19 +547,16 @@ html body .back-to-top:hover {
     margin-bottom: 30px;
   }
 }
-
 @media screen and (max-width: 767px) {
   html body .testimonials {
     margin: 30px 10px;
   }
 }
-
 @media screen and (max-width: 450px) {
   html body .jconfirm-content div {
     font-size: 13px;
   }
 }
-
 @media screen and (max-width: 1199px) {
   html body #footer {
     position: static;
@@ -637,30 +564,25 @@ html body .back-to-top:hover {
     padding-right: 20px 15px;
   }
 }
-
 @media screen and (max-width: 384px) {
   html body .checkmark {
     min-width: 56px;
     min-height: 56px;
   }
 }
-
 @keyframes stroke {
   100% {
     stroke-dashoffset: 0;
   }
 }
-
 @keyframes scale {
-  0%,
-  100% {
+  0%, 100% {
     transform: none;
   }
   50% {
     transform: scale3d(1.1, 1.1, 1);
   }
 }
-
 html body .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -673,7 +595,6 @@ html body .social-links a {
   height: 36px;
   transition: 0.3s;
 }
-
 html body .social-links a:hover {
   text-decoration: none;
 }
@@ -690,42 +611,36 @@ html body .social-links a:hover {
   padding: 0 15px;
   overflow-y: auto;
 }
-
 #header .profile img {
   margin: 15px auto;
   display: block;
   width: 120px;
 }
-
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
   font-weight: 600;
+  -moz-text-align-last: center;
   text-align-last: center;
   font-family: Poppins, sans-serif;
 }
-
 #header .profile h1 a,
 #header .profile h1 a:hover {
   text-decoration: none;
 }
-
 #header .nav-menu {
   padding-top: 30px;
 }
-
 #header .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 #header .nav-menu ul > li {
   position: relative;
   white-space: nowrap;
 }
-
 #header .nav-menu a {
   display: flex;
   align-items: center;
@@ -733,39 +648,34 @@ html body .social-links a:hover {
   transition: 0.3s;
   font-size: 15px;
 }
-
 #header .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
 }
-
 #header .nav-menu .active > a,
 #header .nav-menu a:hover,
 #header .nav-menu li:hover > a {
   text-decoration: none;
 }
-
 #header .nav-menu .theme-toggle-list-item {
   display: flex;
   align-items: center;
   padding: 8px 15px;
 }
-
 #header .nav-menu .theme-toggle-list-item .theme-toggle {
   -webkit-appearance: none;
   position: relative;
   cursor: pointer;
   width: 60px;
   height: 30px;
-  background-image: url("../img/theme-toggle/light-background.webp");
+  background-image: url("../../img/theme-toggle/light-background.webp");
   background-size: cover;
   border-radius: 50px;
   outline: none;
   transition: background-image 0.9s;
 }
-
 #header .nav-menu .theme-toggle-list-item .theme-toggle:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -776,18 +686,15 @@ html body .social-links a:hover {
   transition: all 0.9s;
   background-color: #f7ca33;
 }
-
 #header .nav-menu .theme-toggle-list-item .theme-toggle:checked {
-  background-image: url("../img/theme-toggle/dark-background.png.webp");
+  background-image: url("../../img/theme-toggle/dark-background.png.webp");
   transition: background-image 0.9s;
 }
-
 #header .nav-menu .theme-toggle-list-item .theme-toggle:checked:before {
   transform: translate(100%);
   transition: all 0.9s;
   background-color: #ecf0f3;
 }
-
 #header .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -806,7 +713,325 @@ html body .social-links a:hover {
 .mobile-nav-active {
   overflow: hidden !important;
 }
-
 .mobile-nav-active #header {
   left: 0 !important;
 }
+
+html .dark {
+  color: #ededed;
+  background: #0a0a1a;
+}
+html .dark *::selection:not(button) {
+  background: #d98d08;
+  color: #ffffff;
+}
+html .dark a::selection:not(:hover) {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark a:hover {
+  color: #d88c08 !important;
+}
+html .dark::-webkit-scrollbar-thumb {
+  background-color: #f7a71c;
+}
+html .dark::-webkit-scrollbar-track {
+  background: inherit;
+}
+html .dark .back-to-top {
+  background: #f7a71c;
+  color: #fafafa;
+}
+html .dark .back-to-top::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #hero {
+  background: url(../../img/hero/dark.svg) top center;
+  transition: all 0.5s;
+}
+html .dark #hero h1 {
+  color: #fafafa;
+}
+html .dark #hero p {
+  color: #fafafa;
+}
+html .dark #hero p span {
+  color: #fafafa;
+  border-bottom: 3px solid #f7a71c;
+}
+html .dark #main .section-bg {
+  background-color: #11112c;
+}
+html .dark #main .section-title h2 {
+  color: #f7a71c !important;
+}
+html .dark #main .section-title h2::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .section-title::after {
+  background: #f7a71c;
+}
+html .dark #main .about .content h3 {
+  color: #f19c08;
+}
+html .dark #main .about .content h3::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .about .content ul i {
+  color: #f19c08;
+}
+html .dark #main .about .content ul i::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .resume .resume-title {
+  color: #f19c08;
+}
+html .dark #main .resume .resume-title::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .resume .resume-item {
+  border-left: 2px solid #f7a71c;
+}
+html .dark #main .resume .resume-item::before {
+  background: #fafafa;
+  border: 2px solid #f7a71c;
+}
+html .dark #main .resume .resume-item a {
+  color: #ededed;
+}
+html .dark #main .resume .resume-item h4 {
+  color: #d88c08;
+}
+html .dark #main .resume .resume-item h4::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .resume .resume-item h4 sub::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .resume .resume-item h5 {
+  background: #18183f;
+}
+html .dark #main .portfolio #portfolio-flters {
+  background: #0a0a1a;
+}
+html .dark #main .portfolio #portfolio-flters .filter-active {
+  color: #f19c08 !important;
+}
+html .dark #main .portfolio #portfolio-flters .filter-active::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .portfolio #portfolio-flters li {
+  color: inherit;
+}
+html .dark #main .portfolio #portfolio-flters li:hover {
+  color: #f19c08 !important;
+}
+html .dark #main .portfolio #portfolio-flters li:hover::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .facts .count-box i {
+  color: #f7a71c;
+}
+html .dark #main .facts .count-box i::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .facts .count-box span {
+  color: #d88c08;
+}
+html .dark #main .facts .count-box span::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .facts .count-box p {
+  color: #f7a71c;
+}
+html .dark #main .facts .count-box p::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .facts .count-box a {
+  color: #d88c08;
+}
+html .dark #main .facts .count-box a::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .facts .count-box a:hover {
+  color: #f7a71c;
+}
+html .dark #main .skills .progress .skill {
+  color: inherit;
+}
+html .dark #main .skills .progress-bar-wrap {
+  background: #ededed;
+}
+html .dark #main .skills .progress-bar {
+  background-color: #f19c08;
+}
+html .dark #main .services .icon-box .icon {
+  background: #f19c08;
+  border: 1px solid #f19c08;
+}
+html .dark #main .services .icon-box .icon i {
+  color: #fafafa;
+}
+html .dark #main .services .icon-box:hover .icon {
+  background: #d88c08;
+  border: 1px solid #0a0a1a;
+}
+html .dark #main .services .icon-box .title p {
+  color: #f19c08;
+}
+html .dark #main .services .icon-box .title p::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark #main .services .icon-box .title p:hover {
+  color: #d88c08;
+}
+html .dark .testimonials .testimonials-item h3 {
+  color: #f2f2f2;
+}
+html .dark .testimonials .testimonials-item h4 {
+  color: #ededed;
+}
+html .dark .testimonials .testimonials-item .quote-icon-left,
+html .dark .testimonials .testimonials-item .quote-icon-right {
+  color: #d88c08;
+}
+html .dark .testimonials .testimonials-item .quote-icon-left::selection,
+html .dark .testimonials .testimonials-item .quote-icon-right::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark .testimonials .testimonials-item p {
+  background: #fafafa;
+}
+html .dark .testimonials .testimonials-item p::after {
+  border-top: 20px solid #fafafa;
+}
+html .dark .testimonials .owl-page {
+  background-color: #f2f2f2 !important;
+}
+html .dark .testimonials .owl-pagination .active {
+  background-color: #f7a71c !important;
+}
+html .dark .testimonials .owl-pagination .active::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark .contact .info {
+  background: #11112c;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+html .dark .contact .info i {
+  color: #f19c08;
+  background: #0a0a1a;
+}
+html .dark .contact .info i::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark .contact .info h4 {
+  color: #f19c08;
+}
+html .dark .contact .info h4::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark .contact .info p {
+  color: inherit;
+}
+html .dark .contact .info .address:hover i,
+html .dark .contact .info .email:hover i,
+html .dark .contact .info .phone:hover i {
+  background: #f7a71c;
+  color: #fafafa;
+}
+html .dark .contact .email-form {
+  background: #11112c;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+html .dark .contact .email-form input,
+html .dark .contact .email-form textarea {
+  background: #0a0a1a;
+  border: none;
+  color: #ededed;
+}
+html .dark .contact .email-form input:focus,
+html .dark .contact .email-form textarea:focus {
+  box-shadow: 0 0 0 3px #d88c08;
+}
+html .dark .contact .email-form button[type=submit] {
+  background: #f19c08;
+  color: #ededed;
+}
+html .dark .contact .email-form button[type=submit]::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+html .dark .contact .email-form button[type=submit]:hover {
+  background: #d88c08;
+}
+html .dark .social-links a {
+  background: #d88c08;
+  color: #fafafa;
+}
+html .dark .social-links a:hover {
+  background: #f7a71c;
+  color: #000 !important;
+}
+html .dark .back-to-top {
+  background: #d88c08;
+  color: #fafafa;
+}
+html .dark .back-to-top:hover {
+  color: #fafafa !important;
+  background: #f7a71c;
+}
+html .dark #header {
+  background: #18183f;
+}
+html .dark #header .profile img {
+  border: 8px solid #d88c08;
+}
+html .dark #header .profile h1 a,
+html .dark #header .profile h1 a:hover {
+  color: #fafafa;
+}
+html .dark #header .nav-menu a i {
+  color: #fafafa;
+}
+html .dark #header .nav-menu a span {
+  color: #f2f2f2;
+}
+html .dark #header .nav-menu .active > a,
+html .dark #header .nav-menu a:hover,
+html .dark #header .nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+html .dark #header .nav-menu .active > a i,
+html .dark #header .nav-menu a:hover i,
+html .dark #header .nav-menu li:hover > a i {
+  color: #f7a71c;
+}
+html .dark #header .mobile-nav-toggle i {
+  color: #f7a71c;
+}
+html .dark #header .mobile-nav-toggle i::selection {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

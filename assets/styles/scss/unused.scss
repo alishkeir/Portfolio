@@ -1,0 +1,462 @@
+.light {
+    color: $lightest-black;
+
+    *::selection {
+        background: $light-minor-selected-background;
+        color: $light-minor-selected-color;
+    }
+
+    background: $light-main-background;
+
+    a {
+        color: $light-headers-color;
+
+        &::selection:not(:hover) {
+            background: $light-main-selected-background !important;
+            color: $light-main-selected-color !important;
+        }
+
+        &:hover {
+            color: $light-subtitles-color;
+        }
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $light-headers-color;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: inherit;
+    }
+
+    .back-to-top {
+        background: $light-headers-color;
+        &::selection {
+            background: $light-main-selected-background !important;
+            color: $light-main-selected-color !important;
+        }
+        color: $main-black;
+    }
+
+    #hero {
+        background: url(../../img/hero/light.svg) top center;
+        transition: all 0.5s;
+
+        h1 {
+            color: $main-black;
+        }
+
+        p {
+            color: $main-black;
+
+            span {
+                color: $main-black;
+
+                border-bottom: 3px solid $light-headers-color;
+            }
+        }
+    }
+
+    #main {
+        .section-bg {
+            background-color: $light-sub-background;
+        }
+        .section-title {
+            h2 {
+                color: $light-headers-color !important;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+            &::after {
+                background: $light-headers-color;
+            }
+        }
+
+        .about {
+            .content {
+                h3 {
+                    color: $light-titles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                }
+
+                ul {
+                    i {
+                        color: $light-titles-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .resume {
+            .resume-title {
+                color: $light-titles-color;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+
+            .resume-item {
+                border-left: 2px solid $light-headers-color;
+
+                &::before {
+                    background: $main-white;
+                    border: 2px solid $light-headers-color;
+                }
+
+                a {
+                    color: $lightest-black;
+                }
+
+                h4 {
+                    color: $light-subtitles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                    sub {
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
+                    }
+                }
+
+                h5 {
+                    background: $light-darkest-background;
+                }
+            }
+        }
+
+        .portfolio {
+            #portfolio-flters {
+                background: $light-main-background;
+
+                .filter-active {
+                    color: $light-titles-color !important;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                }
+
+                li {
+                    color: inherit;
+
+                    &:hover {
+                        color: $light-titles-color !important;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .facts {
+            .count-box {
+                i {
+                    color: $light-headers-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                }
+
+                span {
+                    color: $light-subtitles-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                }
+
+                p {
+                    color: $light-headers-color;
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+                }
+
+                a {
+                    color: $light-subtitles-color;
+
+                    &::selection {
+                        background: $light-main-selected-background !important;
+                        color: $light-main-selected-color !important;
+                    }
+
+                    &:hover {
+                        color: $light-headers-color;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            .progress {
+                .skill {
+                    color: inherit;
+                }
+            }
+
+            .progress-bar-wrap {
+                background: $darkest-white;
+            }
+            .progress-bar {
+                background-color: $light-titles-color;
+            }
+        }
+
+        .services {
+            .icon-box {
+                .icon {
+                    background: $light-titles-color;
+                    border: 1px solid $light-titles-color;
+
+                    i {
+                        color: $main-white;
+                    }
+                }
+
+                &:hover .icon {
+                    background: $light-subtitles-color;
+                }
+
+                .title {
+                    p {
+                        color: $light-titles-color;
+                        &::selection {
+                            background: $light-main-selected-background !important;
+                            color: $light-main-selected-color !important;
+                        }
+
+                        &:hover {
+                            color: $light-subtitles-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials {
+        .testimonials-item {
+            h3 {
+                color: $lighten-black;
+            }
+            h4 {
+                color: $lightest-black;
+            }
+
+            .quote-icon-left,
+            .quote-icon-right {
+                color: $light-subtitles-color;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+
+            p {
+                background: $main-black;
+
+                &::after {
+                    border-top: 20px solid $main-black;
+                }
+            }
+        }
+
+        .owl-page {
+            background-color: $lighten-black !important;
+        }
+
+        .owl-pagination {
+            .active {
+                background-color: $light-headers-color !important;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .info {
+            background: $light-sub-background;
+            box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+            .address,
+            .email,
+            .phone {
+                &:hover {
+                    i {
+                        color: $main-white !important;
+                    }
+                }
+            }
+
+            i {
+                color: $light-titles-color !important;
+
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+
+                background: $light-main-background;
+            }
+            h4 {
+                color: $light-titles-color;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+            p {
+                color: inherit;
+            }
+
+            .address:hover i,
+            .email:hover i,
+            .phone:hover i {
+                background: $light-headers-color;
+                color: $main-black;
+            }
+        }
+
+        .email-form {
+            background: $light-sub-background;
+            box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+            input,
+            textarea {
+                background: $light-darkest-background;
+                border: none;
+                color: $lightest-black;
+
+                &:focus {
+                    box-shadow: 0 0 0 3px $light-subtitles-color;
+                }
+            }
+
+            button[type='submit'] {
+                background: $light-titles-color;
+                color: $main-white;
+
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+
+                &:hover {
+                    background: $light-subtitles-color;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        a {
+            background: $light-subtitles-color;
+            color: $main-white;
+
+            &:hover {
+                background: $light-headers-color;
+            }
+        }
+    }
+
+    .back-to-top {
+        background: $light-subtitles-color;
+        color: $main-white;
+
+        &:hover {
+            color: $main-black !important;
+            background: $light-headers-color;
+        }
+    }
+
+    #header {
+        background: $light-darkest-background;
+
+        .profile {
+            img {
+                border: 8px solid $light-subtitles-color;
+            }
+
+            h1 {
+                a,
+                a:hover {
+                    color: $main-black;
+                }
+            }
+        }
+
+        .nav-menu {
+            a {
+                i {
+                    color: $main-black;
+                }
+                span {
+                    color: $lighten-black;
+                }
+            }
+            .active > a,
+            a:hover,
+            li:hover > a {
+                text-decoration: none;
+                color: $main-black;
+            }
+
+            .active > a i,
+            a:hover i,
+            li:hover > a i {
+                color: $light-headers-color;
+            }
+        }
+
+        .mobile-nav-toggle {
+            i {
+                color: $light-headers-color;
+                &::selection {
+                    background: $light-main-selected-background !important;
+                    color: $light-main-selected-color !important;
+                }
+            }
+        }
+    }
+}
+
+// !_____________________________________________________Colors ________________________________________________
+
+$light-main-selected-background: darken(#0000ff, 20%);
+$light-main-selected-color: darken(#ffffff, 8%);
+
+$light-minor-selected-background: rgba(0, 0, 0, 0.6);
+$light-minor-selected-color: #ffffff;
+$light-headers-color: darken(#0000ff, 10%);
+$light-titles-color: darken(#0000ff, 20%);
+$light-subtitles-color: darken(#0000ff, 35%);
+
+$light-main-background: darken(#ffffff, 3%);
+$light-sub-background: darken(#ffffff, 6%);
+$light-darkest-background: darken(#ffffff, 9%);
+
+$main-black: lighten(#000000, 10%);
+$lighten-black: lighten(#000000, 20%);
+$lightest-black: lighten(#000000, 30%);
+$main-black: #0a0a1a;
+$lighten-black: #0c0b20;
+$lightest-black: #0f0f2d;
