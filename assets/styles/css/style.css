@@ -730,16 +730,16 @@ html .dark a::selection:not(:hover) {
   color: #000000 !important;
 }
 html .dark a:hover {
-  color: #d88c08 !important;
+  color: maroon !important;
 }
 html .dark::-webkit-scrollbar-thumb {
-  background-color: #f7a71c;
+  background-color: #b30000;
 }
 html .dark::-webkit-scrollbar-track {
   background: inherit;
 }
 html .dark .back-to-top {
-  background: #f7a71c;
+  background: #b30000;
   color: #fafafa;
 }
 html .dark .back-to-top::selection {
@@ -758,54 +758,54 @@ html .dark #hero p {
 }
 html .dark #hero p span {
   color: #fafafa;
-  border-bottom: 3px solid #f7a71c;
+  border-bottom: 3px solid #b30000;
 }
 html .dark #main .section-bg {
   background-color: #0f0f0f;
 }
 html .dark #main .section-title h2 {
-  color: #f7a71c !important;
+  color: #b30000 !important;
 }
 html .dark #main .section-title h2::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .section-title::after {
-  background: #f7a71c;
+  background: #b30000;
 }
 html .dark #main .about .content h3 {
-  color: #f19c08;
+  color: #990000;
 }
 html .dark #main .about .content h3::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .about .content ul i {
-  color: #f19c08;
+  color: #990000;
 }
 html .dark #main .about .content ul i::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .resume .resume-title {
-  color: #f19c08;
+  color: #990000;
 }
 html .dark #main .resume .resume-title::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .resume .resume-item {
-  border-left: 2px solid #f7a71c;
+  border-left: 2px solid #b30000;
 }
 html .dark #main .resume .resume-item::before {
   background: #fafafa;
-  border: 2px solid #f7a71c;
+  border: 2px solid #b30000;
 }
 html .dark #main .resume .resume-item a {
   color: #ededed;
 }
 html .dark #main .resume .resume-item h4 {
-  color: #d88c08;
+  color: maroon;
 }
 html .dark #main .resume .resume-item h4::selection {
   background: #ffffff !important;
@@ -822,7 +822,7 @@ html .dark #main .portfolio #portfolio-flters {
   background: #080808;
 }
 html .dark #main .portfolio #portfolio-flters .filter-active {
-  color: #f19c08 !important;
+  color: #990000 !important;
 }
 html .dark #main .portfolio #portfolio-flters .filter-active::selection {
   background: #ffffff !important;
@@ -832,42 +832,42 @@ html .dark #main .portfolio #portfolio-flters li {
   color: inherit;
 }
 html .dark #main .portfolio #portfolio-flters li:hover {
-  color: #f19c08 !important;
+  color: #990000 !important;
 }
 html .dark #main .portfolio #portfolio-flters li:hover::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .facts .count-box i {
-  color: #f7a71c;
+  color: #b30000;
 }
 html .dark #main .facts .count-box i::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .facts .count-box span {
-  color: #d88c08;
+  color: maroon;
 }
 html .dark #main .facts .count-box span::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .facts .count-box p {
-  color: #f7a71c;
+  color: #b30000;
 }
 html .dark #main .facts .count-box p::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .facts .count-box a {
-  color: #d88c08;
+  color: maroon;
 }
 html .dark #main .facts .count-box a::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .facts .count-box a:hover {
-  color: #f7a71c;
+  color: #b30000;
 }
 html .dark #main .skills .progress .skill {
   color: inherit;
@@ -876,28 +876,28 @@ html .dark #main .skills .progress-bar-wrap {
   background: #ededed;
 }
 html .dark #main .skills .progress-bar {
-  background-color: #f19c08;
+  background-color: #990000;
 }
 html .dark #main .services .icon-box .icon {
-  background: #f19c08;
-  border: 1px solid #f19c08;
+  background: #990000;
+  border: 1px solid #990000;
 }
 html .dark #main .services .icon-box .icon i {
   color: #fafafa;
 }
 html .dark #main .services .icon-box:hover .icon {
-  background: #d88c08;
+  background: maroon;
   border: 1px solid #080808;
 }
 html .dark #main .services .icon-box .title p {
-  color: #f19c08;
+  color: #990000;
 }
 html .dark #main .services .icon-box .title p::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
 html .dark #main .services .icon-box .title p:hover {
-  color: #d88c08;
+  color: maroon;
 }
 html .dark .testimonials .testimonials-item h3 {
   color: #f2f2f2;
@@ -907,7 +907,7 @@ html .dark .testimonials .testimonials-item h4 {
 }
 html .dark .testimonials .testimonials-item .quote-icon-left,
 html .dark .testimonials .testimonials-item .quote-icon-right {
-  color: #d88c08;
+  color: maroon;
 }
 html .dark .testimonials .testimonials-item .quote-icon-left::selection,
 html .dark .testimonials .testimonials-item .quote-icon-right::selection {
@@ -924,7 +924,7 @@ html .dark .testimonials .owl-page {
   background-color: #f2f2f2 !important;
 }
 html .dark .testimonials .owl-pagination .active {
-  background-color: #f7a71c !important;
+  background-color: #b30000 !important;
 }
 html .dark .testimonials .owl-pagination .active::selection {
   background: #ffffff !important;
@@ -935,7 +935,7 @@ html .dark .contact .info {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 html .dark .contact .info i {
-  color: #f19c08;
+  color: #990000;
   background: #080808;
 }
 html .dark .contact .info i::selection {
@@ -943,7 +943,7 @@ html .dark .contact .info i::selection {
   color: #000000 !important;
 }
 html .dark .contact .info h4 {
-  color: #f19c08;
+  color: #990000;
 }
 html .dark .contact .info h4::selection {
   background: #ffffff !important;
@@ -955,7 +955,7 @@ html .dark .contact .info p {
 html .dark .contact .info .address:hover i,
 html .dark .contact .info .email:hover i,
 html .dark .contact .info .phone:hover i {
-  background: #f7a71c;
+  background: #b30000;
   color: #fafafa;
 }
 html .dark .contact .email-form {
@@ -970,10 +970,10 @@ html .dark .contact .email-form textarea {
 }
 html .dark .contact .email-form input:focus,
 html .dark .contact .email-form textarea:focus {
-  box-shadow: 0 0 0 3px #d88c08;
+  box-shadow: 0 0 0 3px maroon;
 }
 html .dark .contact .email-form button[type=submit] {
-  background: #f19c08;
+  background: #990000;
   color: #ededed;
 }
 html .dark .contact .email-form button[type=submit]::selection {
@@ -981,29 +981,29 @@ html .dark .contact .email-form button[type=submit]::selection {
   color: #000000 !important;
 }
 html .dark .contact .email-form button[type=submit]:hover {
-  background: #d88c08;
+  background: maroon;
 }
 html .dark .social-links a {
-  background: #d88c08;
+  background: maroon;
   color: #fafafa;
 }
 html .dark .social-links a:hover {
-  background: #f7a71c;
+  background: #b30000;
   color: #000 !important;
 }
 html .dark .back-to-top {
-  background: #d88c08;
+  background: maroon;
   color: #fafafa;
 }
 html .dark .back-to-top:hover {
   color: #fafafa !important;
-  background: #f7a71c;
+  background: #b30000;
 }
 html .dark #header {
   background: #171717;
 }
 html .dark #header .profile img {
-  border: 8px solid #d88c08;
+  border: 8px solid maroon;
 }
 html .dark #header .profile h1 a,
 html .dark #header .profile h1 a:hover {
@@ -1024,10 +1024,10 @@ html .dark #header .nav-menu li:hover > a {
 html .dark #header .nav-menu .active > a i,
 html .dark #header .nav-menu a:hover i,
 html .dark #header .nav-menu li:hover > a i {
-  color: #f7a71c;
+  color: #b30000;
 }
 html .dark #header .mobile-nav-toggle i {
-  color: #f7a71c;
+  color: #b30000;
 }
 html .dark #header .mobile-nav-toggle i::selection {
   background: #ffffff !important;
