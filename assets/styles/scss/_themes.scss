@@ -117,6 +117,9 @@ html {
 
                     a {
                         color: $darkest-white;
+                        text-decoration: underline;
+                        text-underline-offset: 1px;
+                        cursor: pointer;
                     }
 
                     h4 {

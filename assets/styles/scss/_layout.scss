@@ -61,10 +61,10 @@ html {
         }
 
         #hero {
-            width: 100%;
+            // width: 100%;
             height: 100vh;
             background-size: cover;
-
+            margin-left: 300px;
             &:before {
                 content: '';
                 position: absolute;
@@ -618,7 +618,8 @@ html {
             #header {
                 left: -300px;
             }
-            #main {
+            #main,
+            #hero {
                 margin-left: 0;
             }
         }

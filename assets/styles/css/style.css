@@ -55,9 +55,9 @@ html body .back-to-top i {
   left: 8px;
 }
 html body #hero {
-  width: 100%;
   height: 100vh;
   background-size: cover;
+  margin-left: 300px;
 }
 html body #hero:before {
   content: "";
@@ -521,7 +521,8 @@ html body .back-to-top:hover {
   html body #header {
     left: -300px;
   }
-  html body #main {
+  html body #main,
+html body #hero {
     margin-left: 0;
   }
 }
@@ -722,8 +723,8 @@ html .dark {
   background: #080808;
 }
 html .dark *::selection:not(button) {
-  background: #d98d08;
-  color: #ffffff;
+  background: #990000;
+  color: #ededed;
 }
 html .dark a::selection:not(:hover) {
   background: #ffffff !important;
@@ -803,6 +804,9 @@ html .dark #main .resume .resume-item::before {
 }
 html .dark #main .resume .resume-item a {
   color: #ededed;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  cursor: pointer;
 }
 html .dark #main .resume .resume-item h4 {
   color: maroon;
