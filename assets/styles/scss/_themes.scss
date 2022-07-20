@@ -366,13 +366,18 @@ html {
         }
 
         .social-links {
-            a {
+            .social-container {
                 background: $dark-subtitles-color;
-                color: $main-white;
 
                 &:hover {
                     background: $dark-headers-color;
-                    color: $black !important;
+
+                    a {
+                        color: $black !important;
+                    }
+                }
+                a {
+                    color: $main-white;
                 }
             }
         }
@@ -391,7 +396,7 @@ html {
             background: $dark-lightest-background;
 
             .profile {
-                img {
+                & > img {
                     border: 8px solid $dark-subtitles-color;
                 }
 

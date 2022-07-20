@@ -332,6 +332,8 @@ html body #main .services .icon-box .title {
   margin-left: 8rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+html body #main .services .icon-box .title p {
   font-size: 1.8rem;
 }
 html body #main .services .icon-box .description {
@@ -598,20 +600,30 @@ html body #hero {
     transform: scale3d(1.1, 1.1, 1);
   }
 }
-html body .social-links a {
-  font-size: 1.8rem;
-  display: inline-block;
+html body .social-links .social-container {
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
   line-height: 1;
   padding: 0.8rem 0;
   margin-right: 0.4rem;
-  border-radius: 50%;
   text-align: center;
-  width: 3.6rem;
-  height: 3.6rem;
-  transition: 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  cursor: pointer;
 }
-html body .social-links a:hover {
+html body .social-links .social-container a {
+  font-size: 1.8rem;
+  display: inline-block;
+  transition: all 0.3s;
+  max-height: min-content;
+}
+html body .social-links .social-container a:hover {
   text-decoration: none;
+}
+html body .social-links .social-container a img {
+  width: 1.6rem !important;
+  height: 1.6rem !important;
 }
 
 #header {
@@ -626,7 +638,7 @@ html body .social-links a:hover {
   padding: 0 1.5rem;
   overflow-y: auto;
 }
-#header .profile img {
+#header .profile > img {
   margin: 1.5rem auto;
   display: block;
   width: 12rem;
@@ -640,6 +652,9 @@ html body .social-links a:hover {
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: Poppins, sans-serif;
+}
+#header .profile h1 a {
+  font-size: 2.4rem;
 }
 #header .profile h1 a,
 #header .profile h1 a:hover {
@@ -1002,13 +1017,17 @@ html .dark .contact .email-form button[type=submit]::selection {
 html .dark .contact .email-form button[type=submit]:hover {
   background: maroon;
 }
-html .dark .social-links a {
+html .dark .social-links .social-container {
   background: maroon;
-  color: #fafafa;
 }
-html .dark .social-links a:hover {
+html .dark .social-links .social-container:hover {
   background: #b30000;
+}
+html .dark .social-links .social-container:hover a {
   color: #000 !important;
+}
+html .dark .social-links .social-container a {
+  color: #fafafa;
 }
 html .dark .back-to-top {
   background: maroon;
@@ -1021,7 +1040,7 @@ html .dark .back-to-top:hover {
 html .dark #header {
   background: #171717;
 }
-html .dark #header .profile img {
+html .dark #header .profile > img {
   border: 8px solid maroon;
 }
 html .dark #header .profile h1 a,
