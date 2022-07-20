@@ -616,6 +616,7 @@ html body .social-links a:hover {
   margin: 15px auto;
   display: block;
   width: 120px;
+  min-height: 120px;
 }
 #header .profile h1 {
   font-size: 24px;
