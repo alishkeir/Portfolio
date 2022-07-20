@@ -1,16 +1,25 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+// @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
-    * {
+    font-size: 62.5%;
+    *:not(h1, h2, h3, h4, h5, h6) {
         transition: background-color 0.5s ease;
+        font-size: 1.75rem;
     }
     body {
-        font-family: 'Open Sans', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         overflow: overlay;
         margin: 0;
+
+        h2 {
+            font-size: 30px;
+        }
 
         h1,
         h2,
@@ -22,15 +31,15 @@ html {
         }
 
         &::-webkit-scrollbar {
-            width: 10px;
-            border-radius: 10px;
+            width: 1rem;
+            border-radius: 1rem;
             overflow: hidden;
         }
         &::-webkit-scrollbar-button {
             display: none;
         }
         &::-webkit-scrollbar-thumb {
-            border-radius: 10px;
+            border-radius: 1rem;
         }
         &::-webkit-scrollbar-track {
             margin: 0;
@@ -43,20 +52,20 @@ html {
         .back-to-top {
             position: fixed;
             display: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50px;
-            right: 15px;
-            bottom: 15px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 5rem;
+            right: 1.5rem;
+            bottom: 1.5rem;
 
             transition: display 0.5s ease-in-out;
             z-index: 99999;
 
             i {
-                font-size: 24px;
+                font-size: 2.4rem;
                 position: absolute;
-                top: 7px;
-                left: 8px;
+                top: 0.7rem;
+                left: 0.8rem;
             }
         }
 
@@ -64,7 +73,7 @@ html {
             // width: 100%;
             height: 100vh;
             background-size: cover;
-            margin-left: 300px;
+            margin-left: 30rem;
             &:before {
                 content: '';
                 position: absolute;
@@ -78,53 +87,54 @@ html {
             .hero-container {
                 position: relative;
                 z-index: 2;
-                min-width: 300px;
-            }
+                min-width: 30rem;
 
-            h1 {
-                margin: 0 0 10px 0;
-                font-weight: 700;
-                line-height: 56px;
+                h1 {
+                    margin: 0 0 2rem 0;
+                    font-weight: 700;
+                    line-height: 7rem;
+                    font-size: 7rem;
+                    text-align: center;
+                }
 
-                text-align: center;
-            }
+                p {
+                    margin-bottom: 5rem;
+                    font-family: Poppins, sans-serif;
+                    text-align: center;
 
-            p {
-                margin-bottom: 50px;
-                font-family: Poppins, sans-serif;
-                text-align: center;
-
-                span {
-                    padding-top: 4px;
-                    letter-spacing: 1px;
+                    span {
+                        padding-top: 0.4rem;
+                        letter-spacing: 0.1rem;
+                        font-size: 3rem;
+                    }
                 }
             }
         }
 
         #main {
             overflow: hidden;
-            margin-left: 300px;
+            margin-left: 30rem;
 
             section {
-                margin-bottom: 80px;
+                padding-bottom: 4rem;
 
                 .section-title {
-                    padding-bottom: 30px;
-                    padding-top: 30px;
+                    padding-bottom: 3rem;
+                    padding-top: 3rem;
 
                     .section-title h2 {
-                        font-size: 32px;
+                        font-size: 3.2rem;
                         font-weight: 700;
-                        margin-bottom: 20px;
-                        padding-bottom: 20px;
+                        margin-bottom: 2rem;
+                        padding-bottom: 2rem;
                         position: relative;
 
                         &::after {
                             content: '';
                             position: absolute;
                             display: block;
-                            width: 50px;
-                            height: 3px;
+                            width: 5rem;
+                            height: 0.3rem;
                             bottom: 0;
                             left: 0;
                         }
@@ -138,7 +148,7 @@ html {
                 .content {
                     h3 {
                         font-weight: 700;
-                        font-size: 26px;
+                        font-size: 2.6rem;
                     }
 
                     ul {
@@ -146,32 +156,38 @@ html {
                         padding: 0;
 
                         li {
-                            padding-bottom: 10px;
+                            padding-bottom: 1rem;
                         }
 
                         i {
-                            font-size: 20px;
-                            padding-right: 2px;
+                            font-size: 2rem;
+                            padding-right: 0.2rem;
                         }
                     }
 
                     p:last-child {
                         margin-bottom: 0;
                     }
+
+                    .section-title {
+                        p {
+                            font-size: 1.8rem;
+                        }
+                    }
                 }
             }
 
             .resume {
                 .resume-title {
-                    font-size: 26px;
+                    font-size: 2.6rem;
                     font-weight: 700;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
                 }
 
                 .resume-item {
-                    padding: 0 0 20px 20px;
-                    margin-top: -2px;
+                    padding: 0 0 2rem 2rem;
+                    margin-top: -0.2rem;
                     position: relative;
 
                     &:last-child {
@@ -181,10 +197,10 @@ html {
                     &::before {
                         content: '';
                         position: absolute;
-                        width: 16px;
-                        height: 16px;
-                        border-radius: 50px;
-                        left: -9px;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        border-radius: 5rem;
+                        left: -0.9rem;
                         top: 0;
                     }
 
@@ -193,27 +209,27 @@ html {
                     }
 
                     h4 {
-                        line-height: 18px;
-                        font-size: 18px;
+                        line-height: 1.8rem;
+                        font-size: 1.8rem;
                         font-weight: 600;
                         text-transform: uppercase;
                         font-family: Poppins, sans-serif;
-                        margin-bottom: 10px;
+                        margin-bottom: 1rem;
                     }
 
                     h5 {
-                        font-size: 16px;
-                        padding: 5px 15px;
+                        font-size: 1.6rem;
+                        padding: 0.5rem 1.5rem;
                         display: inline-block;
                         font-weight: 600;
-                        margin-bottom: 10px;
+                        margin-bottom: 1rem;
                     }
 
                     ul {
-                        padding-left: 20px;
+                        padding-left: 2rem;
 
                         li {
-                            padding-bottom: 10px;
+                            padding-bottom: 1rem;
                         }
                     }
                 }
@@ -221,7 +237,7 @@ html {
 
             .portfolio {
                 .portfolio-item {
-                    margin-bottom: 30px;
+                    margin-bottom: 3rem;
                     transition: all 0.5s;
                     -webkit-transition: all 0.5s;
                     -moz-transition: all 0.5s;
@@ -245,21 +261,21 @@ html {
 
                 #portfolio-flters {
                     padding: 0;
-                    margin: 0 auto 35px auto;
+                    margin: 0 auto 3.5rem auto;
                     list-style: none;
                     text-align: center;
-                    border-radius: 50px;
-                    padding: 2px 15px;
+                    border-radius: 5rem;
+                    padding: 0.2rem 1.5rem;
 
                     li {
                         cursor: pointer;
                         display: inline-block;
-                        padding: 10px 15px 8px 15px;
-                        font-size: 14px;
+                        padding: 1rem 1.5rem 0.8rem 1.5rem;
+                        font-size: 1.4rem;
                         font-weight: 600;
                         line-height: 1;
                         text-transform: uppercase;
-                        margin-bottom: 5px;
+                        margin-bottom: 0.5rem;
                         transition: all 0.3s ease-in-out;
 
                         &:last-child {
@@ -278,36 +294,36 @@ html {
 
             .facts {
                 .count-box {
-                    padding: 30px;
+                    padding: 3rem;
 
                     i {
                         display: block;
-                        font-size: 44px;
+                        font-size: 4.4rem;
                         float: left;
                     }
 
                     span {
-                        font-size: 48px;
-                        line-height: 40px;
+                        font-size: 4.8rem;
+                        line-height: 4rem;
                         display: block;
                         font-weight: 700;
 
-                        margin-left: 60px;
+                        margin-left: 6rem;
                     }
 
                     p {
-                        padding: 15px 0 0 0;
-                        margin: 0 0 0 60px;
+                        padding: 1.5rem 0 0 0;
+                        margin: 0 0 0 6rem;
                         font-family: Raleway, sans-serif;
-                        font-size: 14px;
+                        font-size: 1.4rem;
                     }
 
                     a {
                         font-weight: 600;
                         display: block;
-                        margin-top: 20px;
+                        margin-top: 2rem;
 
-                        font-size: 15px;
+                        font-size: 1.5rem;
                         font-family: Poppins, sans-serif;
                         -webkit-transition: ease-in-out 0.3s;
                         -moz-transition: ease-in-out 0.3s;
@@ -319,48 +335,55 @@ html {
             }
 
             .skills {
-                .progress {
-                    height: 50px;
-                    display: block;
-                    background: 0 0;
+                .container {
+                    .skills-content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
 
-                    .skill {
-                        padding: 10px 0;
-                        margin: 0 0 6px 0;
-                        text-transform: uppercase;
-                        display: block;
-                        font-weight: 600;
-                        font-family: Poppins, sans-serif;
+                        .skill {
+                            padding: 1rem 0;
+                            margin: 0 0 0.6rem 0;
+                            text-transform: uppercase;
+                            display: block;
+                            font-weight: 600;
+                            font-family: Poppins, sans-serif;
 
-                        .val {
-                            float: right;
-                            font-style: normal;
+                            margin: 3rem;
+                            text-align: center;
+                            transition: transform 0.5s;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+
+                            img {
+                                height: 8rem;
+                                margin-bottom: 2rem;
+                                user-select: none;
+                                width: 8rem;
+                            }
+
+                            h5 {
+                                font-size: 1.65rem;
+                                font-weight: 700;
+                            }
                         }
                     }
-                }
-
-                .progress-bar {
-                    width: 1px;
-                    height: 10px;
-                    -moz-transition: 0.9s;
-                    -ms-transition: 0.9s;
-                    -webkit-transition: 0.9s;
-                    -o-transition: 0.9s;
-                    transition: 0.9s;
                 }
             }
 
             .services {
                 .icon-box {
-                    margin-bottom: 20px;
+                    margin-bottom: 2rem;
 
                     .icon {
                         float: left;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 54px;
-                        height: 54px;
+                        width: 5.4rem;
+                        height: 5.4rem;
                         -webkit-border-radius: 50%;
                         -moz-border-radius: 50%;
                         -ms-border-radius: 50%;
@@ -373,21 +396,21 @@ html {
                         transition: 0.5s;
 
                         i {
-                            font-size: 24px;
+                            font-size: 2.4rem;
                         }
                     }
 
                     .title {
-                        margin-left: 80px;
+                        margin-left: 8rem;
                         font-weight: 700;
-                        margin-bottom: 15px;
-                        font-size: 18px;
+                        margin-bottom: 1.5rem;
+                        font-size: 1.8rem;
                     }
 
                     .description {
-                        margin-left: 80px;
-                        line-height: 24px;
-                        font-size: 14px;
+                        margin-left: 8rem;
+                        line-height: 2.4rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
@@ -396,11 +419,11 @@ html {
                 .testimonials-item {
                     box-sizing: content-box;
                     text-align: center;
-                    min-height: 320px;
-                    margin: 0 20px;
+                    min-height: 32rem;
+                    margin: 0 2rem;
 
                     .testimonial-img {
-                        width: 90px;
+                        width: 9rem;
                         border-radius: 50%;
                         -webkit-border-radius: 50%;
                         -moz-border-radius: 50%;
@@ -410,66 +433,66 @@ html {
                     }
 
                     h3 {
-                        font-size: 18px;
+                        font-size: 1.8rem;
                         font-weight: 700;
-                        margin: 10px 0 5px 0;
+                        margin: 1rem 0 0.5rem 0;
                     }
                     h4 {
-                        font-size: 14px;
+                        font-size: 1.4rem;
                         margin: 0;
                     }
 
                     .quote-icon-left,
                     .quote-icon-right {
-                        font-size: 30px;
+                        font-size: 3rem;
                     }
                     .quote-icon-left {
                         display: inline-block;
-                        left: -5px;
+                        left: -0.5rem;
                         position: relative;
                     }
                     .quote-icon-right {
                         display: inline-block;
-                        right: -5px;
+                        right: -0.5rem;
                         position: relative;
-                        top: 10px;
+                        top: 1rem;
                     }
                     p {
                         font-style: italic;
-                        margin: 0 15px 15px 15px;
-                        padding: 20px;
+                        margin: 0 1.5rem 1.5rem 1.5rem;
+                        padding: 2rem;
                         position: relative;
-                        margin-bottom: 35px;
-                        border-radius: 6px;
-                        -webkit-border-radius: 6px;
-                        -moz-border-radius: 6px;
-                        -ms-border-radius: 6px;
-                        -o-border-radius: 6px;
+                        margin-bottom: 3.5rem;
+                        border-radius: 0.6rem;
+                        -webkit-border-radius: 0.6rem;
+                        -moz-border-radius: 0.6rem;
+                        -ms-border-radius: 0.6rem;
+                        -o-border-radius: 0.6rem;
 
                         &::after {
                             content: '';
                             width: 0;
                             height: 0;
-                            border-right: 20px solid transparent;
-                            border-left: 20px solid transparent;
+                            border-right: 2rem solid transparent;
+                            border-left: 2rem solid transparent;
                             position: absolute;
-                            bottom: -20px;
-                            left: calc(50% - 20px);
+                            bottom: -2rem;
+                            left: calc(50% - 2rem);
                         }
                     }
                 }
 
                 .owl-nav,
                 .owl-pagination {
-                    margin-top: 5px;
+                    margin-top: 0.5rem;
                     text-align: center;
                 }
 
                 .owl-page {
                     display: inline-block;
-                    margin: 0 5px;
-                    width: 12px;
-                    height: 12px;
+                    margin: 0 0.5rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
                     border-radius: 50%;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -480,23 +503,23 @@ html {
 
             .contact {
                 .info {
-                    padding: 30px;
+                    padding: 3rem;
                     width: 100%;
 
                     i {
-                        font-size: 20px;
+                        font-size: 2rem;
                         float: left;
-                        width: 44px;
-                        height: 44px;
+                        width: 4.4rem;
+                        height: 4.4rem;
 
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        border-radius: 50px;
-                        -webkit-border-radius: 50px;
-                        -moz-border-radius: 50px;
-                        -ms-border-radius: 50px;
-                        -o-border-radius: 50px;
+                        border-radius: 5rem;
+                        -webkit-border-radius: 5rem;
+                        -moz-border-radius: 5rem;
+                        -ms-border-radius: 5rem;
+                        -o-border-radius: 5rem;
                         transition: all 0.3s ease-in-out;
                         -webkit-transition: all 0.3s ease-in-out;
                         -moz-transition: all 0.3s ease-in-out;
@@ -504,66 +527,67 @@ html {
                         -o-transition: all 0.3s ease-in-out;
                     }
                     h4 {
-                        padding: 0 0 0 60px;
-                        font-size: 22px;
+                        padding: 0 0 0 6rem;
+                        font-size: 2.2rem;
                         font-weight: 600;
-                        margin-bottom: 5px;
+                        margin-bottom: 0.5rem;
                     }
                     p {
-                        padding: 0 0 10px 60px;
-                        margin-bottom: 20px;
-                        font-size: 14px;
+                        padding: 0 0 1rem 6rem;
+                        margin-bottom: 2rem;
+                        font-size: 1.4rem;
                     }
 
                     .email {
                         p {
-                            padding-top: 5px;
+                            padding-top: 0.5rem;
                         }
                     }
                 }
 
                 .email-form {
                     width: 100%;
-                    padding: 30px;
+                    padding: 3rem;
 
                     .form-group {
-                        padding-bottom: 8px;
+                        padding-bottom: 0.8rem;
                     }
 
                     input {
-                        height: 44px;
+                        height: 4.4rem;
                     }
 
                     input,
                     textarea {
-                        padding: 10px 12px;
+                        padding: 1rem 1.2rem;
+                        font-size: 1.6rem;
                     }
 
                     button[type='submit'] {
                         border: 0;
-                        padding: 10px 12px;
+                        padding: 1rem 1.2rem;
                         transition: 0.4s;
                         -webkit-transition: 0.4s;
                         -moz-transition: 0.4s;
                         -ms-transition: 0.4s;
                         -o-transition: 0.4s;
-                        border-radius: 4px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        -ms-border-radius: 4px;
-                        -o-border-radius: 4px;
+                        border-radius: 0.4rem;
+                        -webkit-border-radius: 0.4rem;
+                        -moz-border-radius: 0.4rem;
+                        -ms-border-radius: 0.4rem;
+                        -o-border-radius: 0.4rem;
                     }
                 }
             }
         }
 
         #footer {
-            padding: 15px;
-            font-size: 14px;
+            padding: 1.5rem;
+            font-size: 1.4rem;
             position: fixed;
             left: 0;
             bottom: 0;
-            width: 300px;
+            width: 30rem;
             z-index: 9999;
 
             .copyright {
@@ -571,24 +595,24 @@ html {
             }
 
             .credits {
-                padding-top: 5px;
+                padding-top: 0.5rem;
                 text-align: center;
-                font-size: 13px;
+                font-size: 1.3rem;
             }
         }
 
         .back-to-top {
             position: fixed;
             display: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50px;
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            -ms-border-radius: 50px;
-            -o-border-radius: 50px;
-            right: 15px;
-            bottom: 15px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 5rem;
+            -webkit-border-radius: 5rem;
+            -moz-border-radius: 5rem;
+            -ms-border-radius: 5rem;
+            -o-border-radius: 5rem;
+            right: 1.5rem;
+            bottom: 1.5rem;
 
             transition: display 0.5s ease-in-out;
             -webkit-transition: display 0.5s ease-in-out;
@@ -598,10 +622,10 @@ html {
             z-index: 9999;
 
             i {
-                font-size: 24px;
+                font-size: 2.4rem;
                 position: absolute;
-                top: 7px;
-                left: 8px;
+                top: 0.7rem;
+                left: 0.8rem;
             }
             &:hover {
                 transition: background 0.2s ease-in-out;
@@ -614,9 +638,9 @@ html {
 
         //^ Media Queries
 
-        @media (max-width: 1199px) {
+        @media (max-width: 119.9rem) {
             #header {
-                left: -300px;
+                left: -30rem;
             }
             #main,
             #hero {
@@ -624,52 +648,52 @@ html {
             }
         }
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 102.4rem) {
             #hero {
                 background-attachment: fixed;
             }
             #hero h1 {
-                font-size: 64px;
+                font-size: 6.4rem;
             }
             #hero p {
-                font-size: 34px;
+                font-size: 3.4rem;
             }
         }
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 102.3rem) {
             #hero h1 {
-                font-size: 40px;
-                line-height: 36px;
+                font-size: 4.5rem;
+                line-height: 4.5rem;
             }
             #hero p {
-                font-size: 25px;
-                line-height: 24px;
-                margin-bottom: 30px;
+                font-size: 2.5rem;
+                line-height: 2.4rem;
+                margin-bottom: 3rem;
             }
         }
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 76.7rem) {
             .testimonials {
-                margin: 30px 10px;
+                margin: 3rem 1rem;
             }
         }
-        @media screen and (max-width: 450px) {
+        @media screen and (max-width: 45rem) {
             .jconfirm-content div {
-                font-size: 13px;
+                font-size: 1.3rem;
             }
         }
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 119.9rem) {
             #footer {
                 position: static;
                 width: auto;
-                padding-right: 20px 15px;
+                padding-right: 2rem 1.5rem;
             }
         }
 
-        @media screen and(max-width:384px) {
+        @media screen and(max-width:38.4rem) {
             .checkmark {
-                min-width: 56px;
-                min-height: 56px;
+                min-width: 5.6rem;
+                min-height: 5.6rem;
             }
         }
 
@@ -692,16 +716,16 @@ html {
 
         .social-links {
             a {
-                font-size: 18px;
+                font-size: 1.8rem;
                 display: inline-block;
 
                 line-height: 1;
-                padding: 8px 0;
-                margin-right: 4px;
+                padding: 0.8rem 0;
+                margin-right: 0.4rem;
                 border-radius: 50%;
                 text-align: center;
-                width: 36px;
-                height: 36px;
+                width: 3.6rem;
+                height: 3.6rem;
                 transition: 0.3s;
 
                 &:hover {
@@ -717,23 +741,23 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 30rem;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     overflow-y: auto;
 
     .profile {
         img {
-            margin: 15px auto;
+            margin: 1.5rem auto;
             display: block;
-            width: 120px;
-            min-height: 120px;
+            width: 12rem;
+            min-height: 12rem;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 2.4rem;
             margin: 0;
             padding: 0;
             font-weight: 600;
@@ -749,7 +773,7 @@ html {
     }
 
     .nav-menu {
-        padding-top: 30px;
+        padding-top: 3rem;
 
         * {
             margin: 0;
@@ -764,14 +788,14 @@ html {
         a {
             display: flex;
             align-items: center;
-            padding: 8px 15px;
-            // margin-bottom: 8px;
+            padding: 0.8rem 1.5rem;
+            // margin-bottom: 0.8rem;
             transition: 0.3s;
-            font-size: 15px;
+            font-size: 1.5rem;
 
             i {
-                font-size: 24px;
-                padding-right: 8px;
+                font-size: 2.4rem;
+                padding-right: 0.8rem;
             }
         }
         .active > a,
@@ -783,18 +807,18 @@ html {
         .theme-toggle-list-item {
             display: flex;
             align-items: center;
-            padding: 8px 15px;
+            padding: 0.8rem 1.5rem;
 
             .theme-toggle {
                 -webkit-appearance: none;
                 position: relative;
                 cursor: pointer;
 
-                width: 60px;
-                height: 30px;
+                width: 6rem;
+                height: 3rem;
                 background-image: url('../../img/theme-toggle/light-background.webp');
                 background-size: cover;
-                border-radius: 50px;
+                border-radius: 5rem;
                 outline: none;
                 transition: background-image 0.9s;
 
@@ -803,10 +827,10 @@ html {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    height: 30px;
-                    width: 30px;
+                    height: 3rem;
+                    width: 3rem;
                     background-color: navy;
-                    border-radius: 50px;
+                    border-radius: 5rem;
                     transition: all 0.9s;
                     background-color: #f7ca33;
                 }
@@ -827,12 +851,12 @@ html {
 
     .mobile-nav-toggle {
         position: fixed;
-        right: 15px;
-        top: 15px;
+        right: 1.5rem;
+        top: 1.5rem;
         z-index: 9998;
         border: 0;
         background: 0 0;
-        font-size: 24px;
+        font-size: 2.4rem;
         transition: all 0.4s;
         outline: 0 !important;
         line-height: 1;

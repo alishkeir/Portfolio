@@ -1,16 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html {
   overflow-x: hidden;
   overflow-y: auto;
   width: 100%;
+  font-size: 62.5%;
 }
-html * {
+html *:not(h1, h2, h3, h4, h5, h6) {
   transition: background-color 0.5s ease;
+  font-size: 1.75rem;
 }
 html body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow: overlay;
   margin: 0;
+}
+html body h2 {
+  font-size: 30px;
 }
 html body h1,
 html body h2,
@@ -21,15 +26,15 @@ html body h6 {
   font-family: Raleway, sans-serif;
 }
 html body::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 10px;
+  width: 1rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 html body::-webkit-scrollbar-button {
   display: none;
 }
 html body::-webkit-scrollbar-thumb {
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 html body::-webkit-scrollbar-track {
   margin: 0;
@@ -40,24 +45,24 @@ html body ::-webkit-resizer {
 html body .back-to-top {
   position: fixed;
   display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
 html body .back-to-top i {
-  font-size: 24px;
+  font-size: 2.4rem;
   position: absolute;
-  top: 7px;
-  left: 8px;
+  top: 0.7rem;
+  left: 0.8rem;
 }
 html body #hero {
   height: 100vh;
   background-size: cover;
-  margin-left: 300px;
+  margin-left: 30rem;
 }
 html body #hero:before {
   content: "";
@@ -71,47 +76,49 @@ html body #hero:before {
 html body #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
+  min-width: 30rem;
 }
-html body #hero h1 {
-  margin: 0 0 10px 0;
+html body #hero .hero-container h1 {
+  margin: 0 0 2rem 0;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 7rem;
+  font-size: 7rem;
   text-align: center;
 }
-html body #hero p {
-  margin-bottom: 50px;
+html body #hero .hero-container p {
+  margin-bottom: 5rem;
   font-family: Poppins, sans-serif;
   text-align: center;
 }
-html body #hero p span {
-  padding-top: 4px;
-  letter-spacing: 1px;
+html body #hero .hero-container p span {
+  padding-top: 0.4rem;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
 }
 html body #main {
   overflow: hidden;
-  margin-left: 300px;
+  margin-left: 30rem;
 }
 html body #main section {
-  margin-bottom: 80px;
+  padding-bottom: 4rem;
 }
 html body #main section .section-title {
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 html body #main section .section-title .section-title h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 html body #main section .section-title .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
-  height: 3px;
+  width: 5rem;
+  height: 0.3rem;
   bottom: 0;
   left: 0;
 }
@@ -120,31 +127,34 @@ html body #main .about {
 }
 html body #main .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 2.6rem;
 }
 html body #main .about .content ul {
   list-style: none;
   padding: 0;
 }
 html body #main .about .content ul li {
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 html body #main .about .content ul i {
-  font-size: 20px;
-  padding-right: 2px;
+  font-size: 2rem;
+  padding-right: 0.2rem;
 }
 html body #main .about .content p:last-child {
   margin-bottom: 0;
 }
+html body #main .about .content .section-title p {
+  font-size: 1.8rem;
+}
 html body #main .resume .resume-title {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 html body #main .resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
+  padding: 0 0 2rem 2rem;
+  margin-top: -0.2rem;
   position: relative;
 }
 html body #main .resume .resume-item:last-child {
@@ -153,38 +163,38 @@ html body #main .resume .resume-item:last-child {
 html body #main .resume .resume-item::before {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 5rem;
+  left: -0.9rem;
   top: 0;
 }
 html body #main .resume .resume-item a {
   font-weight: 700;
 }
 html body #main .resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
+  line-height: 1.8rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: Poppins, sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 html body #main .resume .resume-item h5 {
-  font-size: 16px;
-  padding: 5px 15px;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 html body #main .resume .resume-item ul {
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 html body #main .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 html body #main .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -206,21 +216,21 @@ html body #main .portfolio .portfolio-item:hover {
 }
 html body #main .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 35px auto;
+  margin: 0 auto 3.5rem auto;
   list-style: none;
   text-align: center;
-  border-radius: 50px;
-  padding: 2px 15px;
+  border-radius: 5rem;
+  padding: 0.2rem 1.5rem;
 }
 html body #main .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
+  padding: 1rem 1.5rem 0.8rem 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   transition: all 0.3s ease-in-out;
 }
 html body #main .portfolio #portfolio-flters li:last-child {
@@ -233,31 +243,31 @@ html body #main .portfolio .portfolio-wrap {
   z-index: 1;
 }
 html body #main .facts .count-box {
-  padding: 30px;
+  padding: 3rem;
 }
 html body #main .facts .count-box i {
   display: block;
-  font-size: 44px;
+  font-size: 4.4rem;
   float: left;
 }
 html body #main .facts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
+  font-size: 4.8rem;
+  line-height: 4rem;
   display: block;
   font-weight: 700;
-  margin-left: 60px;
+  margin-left: 6rem;
 }
 html body #main .facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
+  padding: 1.5rem 0 0 0;
+  margin: 0 0 0 6rem;
   font-family: Raleway, sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 html body #main .facts .count-box a {
   font-weight: 600;
   display: block;
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
   font-family: Poppins, sans-serif;
   -webkit-transition: ease-in-out 0.3s;
   -moz-transition: ease-in-out 0.3s;
@@ -265,42 +275,45 @@ html body #main .facts .count-box a {
   -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-html body #main .skills .progress {
-  height: 50px;
-  display: block;
-  background: 0 0;
+html body #main .skills .container .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-html body #main .skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
+html body #main .skills .container .skills-content .skill {
+  padding: 1rem 0;
+  margin: 0 0 0.6rem 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-family: Poppins, sans-serif;
+  margin: 3rem;
+  text-align: center;
+  transition: transform 0.5s;
 }
-html body #main .skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+html body #main .skills .container .skills-content .skill:hover {
+  transform: scale(1.1);
 }
-html body #main .skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  -moz-transition: 0.9s;
-  -ms-transition: 0.9s;
-  -webkit-transition: 0.9s;
-  -o-transition: 0.9s;
-  transition: 0.9s;
+html body #main .skills .container .skills-content .skill img {
+  height: 8rem;
+  margin-bottom: 2rem;
+  user-select: none;
+  width: 8rem;
+}
+html body #main .skills .container .skills-content .skill h5 {
+  font-size: 1.65rem;
+  font-weight: 700;
 }
 html body #main .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 html body #main .services .icon-box .icon {
   float: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
+  width: 5.4rem;
+  height: 5.4rem;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -313,27 +326,27 @@ html body #main .services .icon-box .icon {
   transition: 0.5s;
 }
 html body #main .services .icon-box .icon i {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 html body #main .services .icon-box .title {
-  margin-left: 80px;
+  margin-left: 8rem;
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 html body #main .services .icon-box .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
+  margin-left: 8rem;
+  line-height: 2.4rem;
+  font-size: 1.5rem;
 }
 html body #main .testimonials .testimonials-item {
   box-sizing: content-box;
   text-align: center;
-  min-height: 320px;
-  margin: 0 20px;
+  min-height: 32rem;
+  margin: 0 2rem;
 }
 html body #main .testimonials .testimonials-item .testimonial-img {
-  width: 90px;
+  width: 9rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -342,61 +355,61 @@ html body #main .testimonials .testimonials-item .testimonial-img {
   margin: 0 auto;
 }
 html body #main .testimonials .testimonials-item h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin: 10px 0 5px 0;
+  margin: 1rem 0 0.5rem 0;
 }
 html body #main .testimonials .testimonials-item h4 {
-  font-size: 14px;
+  font-size: 1.4rem;
   margin: 0;
 }
 html body #main .testimonials .testimonials-item .quote-icon-left,
 html body #main .testimonials .testimonials-item .quote-icon-right {
-  font-size: 30px;
+  font-size: 3rem;
 }
 html body #main .testimonials .testimonials-item .quote-icon-left {
   display: inline-block;
-  left: -5px;
+  left: -0.5rem;
   position: relative;
 }
 html body #main .testimonials .testimonials-item .quote-icon-right {
   display: inline-block;
-  right: -5px;
+  right: -0.5rem;
   position: relative;
-  top: 10px;
+  top: 1rem;
 }
 html body #main .testimonials .testimonials-item p {
   font-style: italic;
-  margin: 0 15px 15px 15px;
-  padding: 20px;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  padding: 2rem;
   position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  margin-bottom: 3.5rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
 }
 html body #main .testimonials .testimonials-item p::after {
   content: "";
   width: 0;
   height: 0;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
+  border-right: 2rem solid transparent;
+  border-left: 2rem solid transparent;
   position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
+  bottom: -2rem;
+  left: calc(50% - 2rem);
 }
 html body #main .testimonials .owl-nav,
 html body #main .testimonials .owl-pagination {
-  margin-top: 5px;
+  margin-top: 0.5rem;
   text-align: center;
 }
 html body #main .testimonials .owl-page {
   display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
+  margin: 0 0.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -404,22 +417,22 @@ html body #main .testimonials .owl-page {
   -o-border-radius: 50%;
 }
 html body #main .contact .info {
-  padding: 30px;
+  padding: 3rem;
   width: 100%;
 }
 html body #main .contact .info i {
-  font-size: 20px;
+  font-size: 2rem;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 4.4rem;
+  height: 4.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -427,76 +440,77 @@ html body #main .contact .info i {
   -o-transition: all 0.3s ease-in-out;
 }
 html body #main .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
+  padding: 0 0 0 6rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 html body #main .contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  padding: 0 0 1rem 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 html body #main .contact .info .email p {
-  padding-top: 5px;
+  padding-top: 0.5rem;
 }
 html body #main .contact .email-form {
   width: 100%;
-  padding: 30px;
+  padding: 3rem;
 }
 html body #main .contact .email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 0.8rem;
 }
 html body #main .contact .email-form input {
-  height: 44px;
+  height: 4.4rem;
 }
 html body #main .contact .email-form input,
 html body #main .contact .email-form textarea {
-  padding: 10px 12px;
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
 }
 html body #main .contact .email-form button[type=submit] {
   border: 0;
-  padding: 10px 12px;
+  padding: 1rem 1.2rem;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
 }
 html body #footer {
-  padding: 15px;
-  font-size: 14px;
+  padding: 1.5rem;
+  font-size: 1.4rem;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 30rem;
   z-index: 9999;
 }
 html body #footer .copyright {
   text-align: center;
 }
 html body #footer .credits {
-  padding-top: 5px;
+  padding-top: 0.5rem;
   text-align: center;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 html body .back-to-top {
   position: fixed;
   display: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  right: 15px;
-  bottom: 15px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
   transition: display 0.5s ease-in-out;
   -webkit-transition: display 0.5s ease-in-out;
   -moz-transition: display 0.5s ease-in-out;
@@ -505,10 +519,10 @@ html body .back-to-top {
   z-index: 9999;
 }
 html body .back-to-top i {
-  font-size: 24px;
+  font-size: 2.4rem;
   position: absolute;
-  top: 7px;
-  left: 8px;
+  top: 0.7rem;
+  left: 0.8rem;
 }
 html body .back-to-top:hover {
   transition: background 0.2s ease-in-out;
@@ -517,58 +531,58 @@ html body .back-to-top:hover {
   -ms-transition: background 0.2s ease-in-out;
   -o-transition: background 0.2s ease-in-out;
 }
-@media (max-width: 1199px) {
+@media (max-width: 119.9rem) {
   html body #header {
-    left: -300px;
+    left: -30rem;
   }
   html body #main,
 html body #hero {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 102.4rem) {
   html body #hero {
     background-attachment: fixed;
   }
   html body #hero h1 {
-    font-size: 64px;
+    font-size: 6.4rem;
   }
   html body #hero p {
-    font-size: 34px;
+    font-size: 3.4rem;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 102.3rem) {
   html body #hero h1 {
-    font-size: 40px;
-    line-height: 36px;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
   }
   html body #hero p {
-    font-size: 25px;
-    line-height: 24px;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 76.7rem) {
   html body .testimonials {
-    margin: 30px 10px;
+    margin: 3rem 1rem;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 45rem) {
   html body .jconfirm-content div {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 119.9rem) {
   html body #footer {
     position: static;
     width: auto;
-    padding-right: 20px 15px;
+    padding-right: 2rem 1.5rem;
   }
 }
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 38.4rem) {
   html body .checkmark {
-    min-width: 56px;
-    min-height: 56px;
+    min-width: 5.6rem;
+    min-height: 5.6rem;
   }
 }
 @keyframes stroke {
@@ -585,15 +599,15 @@ html body #hero {
   }
 }
 html body .social-links a {
-  font-size: 18px;
+  font-size: 1.8rem;
   display: inline-block;
   line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  padding: 0.8rem 0;
+  margin-right: 0.4rem;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   transition: 0.3s;
 }
 html body .social-links a:hover {
@@ -605,21 +619,21 @@ html body .social-links a:hover {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  width: 30rem;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding: 0 1.5rem;
   overflow-y: auto;
 }
 #header .profile img {
-  margin: 15px auto;
+  margin: 1.5rem auto;
   display: block;
-  width: 120px;
-  min-height: 120px;
+  width: 12rem;
+  min-height: 12rem;
 }
 #header .profile h1 {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -632,7 +646,7 @@ html body .social-links a:hover {
   text-decoration: none;
 }
 #header .nav-menu {
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 #header .nav-menu * {
   margin: 0;
@@ -646,13 +660,13 @@ html body .social-links a:hover {
 #header .nav-menu a {
   display: flex;
   align-items: center;
-  padding: 8px 15px;
+  padding: 0.8rem 1.5rem;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 #header .nav-menu a i {
-  font-size: 24px;
-  padding-right: 8px;
+  font-size: 2.4rem;
+  padding-right: 0.8rem;
 }
 #header .nav-menu .active > a,
 #header .nav-menu a:hover,
@@ -662,17 +676,17 @@ html body .social-links a:hover {
 #header .nav-menu .theme-toggle-list-item {
   display: flex;
   align-items: center;
-  padding: 8px 15px;
+  padding: 0.8rem 1.5rem;
 }
 #header .nav-menu .theme-toggle-list-item .theme-toggle {
   -webkit-appearance: none;
   position: relative;
   cursor: pointer;
-  width: 60px;
-  height: 30px;
+  width: 6rem;
+  height: 3rem;
   background-image: url("../../img/theme-toggle/light-background.webp");
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 5rem;
   outline: none;
   transition: background-image 0.9s;
 }
@@ -681,10 +695,10 @@ html body .social-links a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   background-color: navy;
-  border-radius: 50px;
+  border-radius: 5rem;
   transition: all 0.9s;
   background-color: #f7ca33;
 }
@@ -699,12 +713,12 @@ html body .social-links a:hover {
 }
 #header .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 1.5rem;
+  top: 1.5rem;
   z-index: 9998;
   border: 0;
   background: 0 0;
-  font-size: 24px;
+  font-size: 2.4rem;
   transition: all 0.4s;
   outline: 0 !important;
   line-height: 1;
