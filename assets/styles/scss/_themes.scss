@@ -426,6 +426,7 @@ html {
 
                 .active > a i,
                 a:hover i,
+                li:hover > a span,
                 li:hover > a i {
                     color: $dark-headers-color;
                 }

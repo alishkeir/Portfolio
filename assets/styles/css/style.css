@@ -1069,6 +1069,7 @@ html .dark #header .nav-menu li:hover > a {
 }
 html .dark #header .nav-menu .active > a i,
 html .dark #header .nav-menu a:hover i,
+html .dark #header .nav-menu li:hover > a span,
 html .dark #header .nav-menu li:hover > a i {
   color: #b30000;
 }
