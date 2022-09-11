@@ -166,6 +166,28 @@ html {
                         }
                     }
                 }
+                .portfolio-wrap {
+                    .portfolio-content {
+                        background-color: $dark-main-background;
+                        background: $dark-main-background;
+                        color: $main-white;
+
+                        p {
+                            a {
+                                color: $main-white !important;
+                            }
+                        }
+
+                        .portfolio-links {
+                            a {
+                                text-decoration: none !important;
+                                h4 {
+                                    color: $darken-white;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .facts {
