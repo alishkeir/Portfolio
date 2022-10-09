@@ -570,7 +570,7 @@ html body .back-to-top:hover {
   -ms-transition: background 0.2s ease-in-out;
   -o-transition: background 0.2s ease-in-out;
 }
-@media (max-width: 119.9rem) {
+@media (max-width: 1199px) {
   html body #header {
     left: -30rem;
   }
@@ -579,7 +579,7 @@ html body #hero {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 102.4rem) {
+@media screen and (min-width: 1024px) {
   html body #hero {
     background-attachment: fixed;
   }
@@ -590,7 +590,7 @@ html body #hero {
     font-size: 3.4rem;
   }
 }
-@media screen and (max-width: 102.3rem) {
+@media screen and (max-width: 1023px) {
   html body #hero h1 {
     font-size: 4.5rem;
     line-height: 4.5rem;
@@ -601,24 +601,24 @@ html body #hero {
     margin-bottom: 3rem;
   }
 }
-@media screen and (max-width: 76.7rem) {
+@media screen and (max-width: 767px) {
   html body .testimonials {
     margin: 3rem 1rem;
   }
 }
-@media screen and (max-width: 45rem) {
+@media screen and (max-width: 450px) {
   html body .jconfirm-content div {
     font-size: 1.3rem;
   }
 }
-@media screen and (max-width: 119.9rem) {
+@media screen and (max-width: 1199px) {
   html body #footer {
     position: static;
     width: auto;
     padding-right: 2rem 1.5rem;
   }
 }
-@media screen and (max-width: 38.4rem) {
+@media screen and (max-width: 384px) {
   html body .checkmark {
     min-width: 5.6rem;
     min-height: 5.6rem;
@@ -682,6 +682,11 @@ html body .social-links .social-container a img {
   transition: all 0.5s;
   padding: 0 1.5rem;
   overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+#header::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 #header .profile > img {
   margin: 1.5rem auto;

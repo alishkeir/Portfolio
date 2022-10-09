@@ -694,7 +694,7 @@ html {
 
         //^ Media Queries
 
-        @media (max-width: 119.9rem) {
+        @media (max-width: 1199px) {
             #header {
                 left: -30rem;
             }
@@ -704,7 +704,7 @@ html {
             }
         }
 
-        @media screen and (min-width: 102.4rem) {
+        @media screen and (min-width: 1024px) {
             #hero {
                 background-attachment: fixed;
             }
@@ -715,7 +715,7 @@ html {
                 font-size: 3.4rem;
             }
         }
-        @media screen and (max-width: 102.3rem) {
+        @media screen and (max-width: 1023px) {
             #hero h1 {
                 font-size: 4.5rem;
                 line-height: 4.5rem;
@@ -727,18 +727,18 @@ html {
             }
         }
 
-        @media screen and (max-width: 76.7rem) {
+        @media screen and (max-width: 767px) {
             .testimonials {
                 margin: 3rem 1rem;
             }
         }
-        @media screen and (max-width: 45rem) {
+        @media screen and (max-width: 450px) {
             .jconfirm-content div {
                 font-size: 1.3rem;
             }
         }
 
-        @media screen and (max-width: 119.9rem) {
+        @media screen and (max-width: 1199px) {
             #footer {
                 position: static;
                 width: auto;
@@ -746,7 +746,7 @@ html {
             }
         }
 
-        @media screen and(max-width:38.4rem) {
+        @media screen and (max-width: 384px) {
             .checkmark {
                 min-width: 5.6rem;
                 min-height: 5.6rem;
@@ -824,6 +824,12 @@ html {
     transition: all 0.5s;
     padding: 0 1.5rem;
     overflow-y: auto;
+
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
 
     .profile {
         & > img {
