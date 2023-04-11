@@ -32,12 +32,44 @@ html {
         }
 
         .back-to-top {
-            background: $dark-headers-color;
+            background: $dark-subtitles-color;
+            color: $main-white;
+
+            &:hover {
+                color: $main-white !important;
+                background: $dark-headers-color;
+            }
+
             &::selection {
                 background: $dark-main-selected-background !important;
                 color: $dark-main-selected-color !important;
             }
-            color: $main-white;
+        }
+
+        #contact-form {
+            & + div {
+                & > div {
+                    background-color: $dark-sub-background !important;
+
+                    & + div {
+                        background: $dark-subtitles-color !important;
+                        color: $main-white !important;
+
+                        &:hover {
+                            background: $dark-headers-color !important;
+                        }
+                    }
+
+                    button {
+                        background: $dark-headers-color !important;
+                        color: $main-white !important;
+
+                        &:hover {
+                            background: $dark-subtitles-color !important;
+                        }
+                    }
+                }
+            }
         }
 
         #hero {
@@ -143,29 +175,7 @@ html {
             }
 
             .portfolio {
-                #portfolio-flters {
-                    background: $dark-main-background;
-
-                    .filter-active {
-                        color: $dark-titles-color !important;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                    }
-
-                    li {
-                        color: inherit;
-
-                        &:hover {
-                            color: $dark-titles-color !important;
-                            &::selection {
-                                background: $dark-main-selected-background !important;
-                                color: $dark-main-selected-color !important;
-                            }
-                        }
-                    }
-                }
+ 
                 .portfolio-wrap {
                     .portfolio-content {
                         background-color: $dark-main-background;
@@ -190,45 +200,7 @@ html {
                 }
             }
 
-            .facts {
-                .count-box {
-                    i {
-                        color: $dark-headers-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                    }
-
-                    span {
-                        color: $dark-subtitles-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                    }
-
-                    p {
-                        color: $dark-headers-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                    }
-
-                    a {
-                        color: $dark-subtitles-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-
-                        &:hover {
-                            color: $dark-headers-color;
-                        }
-                    }
-                }
-            }
+       
 
             .skills {
                 .progress {
@@ -282,111 +254,7 @@ html {
             }
         }
 
-        .testimonials {
-            .testimonials-item {
-                h3 {
-                    color: $darken-white;
-                }
-                h4 {
-                    color: $darkest-white;
-                }
-
-                .quote-icon-left,
-                .quote-icon-right {
-                    color: $dark-subtitles-color;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-
-                p {
-                    background: $main-white;
-
-                    &::after {
-                        border-top: 20px solid $main-white;
-                    }
-                }
-            }
-
-            .owl-page {
-                background-color: $darken-white !important;
-            }
-
-            .owl-pagination {
-                .active {
-                    background-color: $dark-headers-color !important;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-            }
-        }
-
-        .contact {
-            .info {
-                background: $dark-sub-background;
-                box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-
-                i {
-                    color: $dark-titles-color;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-
-                    background: $dark-main-background;
-                }
-                h4 {
-                    color: $dark-titles-color;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-                p {
-                    color: inherit;
-                }
-
-                .address:hover i,
-                .email:hover i,
-                .phone:hover i {
-                    background: $dark-headers-color;
-                    color: $main-white;
-                }
-            }
-
-            .email-form {
-                background: $dark-sub-background;
-                box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-                input,
-                textarea {
-                    background: $dark-main-background;
-                    border: none;
-                    color: $darkest-white;
-
-                    &:focus {
-                        box-shadow: 0 0 0 3px $dark-subtitles-color;
-                    }
-                }
-
-                button[type='submit'] {
-                    background: $dark-titles-color;
-                    color: $darkest-white;
-
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-
-                    &:hover {
-                        background: $dark-subtitles-color;
-                    }
-                }
-            }
-        }
-
+  
         .social-links {
             .social-container {
                 background: $dark-subtitles-color;
@@ -401,16 +269,6 @@ html {
                 a {
                     color: $main-white;
                 }
-            }
-        }
-
-        .back-to-top {
-            background: $dark-subtitles-color;
-            color: $main-white;
-
-            &:hover {
-                color: $main-white !important;
-                background: $dark-headers-color;
             }
         }
 

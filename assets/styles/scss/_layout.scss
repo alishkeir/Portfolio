@@ -49,26 +49,6 @@ html {
             display: none;
         }
 
-        .back-to-top {
-            position: fixed;
-            display: none;
-            width: 4rem;
-            height: 4rem;
-            border-radius: 5rem;
-            right: 1.5rem;
-            bottom: 1.5rem;
-
-            transition: display 0.5s ease-in-out;
-            z-index: 99999;
-
-            i {
-                font-size: 2.4rem;
-                position: absolute;
-                top: 0.7rem;
-                left: 0.8rem;
-            }
-        }
-
         #hero {
             // width: 100%;
             height: 100vh;
@@ -245,6 +225,9 @@ html {
                     -o-transition: all 0.5s;
 
                     .portfolio-wrap {
+                        width: fit-content;
+                        margin: 0 auto;
+
                         & > img {
                             transition: all 0.5s;
                         }
@@ -269,30 +252,7 @@ html {
                     }
                 }
 
-                #portfolio-flters {
-                    padding: 0;
-                    margin: 0 auto 3.5rem auto;
-                    list-style: none;
-                    text-align: center;
-                    border-radius: 5rem;
-                    padding: 0.2rem 1.5rem;
-
-                    li {
-                        cursor: pointer;
-                        display: inline-block;
-                        padding: 1rem 1.5rem 0.8rem 1.5rem;
-                        font-size: 1.4rem;
-                        font-weight: 600;
-                        line-height: 1;
-                        text-transform: uppercase;
-                        margin-bottom: 0.5rem;
-                        transition: all 0.3s ease-in-out;
-
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
-                }
+       
 
                 .portfolio-wrap {
                     transition: 0.3s;
@@ -429,7 +389,9 @@ html {
 
             .services {
                 .icon-box {
-                    margin-bottom: 2rem;
+                    & + .icon-box {
+                        margin-top: 2rem;
+                    }
 
                     .icon {
                         float: left;
@@ -556,82 +518,25 @@ html {
                     -o-border-radius: 50%;
                 }
             }
+        }
 
-            .contact {
-                .info {
-                    padding: 3rem;
-                    width: 100%;
+        #contact-form {
+            & + div {
+                bottom: 70px !important;
+                right: 15px !important;
+                pointer-events: none;
 
-                    i {
-                        font-size: 2rem;
-                        float: left;
-                        width: 4.4rem;
-                        height: 4.4rem;
+                & > div {
+                    pointer-events: all;
 
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 5rem;
-                        -webkit-border-radius: 5rem;
-                        -moz-border-radius: 5rem;
-                        -ms-border-radius: 5rem;
-                        -o-border-radius: 5rem;
-                        transition: all 0.3s ease-in-out;
-                        -webkit-transition: all 0.3s ease-in-out;
-                        -moz-transition: all 0.3s ease-in-out;
-                        -ms-transition: all 0.3s ease-in-out;
-                        -o-transition: all 0.3s ease-in-out;
-                    }
-                    h4 {
-                        padding: 0 0 0 6rem;
-                        font-size: 2.2rem;
-                        font-weight: 600;
-                        margin-bottom: 0.5rem;
-                    }
-                    p {
-                        padding: 0 0 1rem 6rem;
-                        margin-bottom: 2rem;
-                        font-size: 1.4rem;
+                    &:first-child {
+                        width: 320px !important;
+                        text-align: center;
                     }
 
-                    .email {
-                        p {
-                            padding-top: 0.5rem;
-                        }
-                    }
-                }
-
-                .email-form {
-                    width: 100%;
-                    padding: 3rem;
-
-                    .form-group {
-                        padding-bottom: 0.8rem;
-                    }
-
-                    input {
-                        height: 4.4rem;
-                    }
-
-                    input,
-                    textarea {
-                        padding: 1rem 1.2rem;
-                        font-size: 1.6rem;
-                    }
-
-                    button[type='submit'] {
-                        border: 0;
-                        padding: 1rem 1.2rem;
-                        transition: 0.4s;
-                        -webkit-transition: 0.4s;
-                        -moz-transition: 0.4s;
-                        -ms-transition: 0.4s;
-                        -o-transition: 0.4s;
-                        border-radius: 0.4rem;
-                        -webkit-border-radius: 0.4rem;
-                        -moz-border-radius: 0.4rem;
-                        -ms-border-radius: 0.4rem;
-                        -o-border-radius: 0.4rem;
+                    & + div {
+                        width: 40px !important;
+                        height: 40px !important;
                     }
                 }
             }
@@ -897,6 +802,7 @@ html {
 
             .theme-toggle {
                 -webkit-appearance: none;
+                appearance: none;
                 position: relative;
                 cursor: pointer;
 
@@ -957,4 +863,8 @@ html {
     #header {
         left: 0 !important;
     }
+}
+
+.row {
+    margin: 0 !important;
 }

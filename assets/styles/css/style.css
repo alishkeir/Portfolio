@@ -42,23 +42,6 @@ html body::-webkit-scrollbar-track {
 html body ::-webkit-resizer {
   display: none;
 }
-html body .back-to-top {
-  position: fixed;
-  display: none;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 5rem;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  transition: display 0.5s ease-in-out;
-  z-index: 99999;
-}
-html body .back-to-top i {
-  font-size: 2.4rem;
-  position: absolute;
-  top: 0.7rem;
-  left: 0.8rem;
-}
 html body #hero {
   height: 100vh;
   background-size: cover;
@@ -201,6 +184,10 @@ html body #main .portfolio .portfolio-item {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
 }
+html body #main .portfolio .portfolio-item .portfolio-wrap {
+  width: fit-content;
+  margin: 0 auto;
+}
 html body #main .portfolio .portfolio-item .portfolio-wrap > img {
   transition: all 0.5s;
 }
@@ -341,8 +328,8 @@ html body #main .skills .container .skills-content .skill h5 {
   font-size: 1.65rem;
   font-weight: 700;
 }
-html body #main .services .icon-box {
-  margin-bottom: 2rem;
+html body #main .services .icon-box + .icon-box {
+  margin-top: 2rem;
 }
 html body #main .services .icon-box .icon {
   float: left;
@@ -455,71 +442,21 @@ html body #main .testimonials .owl-page {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-html body #main .contact .info {
-  padding: 3rem;
-  width: 100%;
+html body #contact-form + div {
+  bottom: 70px !important;
+  right: 15px !important;
+  pointer-events: none;
 }
-html body #main .contact .info i {
-  font-size: 2rem;
-  float: left;
-  width: 4.4rem;
-  height: 4.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rem;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -ms-border-radius: 5rem;
-  -o-border-radius: 5rem;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+html body #contact-form + div > div {
+  pointer-events: all;
 }
-html body #main .contact .info h4 {
-  padding: 0 0 0 6rem;
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+html body #contact-form + div > div:first-child {
+  width: 320px !important;
+  text-align: center;
 }
-html body #main .contact .info p {
-  padding: 0 0 1rem 6rem;
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
-}
-html body #main .contact .info .email p {
-  padding-top: 0.5rem;
-}
-html body #main .contact .email-form {
-  width: 100%;
-  padding: 3rem;
-}
-html body #main .contact .email-form .form-group {
-  padding-bottom: 0.8rem;
-}
-html body #main .contact .email-form input {
-  height: 4.4rem;
-}
-html body #main .contact .email-form input,
-html body #main .contact .email-form textarea {
-  padding: 1rem 1.2rem;
-  font-size: 1.6rem;
-}
-html body #main .contact .email-form button[type=submit] {
-  border: 0;
-  padding: 1rem 1.2rem;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-  border-radius: 0.4rem;
-  -webkit-border-radius: 0.4rem;
-  -moz-border-radius: 0.4rem;
-  -ms-border-radius: 0.4rem;
-  -o-border-radius: 0.4rem;
+html body #contact-form + div > div + div {
+  width: 40px !important;
+  height: 40px !important;
 }
 html body #footer {
   padding: 1.5rem;
@@ -745,6 +682,7 @@ html body .social-links .social-container a img {
 }
 #header .nav-menu .theme-toggle-list-item .theme-toggle {
   -webkit-appearance: none;
+  appearance: none;
   position: relative;
   cursor: pointer;
   width: 6rem;
@@ -798,6 +736,10 @@ html body .social-links .social-container a img {
   left: 0 !important;
 }
 
+.row {
+  margin: 0 !important;
+}
+
 html .dark {
   color: #ededed;
   background: #080808;
@@ -820,12 +762,33 @@ html .dark::-webkit-scrollbar-track {
   background: inherit;
 }
 html .dark .back-to-top {
-  background: #b30000;
+  background: maroon;
   color: #fafafa;
+}
+html .dark .back-to-top:hover {
+  color: #fafafa !important;
+  background: #b30000;
 }
 html .dark .back-to-top::selection {
   background: #ffffff !important;
   color: #000000 !important;
+}
+html .dark #contact-form + div > div {
+  background-color: #0f0f0f !important;
+}
+html .dark #contact-form + div > div + div {
+  background: maroon !important;
+  color: #fafafa !important;
+}
+html .dark #contact-form + div > div + div:hover {
+  background: #b30000 !important;
+}
+html .dark #contact-form + div > div button {
+  background: #b30000 !important;
+  color: #fafafa !important;
+}
+html .dark #contact-form + div > div button:hover {
+  background: maroon !important;
 }
 html .dark #hero {
   background: url(../../img/hero/dark.svg) top center;
@@ -1092,14 +1055,6 @@ html .dark .social-links .social-container:hover a {
 }
 html .dark .social-links .social-container a {
   color: #fafafa;
-}
-html .dark .back-to-top {
-  background: maroon;
-  color: #fafafa;
-}
-html .dark .back-to-top:hover {
-  color: #fafafa !important;
-  background: #b30000;
 }
 html .dark #header {
   background: #171717;
