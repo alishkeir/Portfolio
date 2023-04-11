@@ -202,28 +202,6 @@ html body #main .portfolio .portfolio-item:hover .portfolio-content {
   visibility: visible;
   opacity: 1;
 }
-html body #main .portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 3.5rem auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 5rem;
-  padding: 0.2rem 1.5rem;
-}
-html body #main .portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 1rem 1.5rem 0.8rem 1.5rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease-in-out;
-}
-html body #main .portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
 html body #main .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -865,26 +843,6 @@ html .dark #main .resume .resume-item h4 sub::selection {
 html .dark #main .resume .resume-item h5 {
   background: #171717;
 }
-html .dark #main .portfolio #portfolio-flters {
-  background: #080808;
-}
-html .dark #main .portfolio #portfolio-flters .filter-active {
-  color: #990000 !important;
-}
-html .dark #main .portfolio #portfolio-flters .filter-active::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark #main .portfolio #portfolio-flters li {
-  color: inherit;
-}
-html .dark #main .portfolio #portfolio-flters li:hover {
-  color: #990000 !important;
-}
-html .dark #main .portfolio #portfolio-flters li:hover::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
 html .dark #main .portfolio .portfolio-wrap .portfolio-content {
   background-color: #080808;
   background: #080808;
@@ -898,37 +856,6 @@ html .dark #main .portfolio .portfolio-wrap .portfolio-content .portfolio-links 
 }
 html .dark #main .portfolio .portfolio-wrap .portfolio-content .portfolio-links a h4 {
   color: #f2f2f2;
-}
-html .dark #main .facts .count-box i {
-  color: #b30000;
-}
-html .dark #main .facts .count-box i::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark #main .facts .count-box span {
-  color: maroon;
-}
-html .dark #main .facts .count-box span::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark #main .facts .count-box p {
-  color: #b30000;
-}
-html .dark #main .facts .count-box p::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark #main .facts .count-box a {
-  color: maroon;
-}
-html .dark #main .facts .count-box a::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark #main .facts .count-box a:hover {
-  color: #b30000;
 }
 html .dark #main .skills .progress .skill {
   color: inherit;
@@ -959,90 +886,6 @@ html .dark #main .services .icon-box .title p::selection {
 }
 html .dark #main .services .icon-box .title p:hover {
   color: maroon;
-}
-html .dark .testimonials .testimonials-item h3 {
-  color: #f2f2f2;
-}
-html .dark .testimonials .testimonials-item h4 {
-  color: #ededed;
-}
-html .dark .testimonials .testimonials-item .quote-icon-left,
-html .dark .testimonials .testimonials-item .quote-icon-right {
-  color: maroon;
-}
-html .dark .testimonials .testimonials-item .quote-icon-left::selection,
-html .dark .testimonials .testimonials-item .quote-icon-right::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark .testimonials .testimonials-item p {
-  background: #fafafa;
-}
-html .dark .testimonials .testimonials-item p::after {
-  border-top: 20px solid #fafafa;
-}
-html .dark .testimonials .owl-page {
-  background-color: #f2f2f2 !important;
-}
-html .dark .testimonials .owl-pagination .active {
-  background-color: #b30000 !important;
-}
-html .dark .testimonials .owl-pagination .active::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark .contact .info {
-  background: #0f0f0f;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-html .dark .contact .info i {
-  color: #990000;
-  background: #080808;
-}
-html .dark .contact .info i::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark .contact .info h4 {
-  color: #990000;
-}
-html .dark .contact .info h4::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark .contact .info p {
-  color: inherit;
-}
-html .dark .contact .info .address:hover i,
-html .dark .contact .info .email:hover i,
-html .dark .contact .info .phone:hover i {
-  background: #b30000;
-  color: #fafafa;
-}
-html .dark .contact .email-form {
-  background: #0f0f0f;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-html .dark .contact .email-form input,
-html .dark .contact .email-form textarea {
-  background: #080808;
-  border: none;
-  color: #ededed;
-}
-html .dark .contact .email-form input:focus,
-html .dark .contact .email-form textarea:focus {
-  box-shadow: 0 0 0 3px maroon;
-}
-html .dark .contact .email-form button[type=submit] {
-  background: #990000;
-  color: #ededed;
-}
-html .dark .contact .email-form button[type=submit]::selection {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-html .dark .contact .email-form button[type=submit]:hover {
-  background: maroon;
 }
 html .dark .social-links .social-container {
   background: maroon;
