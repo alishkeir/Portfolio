@@ -1,326 +1,324 @@
 @import 'colors';
 
 html {
-    .dark {
-        color: $darkest-white;
+  .dark {
+    color: $darkest-white;
 
-        *::selection:not(button) {
-            background: $dark-minor-selected-background;
-            color: $dark-minor-selected-color;
-        }
+    *::selection:not(button) {
+      background: $dark-minor-selected-background;
+      color: $dark-minor-selected-color;
+    }
 
-        background: $dark-main-background;
+    background: $dark-main-background;
 
-        a {
-            // color: $dark-headers-color;
-            &::selection:not(:hover) {
-                background: $dark-main-selected-background !important;
-                color: $dark-main-selected-color !important;
-            }
+    a {
+      // color: $dark-headers-color;
+      &::selection:not(:hover) {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
+      }
+
+      &:hover {
+        color: $dark-subtitles-color !important;
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $dark-headers-color;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: inherit;
+    }
+
+    .back-to-top {
+      background: $dark-subtitles-color;
+      color: $main-white;
+
+      &:hover {
+        color: $main-white !important;
+        background: $dark-headers-color;
+      }
+
+      &::selection {
+        background: $dark-main-selected-background !important;
+        color: $dark-main-selected-color !important;
+      }
+    }
+
+    #contact-form {
+      & + div {
+        & > div {
+          background-color: $dark-sub-background !important;
+
+          & + div {
+            background: $dark-subtitles-color !important;
+            color: $main-white !important;
 
             &:hover {
-                color: $dark-subtitles-color !important;
+              background: $dark-headers-color !important;
             }
+          }
+
+          button {
+            background: $dark-headers-color !important;
+            color: $main-white !important;
+
+            &:hover {
+              background: $dark-subtitles-color !important;
+            }
+          }
+        }
+      }
+    }
+
+    #hero {
+      background: url(../../img/hero/dark.svg) top center;
+      transition: all 0.5s;
+
+      h1 {
+        color: $main-white;
+      }
+
+      p {
+        color: $main-white;
+
+        span {
+          color: $main-white;
+
+          border-bottom: 3px solid $dark-headers-color;
+        }
+      }
+    }
+
+    #main {
+      .section-bg {
+        background-color: $dark-sub-background;
+      }
+      .section-title {
+        h2,
+        h3 {
+          color: $dark-headers-color !important;
+          &::selection {
+            background: $dark-main-selected-background !important;
+            color: $dark-main-selected-color !important;
+          }
         }
 
-        &::-webkit-scrollbar-thumb {
-            background-color: $dark-headers-color;
+        &::after {
+          background: $dark-headers-color;
+        }
+      }
+
+      .about {
+        .content {
+          h3 {
+            color: $dark-titles-color;
+            &::selection {
+              background: $dark-main-selected-background !important;
+              color: $dark-main-selected-color !important;
+            }
+          }
+
+          ul {
+            i {
+              color: $dark-titles-color;
+              &::selection {
+                background: $dark-main-selected-background !important;
+                color: $dark-main-selected-color !important;
+              }
+            }
+          }
+        }
+      }
+
+      .resume {
+        .resume-title {
+          color: $dark-titles-color;
+          &::selection {
+            background: $dark-main-selected-background !important;
+            color: $dark-main-selected-color !important;
+          }
         }
 
-        &::-webkit-scrollbar-track {
-            background: inherit;
-        }
+        .resume-item {
+          border-left: 2px solid $dark-headers-color;
 
-        .back-to-top {
-            background: $dark-subtitles-color;
+          &::before {
+            background: $main-white;
+            border: 2px solid $dark-headers-color;
+          }
+
+          a {
+            color: $darkest-white;
+            text-decoration: underline;
+            text-underline-offset: 1px;
+            cursor: pointer;
+          }
+
+          h4 {
+            color: $dark-subtitles-color;
+            &::selection {
+              background: $dark-main-selected-background !important;
+              color: $dark-main-selected-color !important;
+            }
+            sub {
+              &::selection {
+                background: $dark-main-selected-background !important;
+                color: $dark-main-selected-color !important;
+              }
+            }
+          }
+
+          h5 {
+            background: $dark-lightest-background;
+          }
+        }
+      }
+
+      .portfolio {
+        .portfolio-wrap {
+          .portfolio-content {
+            background-color: $dark-main-background;
+            background: $dark-main-background;
             color: $main-white;
 
-            &:hover {
+            p {
+              a {
                 color: $main-white !important;
-                background: $dark-headers-color;
+              }
             }
 
-            &::selection {
+            .portfolio-links {
+              a {
+                text-decoration: none !important;
+                h4 {
+                  color: $darken-white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .skills {
+        .progress {
+          .skill {
+            color: inherit;
+          }
+        }
+
+        .progress-bar-wrap {
+          background: $darkest-white;
+        }
+        .progress-bar {
+          background-color: $dark-titles-color;
+        }
+      }
+
+      .services {
+        .icon-box {
+          .icon {
+            background: $dark-titles-color;
+            border: 1px solid $dark-titles-color;
+
+            i {
+              color: $main-white;
+            }
+          }
+
+          &:hover .icon {
+            background: $dark-subtitles-color;
+
+            // i {
+            //     color: $dark-headers-color;
+            // }
+            border: 1px solid $dark-main-background;
+          }
+
+          .title {
+            p {
+              color: $dark-titles-color;
+              &::selection {
                 background: $dark-main-selected-background !important;
                 color: $dark-main-selected-color !important;
+              }
+
+              &:hover {
+                color: $dark-subtitles-color;
+              }
             }
+          }
         }
-
-        #contact-form {
-            & + div {
-                & > div {
-                    background-color: $dark-sub-background !important;
-
-                    & + div {
-                        background: $dark-subtitles-color !important;
-                        color: $main-white !important;
-
-                        &:hover {
-                            background: $dark-headers-color !important;
-                        }
-                    }
-
-                    button {
-                        background: $dark-headers-color !important;
-                        color: $main-white !important;
-
-                        &:hover {
-                            background: $dark-subtitles-color !important;
-                        }
-                    }
-                }
-            }
-        }
-
-        #hero {
-            background: url(../../img/hero/dark.svg) top center;
-            transition: all 0.5s;
-
-            h1 {
-                color: $main-white;
-            }
-
-            p {
-                color: $main-white;
-
-                span {
-                    color: $main-white;
-
-                    border-bottom: 3px solid $dark-headers-color;
-                }
-            }
-        }
-
-        #main {
-            .section-bg {
-                background-color: $dark-sub-background;
-            }
-            .section-title {
-                h2 {
-                    color: $dark-headers-color !important;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-                &::after {
-                    background: $dark-headers-color;
-                }
-            }
-
-            .about {
-                .content {
-                    h3 {
-                        color: $dark-titles-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                    }
-
-                    ul {
-                        i {
-                            color: $dark-titles-color;
-                            &::selection {
-                                background: $dark-main-selected-background !important;
-                                color: $dark-main-selected-color !important;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .resume {
-                .resume-title {
-                    color: $dark-titles-color;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-
-                .resume-item {
-                    border-left: 2px solid $dark-headers-color;
-
-                    &::before {
-                        background: $main-white;
-                        border: 2px solid $dark-headers-color;
-                    }
-
-                    a {
-                        color: $darkest-white;
-                        text-decoration: underline;
-                        text-underline-offset: 1px;
-                        cursor: pointer;
-                    }
-
-                    h4 {
-                        color: $dark-subtitles-color;
-                        &::selection {
-                            background: $dark-main-selected-background !important;
-                            color: $dark-main-selected-color !important;
-                        }
-                        sub {
-                            &::selection {
-                                background: $dark-main-selected-background !important;
-                                color: $dark-main-selected-color !important;
-                            }
-                        }
-                    }
-
-                    h5 {
-                        background: $dark-lightest-background;
-                    }
-                }
-            }
-
-            .portfolio {
- 
-                .portfolio-wrap {
-                    .portfolio-content {
-                        background-color: $dark-main-background;
-                        background: $dark-main-background;
-                        color: $main-white;
-
-                        p {
-                            a {
-                                color: $main-white !important;
-                            }
-                        }
-
-                        .portfolio-links {
-                            a {
-                                text-decoration: none !important;
-                                h4 {
-                                    color: $darken-white;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-       
-
-            .skills {
-                .progress {
-                    .skill {
-                        color: inherit;
-                    }
-                }
-
-                .progress-bar-wrap {
-                    background: $darkest-white;
-                }
-                .progress-bar {
-                    background-color: $dark-titles-color;
-                }
-            }
-
-            .services {
-                .icon-box {
-                    .icon {
-                        background: $dark-titles-color;
-                        border: 1px solid $dark-titles-color;
-
-                        i {
-                            color: $main-white;
-                        }
-                    }
-
-                    &:hover .icon {
-                        background: $dark-subtitles-color;
-
-                        // i {
-                        //     color: $dark-headers-color;
-                        // }
-                        border: 1px solid $dark-main-background;
-                    }
-
-                    .title {
-                        p {
-                            color: $dark-titles-color;
-                            &::selection {
-                                background: $dark-main-selected-background !important;
-                                color: $dark-main-selected-color !important;
-                            }
-
-                            &:hover {
-                                color: $dark-subtitles-color;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-  
-        .social-links {
-            .social-container {
-                background: $dark-subtitles-color;
-
-                &:hover {
-                    background: $dark-headers-color;
-
-                    a {
-                        color: $black !important;
-                    }
-                }
-                a {
-                    color: $main-white;
-                }
-            }
-        }
-
-        #header {
-            background: $dark-lightest-background;
-
-            .profile {
-                & > img {
-                    border: 8px solid $dark-subtitles-color;
-                }
-
-                h1 {
-                    a,
-                    a:hover {
-                        color: $main-white;
-                    }
-                }
-            }
-
-            .nav-menu {
-                a {
-                    i {
-                        color: $main-white;
-                    }
-                    span {
-                        color: $darken-white;
-                    }
-                }
-                .active > a,
-                a:hover,
-                li:hover > a {
-                    text-decoration: none;
-                    color: $main-white;
-                }
-
-                .active > a i,
-                a:hover i,
-                li:hover > a span,
-                li:hover > a i {
-                    color: $dark-headers-color;
-                }
-            }
-
-            .mobile-nav-toggle {
-                i {
-                    color: $dark-headers-color;
-                    &::selection {
-                        background: $dark-main-selected-background !important;
-                        color: $dark-main-selected-color !important;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .social-links {
+      .social-container {
+        background: $dark-subtitles-color;
+
+        &:hover {
+          background: $dark-headers-color;
+
+          a {
+            color: $black !important;
+          }
+        }
+        a {
+          color: $main-white;
+        }
+      }
+    }
+
+    #header {
+      background: $dark-lightest-background;
+
+      .profile {
+        & > img {
+          border: 8px solid $dark-subtitles-color;
+        }
+
+        h1 {
+          a,
+          a:hover {
+            color: $main-white;
+          }
+        }
+      }
+
+      .nav-menu {
+        a {
+          i {
+            color: $main-white;
+          }
+          span {
+            color: $darken-white;
+          }
+        }
+        .active > a,
+        a:hover,
+        li:hover > a {
+          text-decoration: none;
+          color: $main-white;
+        }
+
+        .active > a i,
+        a:hover i,
+        li:hover > a span,
+        li:hover > a i {
+          color: $dark-headers-color;
+        }
+      }
+
+      .mobile-nav-toggle {
+        i {
+          color: $dark-headers-color;
+          &::selection {
+            background: $dark-main-selected-background !important;
+            color: $dark-main-selected-color !important;
+          }
+        }
+      }
+    }
+  }
 }

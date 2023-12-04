@@ -89,14 +89,14 @@ html body #main section .section-title {
   padding-bottom: 3rem;
   padding-top: 3rem;
 }
-html body #main section .section-title .section-title h2 {
-  font-size: 3.2rem;
+html body #main section .section-title h2,
+html body #main section .section-title h3 {
   font-weight: 700;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin: 0;
   position: relative;
 }
-html body #main section .section-title .section-title h2::after {
+html body #main section .section-title h2::after,
+html body #main section .section-title h3::after {
   content: "";
   position: absolute;
   display: block;
@@ -104,6 +104,12 @@ html body #main section .section-title .section-title h2::after {
   height: 0.3rem;
   bottom: 0;
   left: 0;
+}
+html body #main section .section-title h2 {
+  font-size: 3.2rem;
+}
+html body #main section .section-title h3 {
+  font-size: 2.4rem;
 }
 html body #main .about {
   overflow-x: hidden;
@@ -277,37 +283,32 @@ html body #main .facts .count-box a {
   -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
-html body #main .skills .container .skills-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+html body #main .skills .container .skills-content .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 103px);
+  gap: 3rem;
 }
-html body #main .skills .container .skills-content .skill {
-  padding: 1rem 0;
+html body #main .skills .container .skills-content .skills-grid .skill {
   margin: 0 0 0.6rem 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-family: Poppins, sans-serif;
-  margin: 3rem;
   text-align: center;
   transition: transform 0.5s;
 }
-html body #main .skills .container .skills-content .skill:hover {
+html body #main .skills .container .skills-content .skills-grid .skill:hover {
   transform: scale(1.1);
 }
-html body #main .skills .container .skills-content .skill img {
+html body #main .skills .container .skills-content .skills-grid .skill img {
   height: 8rem;
   margin-bottom: 2rem;
   user-select: none;
   width: 8rem;
 }
-html body #main .skills .container .skills-content .skill h5 {
+html body #main .skills .container .skills-content .skills-grid .skill h5 {
   font-size: 1.65rem;
   font-weight: 700;
-}
-html body #main .services .icon-box + .icon-box {
-  margin-top: 2rem;
 }
 html body #main .services .icon-box .icon {
   float: left;
@@ -490,7 +491,7 @@ html body .back-to-top:hover {
     left: -30rem;
   }
   html body #main,
-html body #hero {
+  html body #hero {
     margin-left: 0;
   }
 }
@@ -519,6 +520,9 @@ html body #hero {
 @media screen and (max-width: 767px) {
   html body .testimonials {
     margin: 3rem 1rem;
+  }
+  html body .skills-grid {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 450px) {
@@ -785,10 +789,12 @@ html .dark #hero p span {
 html .dark #main .section-bg {
   background-color: #0f0f0f;
 }
-html .dark #main .section-title h2 {
+html .dark #main .section-title h2,
+html .dark #main .section-title h3 {
   color: #b30000 !important;
 }
-html .dark #main .section-title h2::selection {
+html .dark #main .section-title h2::selection,
+html .dark #main .section-title h3::selection {
   background: #ffffff !important;
   color: #000000 !important;
 }
