@@ -231,11 +231,66 @@ html {
           -o-transition: all 0.5s;
 
           .portfolio-wrap {
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
             width: fit-content;
             margin: 0 auto;
 
             & > img {
               transition: all 0.5s;
+            }
+
+            .portfolio-content {
+              visibility: hidden;
+              opacity: 0;
+              transform: translateY(100%);
+
+              transition: all 0.5s;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: 0;
+
+              z-index: 1;
+              padding: 3rem;
+
+              h3 {
+                font-size: 3rem;
+                text-align: center;
+                margin: 2rem 0 4rem;
+              }
+
+              p {
+                a {
+                  text-decoration: underline !important;
+                }
+              }
+
+              .portfolio-links {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 4rem;
+                z-index: 7;
+                a {
+                  text-decoration: none !important;
+                  padding: 0.6rem 1rem;
+                  border-radius: 0.7rem;
+                  
+           
+
+                  h4 {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    margin: 0;
+                  }
+                }
+              }
             }
           }
 
@@ -245,66 +300,10 @@ html {
           }
 
           &:hover {
-            .portfolio-wrap {
-              & > img {
-                transform: scale(1.1);
-              }
-            }
-
             .portfolio-content {
               visibility: visible;
               opacity: 1;
-            }
-          }
-        }
-
-        .portfolio-wrap {
-          transition: 0.3s;
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
-
-          .portfolio-content {
-            visibility: hidden;
-            opacity: 0;
-            transition: all 0.5s;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-
-            z-index: 1;
-            padding: 3rem;
-
-            h3 {
-              font-size: 3rem;
-              text-align: center;
-              margin: 2rem 0 4rem;
-            }
-
-            p {
-              a {
-                text-decoration: underline !important;
-              }
-            }
-
-            .portfolio-links {
-              display: flex;
-              justify-content: space-evenly;
-              margin-top: 4rem;
-              z-index: 7;
-              a {
-                text-decoration: none !important;
-
-                h4 {
-                  font-size: 1.8rem;
-                  font-weight: bold;
-                  text-decoration: underline;
-                }
-              }
+              transform: translate(0);
             }
           }
         }

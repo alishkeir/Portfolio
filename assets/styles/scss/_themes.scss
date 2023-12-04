@@ -158,10 +158,12 @@ html {
 
           h4 {
             color: $dark-subtitles-color;
+
             &::selection {
               background: $dark-main-selected-background !important;
               color: $dark-main-selected-color !important;
             }
+
             sub {
               &::selection {
                 background: $dark-main-selected-background !important;
@@ -179,9 +181,12 @@ html {
       .portfolio {
         .portfolio-wrap {
           .portfolio-content {
-            background-color: $dark-main-background;
-            background: $dark-main-background;
+            // background-color: $dark-main-background;
+            // background: $dark-main-background;
             color: $main-white;
+
+            background: $dark-lightest-background;
+            background-color: $dark-lightest-background;
 
             p {
               a {
@@ -191,7 +196,10 @@ html {
 
             .portfolio-links {
               a {
-                text-decoration: none !important;
+                background: $dark-subtitles-color;
+                &:hover {
+                  background: $dark-hover-color;
+                }
                 h4 {
                   color: $darken-white;
                 }
